@@ -59,7 +59,7 @@ src/
 public/data/             Natural Earth 110m countries (beige land / pale ocean).
 ```
 
-The map is MapLibre GL JS with a **local** style: pale-blue ocean, 10° graticule, beige land from Natural Earth. No commercial tile key is required. Glyphs for marker labels come from MapLibre’s public demo font endpoint; labels simply omit if that request is blocked.
+The map prefers **MapLibre GL JS** with a local style (pale-blue ocean, 10° graticule, beige Natural Earth land). No commercial tile key is required. If WebGL is unavailable or only a software fallback exists, SignalMap automatically uses a Canvas2D equirectangular renderer with the same GeoJSON, markers, and interactions so the dashboard still looks alive.
 
 ## Swap mocks for live APIs
 
