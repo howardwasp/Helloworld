@@ -1,3 +1,4 @@
+import { publicUrl } from '@/lib/publicUrl'
 import type { StyleSpecification } from 'maplibre-gl'
 import { createGraticule } from './graticule'
 
@@ -8,7 +9,7 @@ export const SIGNALMAP_STYLE: StyleSpecification = {
   sources: {
     countries: {
       type: 'geojson',
-      data: '/data/countries-110m.geojson',
+      data: publicUrl('data/countries-110m.geojson'),
     },
     graticule: {
       type: 'geojson',

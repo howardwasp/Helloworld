@@ -2,6 +2,8 @@
 
 SignalMap is a real-time global situation dashboard: a large tactical map on the left and live intel panels on the right. The MVP runs entirely on typed mock GeoJSON and news fixtures so it works offline. It is original software inspired by the *feel* of public situation dashboards — not a copy of World Monitor, and it does not use that product’s source, trademarks, or APIs.
 
+**Live site:** [https://howardwasp.github.io/Helloworld/](https://howardwasp.github.io/Helloworld/)
+
 ## Quick start
 
 ```bash
@@ -11,12 +13,27 @@ npm run dev
 
 Open the printed local URL (default `http://localhost:5173`).
 
-Production build:
+Production build (assets are prefixed with `/Helloworld/` for GitHub Pages):
 
 ```bash
 npm run build
 npm run preview
 ```
+
+Preview the production build at `http://localhost:4173/Helloworld/`.
+
+## Deploy (GitHub Pages)
+
+Pushes to `main` run [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml): Node 22, `npm ci`, `npm run build`, then the official `upload-pages-artifact` + `deploy-pages` actions.
+
+Public URL: **https://howardwasp.github.io/Helloworld/**
+
+If the site is not live yet, enable Pages once (repo admin):
+
+1. Open [Settings → Pages](https://github.com/howardwasp/Helloworld/settings/pages).
+2. Under **Build and deployment → Source**, choose **GitHub Actions**.
+
+Then re-run the **Deploy SignalMap to GitHub Pages** workflow (Actions tab → Run workflow) or push another commit to `main`.
 
 ## Default view
 

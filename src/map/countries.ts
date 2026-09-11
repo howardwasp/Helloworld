@@ -1,10 +1,11 @@
+import { publicUrl } from '@/lib/publicUrl'
 import type { FeatureCollection, Geometry } from 'geojson'
 
 let cache: Promise<FeatureCollection> | null = null
 
 export function loadCountries(): Promise<FeatureCollection> {
   if (!cache) {
-    cache = fetch('/data/countries-110m.geojson').then((response) => {
+    cache = fetch(publicUrl('data/countries-110m.geojson')).then((response) => {
       if (!response.ok) throw new Error('Failed to load country outlines')
       return response.json() as Promise<FeatureCollection>
     })
