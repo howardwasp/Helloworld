@@ -109,7 +109,7 @@ export function LayerChips({ dash }: { dash: DashboardModel }) {
             disabled={!chip.enabled}
             onClick={() => dash.toggleLayer(chip.id)}
             title={source ? `${source.provider} — ${source.note ?? source.attribution}` : undefined}
-            className={`pointer-events-auto flex items-center justify-between gap-2 rounded-full border bg-white/92 px-2.5 py-1 text-left text-[10px] font-semibold uppercase tracking-[0.08em] shadow-sm ${
+            className={`pointer-events-auto flex items-center justify-between gap-2 whitespace-nowrap rounded-full border bg-white/92 px-2.5 py-1 text-left text-[10px] font-semibold uppercase tracking-[0.08em] shadow-sm ${
               !chip.enabled
                 ? 'cursor-not-allowed border-[#eeeae1] text-[#b2ab9f] opacity-70'
                 : active
