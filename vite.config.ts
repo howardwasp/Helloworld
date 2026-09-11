@@ -5,8 +5,8 @@ import { defineConfig } from 'vite'
 
 // Project site on GitHub Pages: https://howardwasp.github.io/Helloworld/
 // Dev keeps `/` so `npm run dev` still matches the README local URL.
-export default defineConfig(({ command }) => ({
-  base: command === 'build' ? '/Helloworld/' : '/',
+export default defineConfig(({ command, isPreview }) => ({
+  base: command === 'build' || isPreview ? '/Helloworld/' : '/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
