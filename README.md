@@ -1,6 +1,6 @@
 # SignalMap
 
-SignalMap is a real-time global situation dashboard: a large tactical map on the left and live intel panels on the right. Natural events and severe weather are pulled from public HTTPS APIs in the browser; other layers stay on clearly labeled sample fixtures. Offline or on fetch failure the app falls back to snapshots in `public/data/live/`, then to in-memory fixtures. It is original software inspired by the *feel* of public situation dashboards — not a copy of World Monitor, and it does not use that product’s source, trademarks, or APIs.
+SignalMap is a real-time global situation dashboard: a large tactical map on the left and live intel panels on the right. Every enabled map layer attempts a live public feed (or a scheduled snapshot of that feed). Offline or on fetch failure the app falls back to snapshots in `public/data/live/`, then to in-memory fixtures. It is original software inspired by the *feel* of public situation dashboards — not a copy of World Monitor, and it does not use that product’s source, trademarks, or APIs.
 
 **Live site:** [https://howardwasp.github.io/Helloworld/](https://howardwasp.github.io/Helloworld/)
 
@@ -70,9 +70,12 @@ src/
   api/http.ts            Fetch + timeout + in-memory cache.
   api/usgs.ts            USGS FDSN earthquake GeoJSON.
   api/weather.ts         NWS alerts, Open-Meteo stations, NHC storms.
-  api/outages.ts         Radar / snapshot hook (sample until a CORS-safe feed).
+  api/conflicts.ts       GDELT 2.0 exports + DOC headlines.
+  api/hotspots.ts        Density clusters derived from GDELT points.
+  api/sanctions.ts       OFAC SDN country aggregates (Actions snapshot).
+  api/outages.ts         IODA (+ optional Cloudflare Radar).
   data/catalog.ts        Regions, chips, colors, source tabs.
-  data/fixtures/         Sample events, polygons, and desk copy.
+  data/fixtures/         Fallback events, polygons, and desk copy.
   map/                   MapLibre style, graticule, GeoJSON helpers, map view.
   state/useDashboard.ts  URL sync + filtering + selection.
   components/            Chrome, panels, detail card.
@@ -82,22 +85,22 @@ public/data/             Natural Earth 110m countries + live API snapshots.
 
 The map prefers **MapLibre GL JS** with a local style (pale-blue ocean, 10° graticule, beige Natural Earth land). No commercial tile key is required. If WebGL is unavailable or only a software fallback exists, SignalMap automatically uses a Canvas2D equirectangular renderer with the same GeoJSON, markers, and interactions so the dashboard still looks alive.
 
-## Live vs sample layers
+## Live vs fallback layers
 
-`src/api/client.ts` is the only module the UI talks to. It returns an `IntelBundle` plus per-layer source metadata (live / sample / fallback). Time chips map to API windows (1H/6H/24H/48H/7D/ALL → USGS `starttime` + magnitude floor).
+`src/api/client.ts` is the only module the UI talks to. It returns an `IntelBundle` plus per-layer source metadata (`live` / `cached` / `fallback` / `sample`). Time chips map to API windows (1H/6H/24H/48H/7D/ALL → provider `starttime` plus client-side `occurredAt` filtering). Successful snapshot loads show **Live (cached)**, not Sample.
 
 | Layer | Status | Source | Notes |
 | --- | --- | --- | --- |
 | Natural events | **Live** | [USGS FDSN event API](https://earthquake.usgs.gov/fdsnws/event/1/) GeoJSON | CORS-safe. Magnitude floor rises for longer windows (M2.5 → M4.5). |
 | Severe weather | **Live** | [NWS alerts](https://api.weather.gov/alerts/active) + [Open-Meteo](https://open-meteo.com/) current conditions + [NHC CurrentStorms](https://www.nhc.noaa.gov/CurrentStorms.json) | NWS and Open-Meteo are browser-callable. NHC has no CORS header; the scheduled snapshot covers it. |
-| Internet disruptions | **Sample** (hooked) | Cloudflare Radar annotations if `VITE_CLOUDFLARE_RADAR_TOKEN` is set, else `public/data/live/outages.json`, else fixtures | Radar needs a token and usually fails CORS in the browser. |
-| Conflict zones | **Sample** | Curated fixtures | ACLED needs a key; license for redistribution is not assumed. |
-| Intel hotspots | **Sample** | Curated fixtures | The Brief list still ranks whatever is visible, including live quakes. |
-| Sanctions | **Sample** | Curated fixtures | OFAC SDN / EU lists are legal text, not geometries. Overlays are illustrative only. |
+| Conflict zones | **Live** (snapshot fallback) | [GDELT 2.0](https://www.gdeltproject.org/) 15-minute export ZIPs (CORS `*` on GCS) + [DOC 2.0](https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/) headlines | CAMEO roots 14/18/19/20 with coordinates. News-mention events, **not** verified incidents. UCDP now requires a token; ACLED needs a key — neither is used. |
+| Intel hotspots | **Live** (derived) | Grid clusters of the current GDELT conflict points | Recalculated when the time-range chip changes. |
+| Sanctions | **Live (cached)** | [US Treasury OFAC SDN](https://ofac.treasury.gov/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists) CSV + ADD.CSV | The full SDN is **not** copied into the repo. Actions write country aggregates (counts, programs, a few example names) to `public/data/live/sanctions.json`. Country dots/overlays are **not** a legal coverage map. |
+| Internet disruptions | **Live** (snapshot fallback) | [IODA](https://ioda.inetintel.cc.gatech.edu/) country events/summary; optional [Cloudflare Radar](https://developers.cloudflare.com/radar/investigate/outages/) if `VITE_CLOUDFLARE_RADAR_TOKEN` is set | IODA JSON is public but usually has no browser CORS header, so the scheduled snapshot is the reliable path. |
 
-Layer chips show **Live** or **Sample**. The footer lists providers and last-updated time.
+Layer chips show **Live**, **Live (cached)**, **Fallback**, or **Sample**. The footer lists providers and last-updated time.
 
-Fallback order for live layers: **browser API → `public/data/live/` snapshot → in-memory fixtures**.
+Fallback order for every enabled layer: **browser API → `public/data/live/` snapshot → in-memory fixtures**.
 
 ## Snapshots (GitHub Actions)
 
@@ -106,6 +109,10 @@ Fallback order for live layers: **browser API → `public/data/live/` snapshot �
 - `public/data/live/earthquakes.geojson`
 - `public/data/live/weather-alerts.geojson`
 - `public/data/live/storms.json`
+- `public/data/live/conflicts.json` (filtered GDELT subset)
+- `public/data/live/hotspots.json`
+- `public/data/live/sanctions.json` (OFAC country aggregates only)
+- `public/data/live/outages.json` (IODA)
 - `public/data/live/sources.json`
 
 Refresh locally with `node scripts/refresh-live-data.mjs`.
@@ -129,5 +136,8 @@ Application code is original to this repository. Country polygons are [Natural E
 - U.S. alerts: [National Weather Service](https://www.weather.gov/documentation/services-web-api) (U.S. public domain)
 - Active cyclones: [National Hurricane Center](https://www.nhc.noaa.gov/) (U.S. public domain)
 - Global station weather: [Open-Meteo](https://open-meteo.com/) ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))
+- Conflict / hotspot points: [The GDELT Project](https://www.gdeltproject.org/) (news-mention events; filtered snapshot, not the full database)
+- Sanctions country aggregates: [U.S. Treasury OFAC SDN](https://ofac.treasury.gov/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists) (U.S. public domain; **not** legal advice or a coverage map)
+- Internet outages: [IODA](https://ioda.inetintel.cc.gatech.edu/), Georgia Institute of Technology (attribution required)
 
-Sample-layer headlines and conflict / sanctions / outage geometries are invented for the demo and are not official reporting or legal coverage.
+Fixture headlines remain only as a last-resort fallback when a provider is down. Reuters / AP / BBC (and similar) briefing tabs are still sample desk copy.

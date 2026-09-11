@@ -1,20 +1,22 @@
+import { resolveCentroid } from '@/api/centroids'
+import { clipText } from '@/api/geo'
 import { tryFetchJson } from '@/api/http'
+import { snapshotToEvents, type SnapshotBundle, type SnapshotEvent } from '@/api/snapshot'
+import { queryWindow } from '@/api/windows'
 import { publicUrl } from '@/lib/publicUrl'
-import type { IntelEvent, LayerSourceInfo } from '@/types/intel'
+import type { IntelEvent, LayerSourceInfo, Severity, TimeRange } from '@/types/intel'
 
 /**
- * Outage hook.
- *
- * Cloudflare Radar annotations need an API token and typically fail CORS from
- * the browser. IODA / NetBlocks are similarly not CORS-safe without a proxy.
- *
- * Resolution order:
- *  1. `VITE_CLOUDFLARE_RADAR_TOKEN` (live Radar, if the browser is allowed)
- *  2. `public/data/live/outages.json` written by a scheduled Action
- *  3. Curated sample fixtures (client assembler)
+ * Outages: Cloudflare Radar (optional token) → IODA live → Actions snapshot → fixtures.
+ * IODA typically has no browser CORS header; the scheduled snapshot is the reliable path.
  */
-const RADAR_URL = 'https://api.cloudflare.com/client/v4/radar/annotations/outages?limit=25&dateRange=7d&format=json'
+const RADAR_URL =
+  'https://api.cloudflare.com/client/v4/radar/annotations/outages?limit=25&dateRange=7d&format=json'
+const IODA_EVENTS = 'https://api.ioda.inetintel.cc.gatech.edu/v2/outages/events'
+const IODA_SUMMARY = 'https://api.ioda.inetintel.cc.gatech.edu/v2/outages/summary'
 const SNAPSHOT = publicUrl('data/live/outages.json')
+
+const SKIP_CODES = new Set(['AQ', 'AS', 'MP', 'GU', 'VI', 'UM', 'BQ', 'TF', 'IO', 'HM', 'GS'])
 
 interface RadarOutage {
   id?: string | number
@@ -32,35 +34,38 @@ interface RadarResponse {
   result?: { annotations?: RadarOutage[] }
 }
 
-interface SnapshotEvent {
-  id: string
-  title: string
-  description: string
-  severity: IntelEvent['severity']
-  occurredAt: string
-  longitude: number
-  latitude: number
-  country?: string
-  url?: string
+interface IodaEvent {
+  location?: string
+  location_name?: string
+  start?: number
+  duration?: number
+  datasource?: string
+  method?: string
+  score?: number
+  overlaps_window?: boolean
 }
 
-const COUNTRY_CENTROIDS: Record<string, { longitude: number; latitude: number; name: string }> = {
-  US: { longitude: -98.5, latitude: 39.8, name: 'United States' },
-  CU: { longitude: -79.5, latitude: 22.0, name: 'Cuba' },
-  HT: { longitude: -72.3, latitude: 18.97, name: 'Haiti' },
-  VE: { longitude: -66.6, latitude: 6.4, name: 'Venezuela' },
-  UA: { longitude: 31.2, latitude: 48.4, name: 'Ukraine' },
-  MM: { longitude: 96.1, latitude: 21.9, name: 'Myanmar' },
-  ML: { longitude: -3.5, latitude: 17.6, name: 'Mali' },
-  IR: { longitude: 53.7, latitude: 32.4, name: 'Iran' },
-  CN: { longitude: 104.2, latitude: 35.9, name: 'China' },
-  IN: { longitude: 78.96, latitude: 20.6, name: 'India' },
-  BR: { longitude: -51.9, latitude: -14.2, name: 'Brazil' },
+interface IodaEnvelope<T> {
+  data?: T
+  error?: string | null
+}
+
+interface IodaSummaryRow {
+  scores?: { overall?: number }
+  event_cnt?: number
+  entity?: { code?: string; name?: string; type?: string }
+}
+
+function severityForScore(score: number): Severity {
+  if (score >= 20_000) return 'critical'
+  if (score >= 2_000) return 'high'
+  if (score >= 200) return 'elevated'
+  return 'watch'
 }
 
 function mapRadar(item: RadarOutage): IntelEvent | null {
   const code = item.locations?.[0] ?? item.locationsDetails?.[0]?.code
-  const centroid = code ? COUNTRY_CENTROIDS[code] : undefined
+  const centroid = resolveCentroid(code) ?? resolveCentroid(item.locationsDetails?.[0]?.name)
   if (!centroid) return null
   const cause = item.outage?.outageCause ?? 'UNKNOWN'
   const kind = item.outage?.outageType ?? 'OUTAGE'
@@ -79,20 +84,96 @@ function mapRadar(item: RadarOutage): IntelEvent | null {
   }
 }
 
-function sampleSource(now: number, note: string): LayerSourceInfo {
+function mapIodaEvent(item: IodaEvent): IntelEvent | null {
+  const code = item.location?.split('/')[1]
+  if (!code || SKIP_CODES.has(code)) return null
+  if (item.overlaps_window === false) return null
+  const centroid = resolveCentroid(code) ?? resolveCentroid(item.location_name)
+  if (!centroid) return null
+  const hours = Math.max(1, Math.round((item.duration ?? 0) / 3600))
+  const score = item.score ?? 0
   return {
-    id: 'outages',
-    label: 'Internet Disruptions',
-    mode: 'sample',
-    provider: 'Cloudflare Radar (hooked, not live)',
-    attribution: 'Sample points until a CORS-safe outage GeoJSON or Radar token is configured',
-    url: 'https://developers.cloudflare.com/radar/investigate/outages/',
-    fetchedAt: new Date(now).toISOString(),
-    note,
+    id: `ioda-${code}-${item.start ?? 'x'}`,
+    layer: 'outages',
+    title: `Internet outage — ${item.location_name ?? centroid.name}`,
+    description: clipText(
+      `IODA ${item.datasource ?? 'signal'} / ${item.method ?? 'detector'} scored ${Math.round(score)}. Duration about ${hours}h. Georgia Tech Internet Outage Detection and Analysis.`,
+      420,
+    ),
+    severity: severityForScore(score),
+    source: 'IODA',
+    occurredAt: item.start ? new Date(item.start * 1000).toISOString() : new Date().toISOString(),
+    longitude: centroid.longitude,
+    latitude: centroid.latitude,
+    country: item.location_name ?? centroid.name,
+    label: item.datasource?.slice(0, 8),
+    url: `https://ioda.inetintel.cc.gatech.edu/country/${code}`,
   }
 }
 
-export async function fetchOutages(now = Date.now()): Promise<{
+function mapIodaSummary(row: IodaSummaryRow, occurredAt: string): IntelEvent | null {
+  const code = row.entity?.code
+  if (!code || SKIP_CODES.has(code) || row.entity?.type !== 'country') return null
+  const centroid = resolveCentroid(code) ?? resolveCentroid(row.entity.name)
+  if (!centroid) return null
+  const score = row.scores?.overall ?? 0
+  return {
+    id: `ioda-sum-${code}`,
+    layer: 'outages',
+    title: `Internet disruption — ${row.entity.name ?? centroid.name}`,
+    description: clipText(
+      `IODA country summary: ${row.event_cnt ?? 0} events, overall score ${Math.round(score)}. Georgia Tech Internet Outage Detection and Analysis.`,
+      420,
+    ),
+    severity: severityForScore(Math.min(score, 80_000)),
+    source: 'IODA',
+    occurredAt,
+    longitude: centroid.longitude,
+    latitude: centroid.latitude,
+    country: row.entity.name ?? centroid.name,
+    label: String(row.event_cnt ?? ''),
+    url: `https://ioda.inetintel.cc.gatech.edu/country/${code}`,
+  }
+}
+
+function dedupeByCountry(events: IntelEvent[]): IntelEvent[] {
+  const best = new Map<string, IntelEvent>()
+  for (const event of events) {
+    const key = event.country ?? event.id
+    const prev = best.get(key)
+    if (!prev) {
+      best.set(key, event)
+      continue
+    }
+    const rank: Record<string, number> = { critical: 0, high: 1, elevated: 2, watch: 3, info: 4 }
+    if (rank[event.severity] < rank[prev.severity]) best.set(key, event)
+  }
+  return [...best.values()].slice(0, 40)
+}
+
+async function fetchIoda(range: TimeRange, now: number): Promise<IntelEvent[]> {
+  const window = queryWindow(range, now)
+  const from = Math.floor(Date.parse(window.startIso) / 1000)
+  const until = Math.floor(now / 1000)
+  const common = `entityType=country&from=${from}&until=${until}&limit=60&orderBy=score/desc`
+  const eventsEnv = await tryFetchJson<IodaEnvelope<IodaEvent[]>>(`${IODA_EVENTS}?${common}`, {
+    timeoutMs: 10_000,
+    cacheTtlMs: 5 * 60_000,
+  })
+  const fromEvents = (eventsEnv?.data ?? []).map(mapIodaEvent).filter((event): event is IntelEvent => event != null)
+  if (fromEvents.length > 0) return dedupeByCountry(fromEvents)
+
+  const summaryEnv = await tryFetchJson<IodaEnvelope<IodaSummaryRow[]>>(`${IODA_SUMMARY}?${common}`, {
+    timeoutMs: 10_000,
+    cacheTtlMs: 5 * 60_000,
+  })
+  const occurredAt = new Date(now).toISOString()
+  return dedupeByCountry(
+    (summaryEnv?.data ?? []).map((row) => mapIodaSummary(row, occurredAt)).filter((event): event is IntelEvent => event != null),
+  )
+}
+
+export async function fetchOutages(range: TimeRange, now = Date.now()): Promise<{
   events: IntelEvent[]
   source: LayerSourceInfo
 }> {
@@ -102,7 +183,9 @@ export async function fetchOutages(now = Date.now()): Promise<{
       timeoutMs: 8_000,
       headers: { Authorization: `Bearer ${token}` },
     })
-    const events = (radar?.result?.annotations ?? []).map(mapRadar).filter((event): event is IntelEvent => event != null)
+    const events = (radar?.result?.annotations ?? [])
+      .map(mapRadar)
+      .filter((event): event is IntelEvent => event != null)
     if (events.length > 0) {
       return {
         events,
@@ -120,29 +203,54 @@ export async function fetchOutages(now = Date.now()): Promise<{
     }
   }
 
-  const snapshot = await tryFetchJson<{ events?: SnapshotEvent[] }>(SNAPSHOT, { timeoutMs: 6_000 })
-  if (snapshot?.events?.length) {
+  const ioda = await fetchIoda(range, now)
+  if (ioda.length > 0) {
     return {
-      events: snapshot.events.map((item) => ({ ...item, layer: 'outages' as const, source: item.url ? 'Outage snapshot' : 'Outage snapshot' })),
+      events: ioda,
       source: {
         id: 'outages',
         label: 'Internet Disruptions',
         mode: 'live',
-        provider: 'Scheduled outage snapshot',
-        attribution: 'See public/data/live/outages.json',
+        provider: 'IODA / Georgia Tech',
+        attribution: 'Internet Outage Detection and Analysis (IODA), Georgia Institute of Technology',
+        url: 'https://ioda.inetintel.cc.gatech.edu/',
         fetchedAt: new Date(now).toISOString(),
-        note: 'Loaded from public/data/live/outages.json',
+        note: `Live IODA country outages · ${ioda.length} locations`,
+      },
+    }
+  }
+
+  const snapshot = await tryFetchJson<SnapshotBundle>(SNAPSHOT, { timeoutMs: 6_000, cacheTtlMs: 10 * 60_000 })
+  const snapEvents = snapshotToEvents(snapshot?.events as SnapshotEvent[] | undefined, 'outages', 'IODA')
+  if (snapEvents.length > 0) {
+    return {
+      events: snapEvents,
+      source: {
+        id: 'outages',
+        label: 'Internet Disruptions',
+        mode: 'cached',
+        provider: 'IODA / Georgia Tech',
+        attribution: 'Internet Outage Detection and Analysis (IODA), Georgia Institute of Technology',
+        url: 'https://ioda.inetintel.cc.gatech.edu/',
+        fetchedAt: snapshot?.generatedAt ?? new Date(now).toISOString(),
+        note: 'Snapshot in public/data/live/outages.json (IODA; Radar if a token is configured in Actions)',
       },
     }
   }
 
   return {
     events: [],
-    source: sampleSource(
-      now,
-      token
-        ? 'Radar token present but the request failed (likely CORS). Using sample outages.'
-        : 'No CORS-safe public outage feed configured. Sample layer — set VITE_CLOUDFLARE_RADAR_TOKEN or add public/data/live/outages.json.',
-    ),
+    source: {
+      id: 'outages',
+      label: 'Internet Disruptions',
+      mode: 'fallback',
+      provider: 'IODA / Georgia Tech',
+      attribution: 'Internet Outage Detection and Analysis (IODA), Georgia Institute of Technology',
+      url: 'https://ioda.inetintel.cc.gatech.edu/',
+      fetchedAt: new Date(now).toISOString(),
+      note: token
+        ? 'Radar/IODA live and snapshot failed — using sample outages'
+        : 'IODA is not CORS-safe in this browser and no snapshot is present — using sample outages',
+    },
   }
 }

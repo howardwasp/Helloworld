@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T12:32:58.040Z",
+  "generatedAt": "2026-09-11T15:18:11.147Z",
   "sources": [
     {
       "id": "natural",
@@ -13,7 +13,7 @@
       "provider": "National Weather Service",
       "url": "https://api.weather.gov/alerts/active",
       "license": "U.S. public domain",
-      "count": 90
+      "count": 68
     },
     {
       "id": "storms",
@@ -21,6 +21,34 @@
       "url": "https://www.nhc.noaa.gov/CurrentStorms.json",
       "license": "U.S. public domain",
       "count": 1
+    },
+    {
+      "id": "conflicts",
+      "provider": "The GDELT Project",
+      "url": "https://www.gdeltproject.org/",
+      "license": "GDELT news-mention events (attribution). Snapshot is a filtered subset, not the full database.",
+      "count": 220
+    },
+    {
+      "id": "hotspots",
+      "provider": "Derived from GDELT clusters",
+      "url": "https://www.gdeltproject.org/",
+      "license": "Derived from the GDELT conflict snapshot",
+      "count": 16
+    },
+    {
+      "id": "sanctions",
+      "provider": "US Treasury OFAC SDN",
+      "url": "https://ofac.treasury.gov/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
+      "license": "U.S. public domain. Country aggregates only — not the full SDN file.",
+      "count": 48
+    },
+    {
+      "id": "outages",
+      "provider": "IODA / Georgia Institute of Technology",
+      "url": "https://ioda.inetintel.cc.gatech.edu/",
+      "license": "Attribution required. Live client fetch preferred; this file is a short snapshot.",
+      "count": 25
     }
   ]
 }

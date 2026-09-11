@@ -1,0 +1,1072 @@
+{
+  "generatedAt": "2026-09-11T15:18:11.147Z",
+  "listDate": "2026-09-11T15:18:11.138Z",
+  "countries": [
+    {
+      "code": "RU",
+      "name": "Russia",
+      "longitude": 91.2457,
+      "latitude": 59.302,
+      "count": 7104,
+      "programs": [
+        "CUBA",
+        "SDGT",
+        "NPWMD",
+        "DPRK2",
+        "BELARUS",
+        "IRAN",
+        "TCO",
+        "MAGNIT"
+      ],
+      "samples": [
+        {
+          "name": "MINISTRY OF DEFENSE AND ARMED FORCES LOGISTICS",
+          "program": "SDGT; NPWMD; IFSR; IRAN-CON-ARMS-EO; RUSSIA-EO14024"
+        },
+        {
+          "name": "ISLAMIC REVOLUTIONARY GUARD CORPS AIR FORCE",
+          "program": "FTO; SDGT; NPWMD; IRGC; IFSR; RUSSIA-EO14024"
+        },
+        {
+          "name": "PROKOPENKO, Ivan Pavlovitch",
+          "program": "MAGNIT; RUSSIA-EO14024"
+        }
+      ]
+    },
+    {
+      "code": "IR",
+      "name": "Iran",
+      "longitude": 53.4092,
+      "latitude": 33.3488,
+      "count": 3348,
+      "programs": [
+        "IRAN",
+        "SDGT",
+        "IRGC",
+        "IFSR",
+        "IRAN-EO13902",
+        "NPWMD",
+        "DPRK2",
+        "IRAN-CON-ARMS-EO"
+      ],
+      "samples": [
+        {
+          "name": "BANK MARKAZI JOMHOURI ISLAMI IRAN",
+          "program": "IRAN; SDGT; IRGC; IFSR"
+        },
+        {
+          "name": "BANK MASKAN",
+          "program": "IRAN; IRAN-EO13902"
+        },
+        {
+          "name": "BANK REFAH KARGARAN",
+          "program": "IRAN; IRAN-EO13902"
+        }
+      ]
+    },
+    {
+      "code": "MX",
+      "name": "Mexico",
+      "longitude": -103.0479,
+      "latitude": 23.8233,
+      "count": 1173,
+      "programs": [
+        "CUBA",
+        "SDNTK",
+        "ILLICIT-DRUGS-EO14059",
+        "FTO",
+        "SDGT",
+        "SDNT",
+        "TCO",
+        "GLOMAG"
+      ],
+      "samples": []
+    },
+    {
+      "code": "CN",
+      "name": "China",
+      "longitude": 105.7794,
+      "latitude": 37.285,
+      "count": 1173,
+      "programs": [
+        "SDGT",
+        "IRAQ2",
+        "SDNTK",
+        "NPWMD",
+        "DPRK2",
+        "IFSR",
+        "BELARUS",
+        "IRAN"
+      ],
+      "samples": []
+    },
+    {
+      "code": "AE",
+      "name": "United Arab Emirates",
+      "longitude": 54.3703,
+      "latitude": 24.193,
+      "count": 760,
+      "programs": [
+        "IRAQ2",
+        "SDGT",
+        "SDNTK",
+        "IRAN",
+        "IFSR",
+        "NPWMD",
+        "IRGC",
+        "TCO"
+      ],
+      "samples": []
+    },
+    {
+      "code": "KP",
+      "name": "Dem. Rep. Korea",
+      "longitude": 127.2503,
+      "latitude": 39.8262,
+      "count": 591,
+      "programs": [
+        "CUBA",
+        "NPWMD",
+        "DPRK2",
+        "DPRK",
+        "DPRK3",
+        "DPRK4",
+        "DPRK-NKSPEA",
+        "RUSSIA-EO14024"
+      ],
+      "samples": [
+        {
+          "name": "KOREA MINING DEVELOPMENT TRADING CORPORATION",
+          "program": "NPWMD; DPRK2"
+        },
+        {
+          "name": "KOREA TANGUN TRADING CORPORATION",
+          "program": "NPWMD; DPRK2"
+        },
+        {
+          "name": "OFFICE 39",
+          "program": "DPRK"
+        }
+      ]
+    },
+    {
+      "code": "VE",
+      "name": "Venezuela",
+      "longitude": -66.9188,
+      "latitude": 7.2356,
+      "count": 481,
+      "programs": [
+        "SDGT",
+        "SDNTK",
+        "VENEZUELA",
+        "IRAN",
+        "NPWMD",
+        "IRGC",
+        "IFSR",
+        "IRAN-CON-ARMS-EO"
+      ],
+      "samples": [
+        {
+          "name": "RANGEL SILVA, Henry de Jesus",
+          "program": "VENEZUELA"
+        },
+        {
+          "name": "CARVAJAL BARRIOS, Hugo Armando",
+          "program": "VENEZUELA"
+        },
+        {
+          "name": "FIGUEROA SALAZAR, Amilcar Jesus",
+          "program": "VENEZUELA"
+        }
+      ]
+    },
+    {
+      "code": "TR",
+      "name": "Turkey",
+      "longitude": 36.5985,
+      "latitude": 38.4246,
+      "count": 382,
+      "programs": [
+        "SDGT",
+        "SDNTK",
+        "IRAN",
+        "NPWMD",
+        "IFSR",
+        "FTO",
+        "TCO",
+        "DPRK"
+      ],
+      "samples": []
+    },
+    {
+      "code": "LB",
+      "name": "Lebanon",
+      "longitude": 35.8547,
+      "latitude": 33.8503,
+      "count": 369,
+      "programs": [
+        "SDGT",
+        "IRAQ2",
+        "IRAN",
+        "IFSR",
+        "SDNT",
+        "IRGC",
+        "SDNTK",
+        "FTO"
+      ],
+      "samples": [
+        {
+          "name": "HARDAN, Assaad Halim",
+          "program": "LEBANON"
+        },
+        {
+          "name": "WAHHAB, Wi'am",
+          "program": "LEBANON"
+        },
+        {
+          "name": "MAKHLUF, Hafiz",
+          "program": "LEBANON"
+        }
+      ]
+    },
+    {
+      "code": "CO",
+      "name": "Colombia",
+      "longitude": -72.7113,
+      "latitude": 4.5234,
+      "count": 358,
+      "programs": [
+        "SDNT",
+        "SDNTK",
+        "SDGT",
+        "ILLICIT-DRUGS-EO14059",
+        "FTO",
+        "TCO",
+        "VENEZUELA-EO13850",
+        "SUDAN-EO14098"
+      ],
+      "samples": []
+    },
+    {
+      "code": "IQ",
+      "name": "Iraq",
+      "longitude": 44.5782,
+      "latitude": 33.4827,
+      "count": 306,
+      "programs": [
+        "SDGT",
+        "FTO",
+        "IRAQ2",
+        "IRAQ3",
+        "IRAN",
+        "IRAN-EO13902",
+        "IFSR",
+        "IRGC"
+      ],
+      "samples": [
+        {
+          "name": "AL-TIKRITI, Saddam Hussein",
+          "program": "IRAQ2"
+        },
+        {
+          "name": "AL-TIKRITI, Qusay Saddam Hussein",
+          "program": "IRAQ2"
+        },
+        {
+          "name": "AL-TIKRITI, Uday Saddam Hussein",
+          "program": "IRAQ2"
+        }
+      ]
+    },
+    {
+      "code": "SY",
+      "name": "Syria",
+      "longitude": 38.036,
+      "latitude": 35.2399,
+      "count": 300,
+      "programs": [
+        "SDGT",
+        "IRAQ2",
+        "NPWMD",
+        "DPRK2",
+        "FTO",
+        "IRGC",
+        "IFSR",
+        "IRAN-HR"
+      ],
+      "samples": []
+    },
+    {
+      "code": "BY",
+      "name": "Belarus",
+      "longitude": 28.2222,
+      "latitude": 53.3109,
+      "count": 296,
+      "programs": [
+        "BELARUS",
+        "IRAN",
+        "NPWMD",
+        "IFSR",
+        "UKRAINE-EO13662",
+        "RUSSIA-EO14024",
+        "SDGT",
+        "BELARUS-EO14038"
+      ],
+      "samples": [
+        {
+          "name": "LUKASHENKA, Alyaksandr Ryhorovich",
+          "program": "BELARUS"
+        },
+        {
+          "name": "HALAVANAU, Viktar Hryhoryavich",
+          "program": "BELARUS"
+        },
+        {
+          "name": "ZIMOUSKY, Aliaksandr Leanidavich",
+          "program": "BELARUS"
+        }
+      ]
+    },
+    {
+      "code": "UA",
+      "name": "Ukraine",
+      "longitude": 30.6398,
+      "latitude": 48.4264,
+      "count": 241,
+      "programs": [
+        "BELARUS",
+        "UKRAINE-EO13660",
+        "RUSSIA-EO14065",
+        "RUSSIA-EO14024",
+        "UKRAINE-EO13685",
+        "UKRAINE-EO13662",
+        "SDGT",
+        "IFSR"
+      ],
+      "samples": []
+    },
+    {
+      "code": "MM",
+      "name": "Myanmar",
+      "longitude": 97.1105,
+      "latitude": 19.9945,
+      "count": 194,
+      "programs": [
+        "SDNTK",
+        "DPRK2",
+        "GLOMAG",
+        "TCO",
+        "BURMA-EO14014",
+        "DPRK",
+        "CYBER4"
+      ],
+      "samples": [
+        {
+          "name": "33RD LIGHT INFANTRY DIVISION OF THE BURMESE ARMY",
+          "program": "GLOMAG; BURMA-EO14014"
+        },
+        {
+          "name": "HLAING, Min Aung",
+          "program": "GLOMAG; BURMA-EO14014"
+        },
+        {
+          "name": "WIN, Soe",
+          "program": "GLOMAG; BURMA-EO14014"
+        }
+      ]
+    },
+    {
+      "code": "GB",
+      "name": "United Kingdom",
+      "longitude": -3.0844,
+      "latitude": 53.9072,
+      "count": 192,
+      "programs": [
+        "CUBA",
+        "IRAN",
+        "SDGT",
+        "IFSR",
+        "FTO",
+        "IRAQ2",
+        "SDNTK",
+        "NPWMD"
+      ],
+      "samples": []
+    },
+    {
+      "code": "CU",
+      "name": "Cuba",
+      "longitude": -79.6713,
+      "latitude": 21.6871,
+      "count": 176,
+      "programs": [
+        "CUBA",
+        "CUBA-EO14404",
+        "SDGT",
+        "NPWMD",
+        "VENEZUELA-EO13850",
+        "GLOMAG"
+      ],
+      "samples": [
+        {
+          "name": "AEROCARIBBEAN AIRLINES",
+          "program": "CUBA"
+        },
+        {
+          "name": "ANGLO-CARIBBEAN CO., LTD.",
+          "program": "CUBA"
+        },
+        {
+          "name": "BANCO NACIONAL DE CUBA",
+          "program": "CUBA"
+        }
+      ]
+    },
+    {
+      "code": "PK",
+      "name": "Pakistan",
+      "longitude": 69.3144,
+      "latitude": 30.718,
+      "count": 169,
+      "programs": [
+        "SDGT",
+        "FTO",
+        "SDNTK",
+        "TCO",
+        "GLOMAG",
+        "CYBER2",
+        "ELECTION-EO13848",
+        "IRAN-EO13846"
+      ],
+      "samples": []
+    },
+    {
+      "code": "IN",
+      "name": "India",
+      "longitude": 83.4864,
+      "latitude": 23.9339,
+      "count": 156,
+      "programs": [
+        "SDGT",
+        "SDNTK",
+        "IRAN",
+        "FTO",
+        "UKRAINE-EO13662",
+        "RUSSIA-EO14024",
+        "DPRK3",
+        "IRAN-EO13846"
+      ],
+      "samples": []
+    },
+    {
+      "code": "KH",
+      "name": "Cambodia",
+      "longitude": 105.0396,
+      "latitude": 12.6697,
+      "count": 155,
+      "programs": [
+        "SDGT",
+        "GLOMAG",
+        "TCO",
+        "CYBER4"
+      ],
+      "samples": []
+    },
+    {
+      "code": "PA",
+      "name": "Panama",
+      "longitude": -80.3753,
+      "latitude": 8.4924,
+      "count": 151,
+      "programs": [
+        "CUBA",
+        "SDNTK",
+        "SDNT",
+        "IRAN",
+        "DPRK",
+        "UKRAINE-EO13661",
+        "DPRK4",
+        "TCO"
+      ],
+      "samples": []
+    },
+    {
+      "code": "CD",
+      "name": "Dem. Rep. Congo",
+      "longitude": 22.949,
+      "latitude": -3.8313,
+      "count": 145,
+      "programs": [
+        "DRCONGO",
+        "SDGT",
+        "CAR",
+        "FTO",
+        "GLOMAG",
+        "DPRK4",
+        "SOUTH SUDAN"
+      ],
+      "samples": [
+        {
+          "name": "BOUT, Viktor Anatolijevitch",
+          "program": "DRCONGO"
+        },
+        {
+          "name": "RUPRAH, Sanjivan Singh",
+          "program": "DRCONGO"
+        },
+        {
+          "name": "POPOV, Dimitri Igorevich",
+          "program": "DRCONGO"
+        }
+      ]
+    },
+    {
+      "code": "YE",
+      "name": "Yemen",
+      "longitude": 46.3429,
+      "latitude": 15.4308,
+      "count": 140,
+      "programs": [
+        "SDGT",
+        "IRAQ2",
+        "FTO",
+        "YEMEN",
+        "IRGC",
+        "IFSR",
+        "GLOMAG"
+      ],
+      "samples": [
+        {
+          "name": "AL-HUTHI, Abd al-Khaliq",
+          "program": "YEMEN"
+        },
+        {
+          "name": "AL HAKIM, Abdullah Yahya",
+          "program": "YEMEN"
+        },
+        {
+          "name": "SALEH, Ali Abdullah",
+          "program": "YEMEN"
+        }
+      ]
+    },
+    {
+      "code": "DE",
+      "name": "Germany",
+      "longitude": 10.631,
+      "latitude": 50.9968,
+      "count": 130,
+      "programs": [
+        "CUBA",
+        "SDGT",
+        "IRAN",
+        "IFSR",
+        "SDNTK",
+        "BELARUS",
+        "DPRK3",
+        "IRGC"
+      ],
+      "samples": []
+    },
+    {
+      "code": "CY",
+      "name": "Cyprus",
+      "longitude": 33.2808,
+      "latitude": 35.0164,
+      "count": 128,
+      "programs": [
+        "IRAN",
+        "UKRAINE-EO13661",
+        "UKRAINE-EO13662",
+        "RUSSIA-EO14024",
+        "GLOMAG",
+        "VENEZUELA-EO13850",
+        "LIBYA3",
+        "PEESA-EO14039"
+      ],
+      "samples": []
+    },
+    {
+      "code": "SD",
+      "name": "Sudan",
+      "longitude": 29.4003,
+      "latitude": 12.9782,
+      "count": 101,
+      "programs": [
+        "SDGT",
+        "DARFUR",
+        "CAR",
+        "FTO",
+        "LIBYA3",
+        "SOUTH SUDAN",
+        "UKRAINE-EO13661",
+        "CYBER2"
+      ],
+      "samples": [
+        {
+          "name": "MANGOK, Marial Chanuong Yol",
+          "program": "SOUTH SUDAN"
+        },
+        {
+          "name": "CHUOL, James Koang",
+          "program": "SOUTH SUDAN"
+        },
+        {
+          "name": "GADET, Peter",
+          "program": "SOUTH SUDAN"
+        }
+      ]
+    },
+    {
+      "code": "BG",
+      "name": "Bulgaria",
+      "longitude": 24.7625,
+      "latitude": 42.844,
+      "count": 92,
+      "programs": [
+        "CUBA",
+        "GLOMAG",
+        "RUSSIA-EO14024",
+        "SDGT",
+        "IRAN-EO13902",
+        "IFSR"
+      ],
+      "samples": []
+    },
+    {
+      "code": "SO",
+      "name": "Somalia",
+      "longitude": 46.9905,
+      "latitude": 6.6502,
+      "count": 87,
+      "programs": [
+        "SDGT",
+        "SOMALIA",
+        "FTO"
+      ],
+      "samples": [
+        {
+          "name": "AWEYS, Hassan Dahir",
+          "program": "SDGT; SOMALIA"
+        },
+        {
+          "name": "AL-SHABAAB",
+          "program": "FTO; SDGT; SOMALIA"
+        },
+        {
+          "name": "AW-MOHAMED, Ahmed Abdi",
+          "program": "SDGT; SOMALIA"
+        }
+      ]
+    },
+    {
+      "code": "NI",
+      "name": "Nicaragua",
+      "longitude": -85.0038,
+      "latitude": 13.1208,
+      "count": 84,
+      "programs": [
+        "SDNTK",
+        "GLOMAG",
+        "NICARAGUA",
+        "NICARAGUA-NHRAA",
+        "TCO"
+      ],
+      "samples": [
+        {
+          "name": "MURILLO DE ORTEGA, Rosario Maria",
+          "program": "NICARAGUA"
+        },
+        {
+          "name": "MONCADA LAU, Nestor",
+          "program": "NICARAGUA"
+        },
+        {
+          "name": "BANCO CORPORATIVO SA",
+          "program": "NICARAGUA"
+        }
+      ]
+    },
+    {
+      "code": "LY",
+      "name": "Libya",
+      "longitude": 16.4862,
+      "latitude": 28.5946,
+      "count": 82,
+      "programs": [
+        "SDGT",
+        "LIBYA2",
+        "FTO",
+        "LIBYA3",
+        "DPRK2",
+        "GLOMAG"
+      ],
+      "samples": [
+        {
+          "name": "QADHAFI, Muammar",
+          "program": "LIBYA2"
+        },
+        {
+          "name": "QADHAFI, Khamis",
+          "program": "LIBYA2"
+        },
+        {
+          "name": "QADHAFI, Saif al-Islam",
+          "program": "LIBYA2"
+        }
+      ]
+    },
+    {
+      "code": "IT",
+      "name": "Italy",
+      "longitude": 12.6602,
+      "latitude": 43.0281,
+      "count": 81,
+      "programs": [
+        "CUBA",
+        "SDGT",
+        "IRAQ2",
+        "SDNTK",
+        "IRAN",
+        "TCO",
+        "LIBYA3",
+        "NPWMD"
+      ],
+      "samples": []
+    },
+    {
+      "code": "CH",
+      "name": "Switzerland",
+      "longitude": 8.2505,
+      "latitude": 46.7652,
+      "count": 80,
+      "programs": [
+        "CUBA",
+        "IRAQ2",
+        "SDGT",
+        "NPWMD",
+        "IRAN",
+        "LIBYA2",
+        "TCO",
+        "UKRAINE-EO13661"
+      ],
+      "samples": []
+    },
+    {
+      "code": "AF",
+      "name": "Afghanistan",
+      "longitude": 67.7864,
+      "latitude": 34.7912,
+      "count": 80,
+      "programs": [
+        "SDGT",
+        "IRAN",
+        "IFSR",
+        "SDNTK",
+        "FTO",
+        "TCO",
+        "ELECTION-EO13848",
+        "GLOMAG"
+      ],
+      "samples": []
+    },
+    {
+      "code": "US",
+      "name": "United States",
+      "longitude": -90.225,
+      "latitude": 38.228,
+      "count": 75,
+      "programs": [
+        "SDGT",
+        "SDNTK",
+        "CUBA",
+        "IRAQ2",
+        "BELARUS",
+        "IRGC",
+        "IFSR",
+        "FTO"
+      ],
+      "samples": []
+    },
+    {
+      "code": "TH",
+      "name": "Thailand",
+      "longitude": 100.5892,
+      "latitude": 13.1634,
+      "count": 74,
+      "programs": [
+        "IRAQ2",
+        "SDNTK",
+        "DPRK",
+        "SDGT",
+        "IFSR",
+        "DPRK3",
+        "DPRK4",
+        "TCO"
+      ],
+      "samples": []
+    },
+    {
+      "code": "GT",
+      "name": "Guatemala",
+      "longitude": -90.2122,
+      "latitude": 15.5603,
+      "count": 65,
+      "programs": [
+        "SDNTK",
+        "SDNT",
+        "FTO",
+        "SDGT",
+        "TCO",
+        "GLOMAG",
+        "ILLICIT-DRUGS-EO14059"
+      ],
+      "samples": []
+    },
+    {
+      "code": "NL",
+      "name": "Netherlands",
+      "longitude": 5.5483,
+      "latitude": 52.0546,
+      "count": 62,
+      "programs": [
+        "CUBA",
+        "SDGT",
+        "SDNTK",
+        "IRAN",
+        "GLOMAG",
+        "CYBER2",
+        "RUSSIA-EO14024",
+        "TCO"
+      ],
+      "samples": []
+    },
+    {
+      "code": "ML",
+      "name": "Mali",
+      "longitude": -5.7259,
+      "latitude": 14.1014,
+      "count": 54,
+      "programs": [
+        "SDGT",
+        "HOSTAGES-EO14078",
+        "FTO",
+        "MALI-EO13882",
+        "GLOMAG",
+        "RUSSIA-EO14024",
+        "SOMALIA"
+      ],
+      "samples": [
+        {
+          "name": "AWEYS, Hassan Dahir",
+          "program": "SDGT; SOMALIA"
+        },
+        {
+          "name": "AL-SHABAAB",
+          "program": "FTO; SDGT; SOMALIA"
+        },
+        {
+          "name": "AW-MOHAMED, Ahmed Abdi",
+          "program": "SDGT; SOMALIA"
+        }
+      ]
+    },
+    {
+      "code": "ES",
+      "name": "Spain",
+      "longitude": -4.3907,
+      "latitude": 40.2368,
+      "count": 53,
+      "programs": [
+        "CUBA",
+        "SDGT",
+        "SDNTK",
+        "VENEZUELA",
+        "NPWMD",
+        "IFSR",
+        "TCO",
+        "VENEZUELA-EO13850"
+      ],
+      "samples": []
+    },
+    {
+      "code": "LR",
+      "name": "Liberia",
+      "longitude": -9.1698,
+      "latitude": 6.7181,
+      "count": 52,
+      "programs": [
+        "IRAN",
+        "SDGT",
+        "VENEZUELA-EO13850",
+        "GLOMAG",
+        "RUSSIA-EO14024",
+        "IRAN-EO13846",
+        "IRAN-EO13902",
+        "UKRAINE-EO13662"
+      ],
+      "samples": []
+    },
+    {
+      "code": "RS",
+      "name": "Serbia",
+      "longitude": 20.9866,
+      "latitude": 43.7837,
+      "count": 49,
+      "programs": [
+        "SDGT",
+        "BALKANS",
+        "SDNTK",
+        "GLOMAG",
+        "BALKANS-EO14033",
+        "RUSSIA-EO14024",
+        "UKRAINE-EO13662",
+        "CAATSA - RUSSIA"
+      ],
+      "samples": []
+    },
+    {
+      "code": "ZA",
+      "name": "South Africa",
+      "longitude": 24.823,
+      "latitude": -28.6042,
+      "count": 48,
+      "programs": [
+        "SDGT",
+        "IRAN",
+        "SDNTK",
+        "GLOMAG",
+        "IRAN-EO13846",
+        "RUSSIA-EO14024"
+      ],
+      "samples": []
+    },
+    {
+      "code": "FR",
+      "name": "France",
+      "longitude": 3.2386,
+      "latitude": 46.9523,
+      "count": 44,
+      "programs": [
+        "CUBA",
+        "SDGT",
+        "IRAN",
+        "IFSR",
+        "DRCONGO",
+        "SDNTK",
+        "UKRAINE-EO13661",
+        "RUSSIA-EO14024"
+      ],
+      "samples": []
+    },
+    {
+      "code": "MY",
+      "name": "Malaysia",
+      "longitude": 114.6814,
+      "latitude": 3.6659,
+      "count": 44,
+      "programs": [
+        "SDGT",
+        "IRAN",
+        "NPWMD",
+        "IFSR",
+        "DPRK3",
+        "TCO",
+        "IRAN-EO13846",
+        "IRGC"
+      ],
+      "samples": []
+    },
+    {
+      "code": "CA",
+      "name": "Canada",
+      "longitude": -90.6245,
+      "latitude": 56.4298,
+      "count": 41,
+      "programs": [
+        "CUBA",
+        "SDGT",
+        "IRAN",
+        "SDNTK",
+        "TCO",
+        "GLOMAG",
+        "RUSSIA-EO14024",
+        "ILLICIT-DRUGS-EO14059"
+      ],
+      "samples": []
+    },
+    {
+      "code": "BE",
+      "name": "Belgium",
+      "longitude": 4.4691,
+      "latitude": 50.6196,
+      "count": 40,
+      "programs": [
+        "SDGT",
+        "SDNTK",
+        "CAR",
+        "NPWMD",
+        "IFSR",
+        "DRCONGO",
+        "RUSSIA-EO14024"
+      ],
+      "samples": []
+    },
+    {
+      "code": "CF",
+      "name": "Central African Rep.",
+      "longitude": 20.5937,
+      "latitude": 6.3116,
+      "count": 39,
+      "programs": [
+        "SDGT",
+        "CAR",
+        "UKRAINE-EO13661",
+        "CYBER2",
+        "ELECTION-EO13848",
+        "RUSSIA-EO14024",
+        "TCO",
+        "UKRAINE-EO13660"
+      ],
+      "samples": [
+        {
+          "name": "KONY, Joseph",
+          "program": "SDGT; CAR"
+        },
+        {
+          "name": "BOZIZE, Francois",
+          "program": "CAR"
+        },
+        {
+          "name": "ADAM, Noureddine",
+          "program": "CAR"
+        }
+      ]
+    },
+    {
+      "code": "SS",
+      "name": "S. Sudan",
+      "longitude": 30.0806,
+      "latitude": 8.0824,
+      "count": 38,
+      "programs": [
+        "SOUTH SUDAN",
+        "GLOMAG"
+      ],
+      "samples": [
+        {
+          "name": "MANGOK, Marial Chanuong Yol",
+          "program": "SOUTH SUDAN"
+        },
+        {
+          "name": "CHUOL, James Koang",
+          "program": "SOUTH SUDAN"
+        },
+        {
+          "name": "GADET, Peter",
+          "program": "SOUTH SUDAN"
+        }
+      ]
+    }
+  ]
+}
