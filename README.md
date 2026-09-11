@@ -28,12 +28,12 @@ Pushes to `main` run [`.github/workflows/deploy-pages.yml`](.github/workflows/de
 
 Public URL: **https://howardwasp.github.io/Helloworld/**
 
-If the site is not live yet, enable Pages once (repo admin):
+**Required once (repo admin):** GitHub Actions cannot create the Pages site by itself on this repo. Enable it with one Settings click:
 
 1. Open [Settings → Pages](https://github.com/howardwasp/Helloworld/settings/pages).
 2. Under **Build and deployment → Source**, choose **GitHub Actions**.
 
-Then re-run the **Deploy SignalMap to GitHub Pages** workflow (Actions tab → Run workflow) or push another commit to `main`.
+Then re-run **Deploy SignalMap to GitHub Pages** (Actions → Run workflow) or push another commit to `main`. After that, every push to `main` publishes automatically.
 
 ## Default view
 
