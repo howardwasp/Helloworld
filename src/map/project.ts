@@ -1,7 +1,7 @@
 import type { MapView } from '@/types/intel'
 
 export function worldScale(zoom: number): number {
-  return (256 * 2 ** zoom) / 360
+  return (512 * 2 ** zoom) / 360
 }
 
 export function project(

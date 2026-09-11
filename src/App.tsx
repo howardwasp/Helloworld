@@ -22,7 +22,7 @@ export default function App() {
     <div className="flex h-full min-h-0 flex-col bg-[#f4f1ea] text-[#2b2b2b]">
       <TopBar dash={dash} />
       <div className="flex min-h-0 flex-1 flex-col lg:flex-row">
-        <section className="relative min-h-[52%] min-w-0 flex-1 overflow-hidden bg-[#d7e6f2]">
+        <section className="relative min-h-[52%] min-w-0 flex-1 overflow-hidden bg-[#c5d9ea]">
           <SituationMap
             events={dash.visibleEvents}
             polygons={dash.visiblePolygons}

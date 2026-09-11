@@ -1,6 +1,6 @@
 import { SEVERITY_COLORS } from '@/data/catalog'
 import { eachPolygonRing, loadCountries } from '@/map/countries'
-import { pointInRing, project, unproject } from '@/map/project'
+import { pointInRing, project, unproject, worldScale } from '@/map/project'
 import type { IntelEvent, IntelPolygon, MapView, SelectableFeature } from '@/types/intel'
 import { selectableFromEvent } from '@/map/geo'
 import type { FeatureCollection } from 'geojson'
@@ -96,7 +96,7 @@ export function CanvasSituationMap({
       ref={wrapRef}
       className="absolute inset-0 cursor-grab overflow-hidden active:cursor-grabbing"
       style={{
-        background: '#d7e6f2',
+        background: '#c5d9ea',
         transform: view.pitch > 10 ? `perspective(1100px) rotateX(${Math.min(view.pitch, 52) * 0.28}deg)` : undefined,
         transformOrigin: 'center bottom',
       }}
@@ -119,7 +119,7 @@ export function CanvasSituationMap({
         onPointerMove={(event) => {
           const drag = dragRef.current
           if (!drag) return
-          const scale = (256 * 2 ** viewRef.current.zoom) / 360
+          const scale = worldScale(viewRef.current.zoom)
           viewRef.current = {
             ...viewRef.current,
             longitude: drag.lng - (event.clientX - drag.x) / scale,
@@ -178,11 +178,11 @@ function drawScene(
   selectedId: string | null,
 ) {
   ctx.clearRect(0, 0, width, height)
-  ctx.fillStyle = '#d7e6f2'
+  ctx.fillStyle = '#c5d9ea'
   ctx.fillRect(0, 0, width, height)
 
-  ctx.strokeStyle = '#c3d4e3'
-  ctx.lineWidth = 0.7
+  ctx.strokeStyle = '#a9c4d6'
+  ctx.lineWidth = 0.8
   for (let lng = -180; lng <= 180; lng += 10) {
     const [x1, y1] = project(lng, -80, view, width, height)
     const [x2, y2] = project(lng, 80, view, width, height)
@@ -201,9 +201,9 @@ function drawScene(
   }
 
   if (countries) {
-    ctx.fillStyle = '#efe6d2'
-    ctx.strokeStyle = '#d5c9b0'
-    ctx.lineWidth = 0.6
+    ctx.fillStyle = '#f3ead8'
+    ctx.strokeStyle = '#cfc3a8'
+    ctx.lineWidth = 0.7
     for (const feature of countries.features) {
       if (!feature.geometry) continue
       ctx.beginPath()
@@ -216,7 +216,7 @@ function drawScene(
   for (const polygon of polygons) {
     ctx.beginPath()
     polygon.rings.forEach((ring) => traceRing(ctx, ring, view, width, height))
-    ctx.fillStyle = hexAlpha(SEVERITY_COLORS[polygon.severity], 0.18)
+    ctx.fillStyle = hexAlpha(SEVERITY_COLORS[polygon.severity], 0.22)
     ctx.fill()
     ctx.setLineDash([4, 3])
     ctx.strokeStyle = SEVERITY_COLORS[polygon.severity]

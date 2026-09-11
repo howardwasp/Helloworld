@@ -19,14 +19,14 @@ export const SIGNALMAP_STYLE: StyleSpecification = {
     {
       id: 'background',
       type: 'background',
-      paint: { 'background-color': '#d7e6f2' },
+      paint: { 'background-color': '#c5d9ea' },
     },
     {
       id: 'graticule',
       type: 'line',
       source: 'graticule',
       paint: {
-        'line-color': '#c3d4e3',
+        'line-color': '#a9c4d6',
         'line-width': 0.7,
         'line-opacity': 0.9,
       },
@@ -36,8 +36,8 @@ export const SIGNALMAP_STYLE: StyleSpecification = {
       type: 'fill',
       source: 'countries',
       paint: {
-        'fill-color': '#efe6d2',
-        'fill-outline-color': '#ddd2bb',
+        'fill-color': '#f3ead8',
+        'fill-outline-color': '#cfc3a8',
       },
     },
     {
