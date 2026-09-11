@@ -54,6 +54,7 @@ export interface IntelEvent {
   country?: string
   label?: string
   magnitude?: number
+  url?: string
 }
 
 export interface IntelPolygon {
@@ -66,6 +67,7 @@ export interface IntelPolygon {
   occurredAt: string
   rings: number[][][]
   country?: string
+  url?: string
 }
 
 export interface NewsItem {
@@ -80,11 +82,25 @@ export interface NewsItem {
   relatedEventId?: string
 }
 
+export type LayerMode = 'live' | 'sample' | 'fallback'
+
+export interface LayerSourceInfo {
+  id: ActiveLayerId | 'news'
+  label: string
+  mode: LayerMode
+  provider: string
+  attribution: string
+  url?: string
+  fetchedAt?: string
+  note?: string
+}
+
 export interface IntelBundle {
   events: IntelEvent[]
   polygons: IntelPolygon[]
   news: NewsItem[]
   generatedAt: string
+  sources: LayerSourceInfo[]
 }
 
 export interface SelectableFeature {
@@ -100,6 +116,7 @@ export interface SelectableFeature {
   longitude?: number
   latitude?: number
   label?: string
+  url?: string
 }
 
 export interface LayerChip {

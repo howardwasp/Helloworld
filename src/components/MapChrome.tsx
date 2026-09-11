@@ -85,20 +85,31 @@ export function TimeRangeBar({ dash }: { dash: DashboardModel }) {
 
 export function LayerChips({ dash }: { dash: DashboardModel }) {
   return (
-    <div className="pointer-events-none absolute left-3 top-20 z-10 grid max-w-[360px] grid-cols-2 gap-1.5">
+    <div className="pointer-events-none absolute left-3 top-20 z-10 grid max-w-[380px] grid-cols-2 gap-1.5">
       {LAYER_CHIPS.map((chip) => {
         const active = dash.layers.includes(chip.id)
         const count = chip.enabled
           ? dash.visibleEvents.filter((event) => event.layer === chip.id).length +
             dash.visiblePolygons.filter((polygon) => polygon.layer === chip.id).length
           : 0
+        const source = dash.sources.find((item) => item.id === chip.id)
+        const badge = !chip.enabled
+          ? null
+          : source?.mode === 'live'
+            ? 'Live'
+            : source?.mode === 'fallback'
+              ? 'Fallback'
+              : source
+                ? 'Sample'
+                : null
         return (
           <button
             key={chip.id}
             type="button"
             disabled={!chip.enabled}
             onClick={() => dash.toggleLayer(chip.id)}
-            className={`pointer-events-auto flex items-center justify-between gap-2 rounded-full border bg-white/92 px-2.5 py-1 text-left text-[10px] font-semibold uppercase tracking-[0.08em] shadow-sm ${
+            title={source ? `${source.provider} — ${source.note ?? source.attribution}` : undefined}
+            className={`pointer-events-auto flex items-center justify-between gap-2 whitespace-nowrap rounded-full border bg-white/92 px-2.5 py-1 text-left text-[10px] font-semibold uppercase tracking-[0.08em] shadow-sm ${
               !chip.enabled
                 ? 'cursor-not-allowed border-[#eeeae1] text-[#b2ab9f] opacity-70'
                 : active
@@ -106,14 +117,29 @@ export function LayerChips({ dash }: { dash: DashboardModel }) {
                   : 'border-[#e4dfd4] text-[#6d675c]'
             }`}
           >
-            <span className="truncate">{chip.label}</span>
+            <span className="min-w-0 truncate">{chip.label}</span>
             {chip.enabled && (
-              <span
-                className={`rounded-full px-1.5 text-[9px] ${
-                  active ? 'bg-[#e8f7ee] text-[#1f7a45]' : 'bg-[#f3efe6] text-[#8a8376]'
-                }`}
-              >
-                {count}
+              <span className="flex shrink-0 items-center gap-1">
+                {badge && (
+                  <span
+                    className={`rounded-full px-1.5 text-[8px] tracking-[0.08em] ${
+                      badge === 'Live'
+                        ? 'bg-[#e8f7ee] text-[#1f7a45]'
+                        : badge === 'Fallback'
+                          ? 'bg-[#fff4d6] text-[#8a6a12]'
+                          : 'bg-[#f3efe6] text-[#8a8376]'
+                    }`}
+                  >
+                    {badge}
+                  </span>
+                )}
+                <span
+                  className={`rounded-full px-1.5 text-[9px] ${
+                    active ? 'bg-[#e8f7ee] text-[#1f7a45]' : 'bg-[#f3efe6] text-[#8a8376]'
+                  }`}
+                >
+                  {count}
+                </span>
               </span>
             )}
           </button>
@@ -156,19 +182,24 @@ export function MapLegend() {
     { label: 'Natural', color: '#e56a1a' },
   ]
   return (
-    <div className="pointer-events-none absolute bottom-3 left-1/2 z-10 flex -translate-x-1/2 items-center gap-3 rounded-full border border-[#e4dfd4] bg-white/92 px-3 py-1.5 text-[10px] uppercase tracking-[0.12em] text-[#6d675c] shadow-sm">
-      {items.map((item) => (
-        <span key={item.label} className="flex items-center gap-1.5">
-          <span
-            className="h-2.5 w-2.5 rounded-full"
-            style={{
-              background: item.ring ? 'transparent' : item.color,
-              boxShadow: item.ring ? `inset 0 0 0 1.5px ${item.color}` : undefined,
-            }}
-          />
-          {item.label}
-        </span>
-      ))}
+    <div className="pointer-events-none absolute bottom-3 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-1">
+      <div className="flex items-center gap-3 rounded-full border border-[#e4dfd4] bg-white/92 px-3 py-1.5 text-[10px] uppercase tracking-[0.12em] text-[#6d675c] shadow-sm">
+        {items.map((item) => (
+          <span key={item.label} className="flex items-center gap-1.5">
+            <span
+              className="h-2.5 w-2.5 rounded-full"
+              style={{
+                background: item.ring ? 'transparent' : item.color,
+                boxShadow: item.ring ? `inset 0 0 0 1.5px ${item.color}` : undefined,
+              }}
+            />
+            {item.label}
+          </span>
+        ))}
+      </div>
+      <div className="rounded-full border border-[#e4dfd4] bg-white/88 px-2.5 py-0.5 text-[9px] uppercase tracking-[0.12em] text-[#8a8376]">
+        Live USGS · NWS · Open-Meteo · Sample conflict / sanctions / outages
+      </div>
     </div>
   )
 }

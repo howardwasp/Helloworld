@@ -102,7 +102,7 @@ export function CanvasSituationMap({
       }}
     >
       <div className="pointer-events-none absolute bottom-1 right-2 z-10 text-[10px] text-[#6d675c]">
-        Land © Natural Earth · Demo intel (mock)
+        Land © Natural Earth · Earthquakes USGS · Alerts NWS · Open-Meteo (CC BY 4.0)
       </div>
       <canvas
         ref={canvasRef}

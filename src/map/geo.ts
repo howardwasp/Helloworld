@@ -20,6 +20,7 @@ export function eventsToGeoJSON(events: IntelEvent[]): FeatureCollection<Point> 
         country: event.country ?? '',
         label: event.label ?? '',
         magnitude: event.magnitude ?? 0,
+        url: event.url ?? '',
         color: SEVERITY_COLORS[event.severity],
         stroke: LAYER_COLORS[event.layer] ?? SEVERITY_COLORS[event.severity],
       },
@@ -47,6 +48,7 @@ export function polygonsToGeoJSON(polygons: IntelPolygon[]): FeatureCollection<P
         source: polygon.source,
         occurredAt: polygon.occurredAt,
         country: polygon.country ?? '',
+        url: polygon.url ?? '',
         color: SEVERITY_COLORS[polygon.severity],
       },
       geometry: {
@@ -75,6 +77,7 @@ export function featureFromProps(
     longitude: coords?.[0],
     latitude: coords?.[1],
     label: props.label ? String(props.label) : undefined,
+    url: props.url ? String(props.url) : undefined,
   }
 }
 
@@ -92,6 +95,7 @@ export function selectableFromEvent(event: IntelEvent): SelectableFeature {
     longitude: event.longitude,
     latitude: event.latitude,
     label: event.label,
+    url: event.url,
   }
 }
 

@@ -73,8 +73,14 @@ export const LAYER_LABELS: Record<LayerId, string> = Object.fromEntries(
   LAYER_CHIPS.map((chip) => [chip.id, chip.label]),
 ) as Record<LayerId, string>
 
+export const LIVE_LAYER_IDS = ['natural', 'weather'] as const
+export const SAMPLE_LAYER_IDS = ['conflicts', 'hotspots', 'sanctions', 'outages'] as const
+
 export const NEWS_SOURCES: NewsSourceTab[] = [
   { id: 'all', label: 'All', accent: '#2f6f4e' },
+  { id: 'usgs', label: 'USGS', accent: '#c45c14' },
+  { id: 'nws', label: 'NWS', accent: '#2f7cae' },
+  { id: 'openmeteo', label: 'Open-Meteo', accent: '#1f7a45' },
   { id: 'reuters', label: 'Reuters', accent: '#f4b400' },
   { id: 'ap', label: 'AP', accent: '#d62728' },
   { id: 'bbc', label: 'BBC', accent: '#bb1919' },
