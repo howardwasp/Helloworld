@@ -49,13 +49,13 @@ export function TopBar({ dash }: { dash: DashboardModel }) {
 
       <div
         className="ml-1 flex items-center gap-1.5 rounded-full border border-[#d8efe0] bg-[#f3fbf6] px-2.5 py-1 text-[11px] font-medium text-[#1f7a45]"
-        title="Mock watch level for the current region"
+        title="Highest severity among live natural and weather events in view"
       >
         <span className="relative flex h-2 w-2">
           <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#22c55e] opacity-60" />
           <span className="relative inline-flex h-2 w-2 rounded-full bg-[#22c55e]" />
         </span>
-        WATCH 2
+        WATCH {dash.watchLevel}
       </div>
 
       <div ref={boxRef} className="relative ml-auto min-w-[200px] max-w-md flex-1">

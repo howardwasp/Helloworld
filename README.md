@@ -1,6 +1,6 @@
 # SignalMap
 
-SignalMap is a real-time global situation dashboard: a large tactical map on the left and live intel panels on the right. The MVP runs entirely on typed mock GeoJSON and news fixtures so it works offline. It is original software inspired by the *feel* of public situation dashboards — not a copy of World Monitor, and it does not use that product’s source, trademarks, or APIs.
+SignalMap is a real-time global situation dashboard: a large tactical map on the left and live intel panels on the right. Natural events and severe weather are pulled from public HTTPS APIs in the browser; other layers stay on clearly labeled sample fixtures. Offline or on fetch failure the app falls back to snapshots in `public/data/live/`, then to in-memory fixtures. It is original software inspired by the *feel* of public situation dashboards — not a copy of World Monitor, and it does not use that product’s source, trademarks, or APIs.
 
 **Live site:** [https://howardwasp.github.io/Helloworld/](https://howardwasp.github.io/Helloworld/)
 
@@ -66,40 +66,49 @@ Zoom, center, pitch, time range, region, and layers are written to the query str
 
 ```
 src/
-  api/client.ts          Data access. Mocks today, live fetchers tomorrow.
+  api/client.ts          Assembles IntelBundle (live + snapshot + fixtures).
+  api/http.ts            Fetch + timeout + in-memory cache.
+  api/usgs.ts            USGS FDSN earthquake GeoJSON.
+  api/weather.ts         NWS alerts, Open-Meteo stations, NHC storms.
+  api/outages.ts         Radar / snapshot hook (sample until a CORS-safe feed).
   data/catalog.ts        Regions, chips, colors, source tabs.
-  data/fixtures/         Typed events, polygons, and news.
+  data/fixtures/         Sample events, polygons, and desk copy.
   map/                   MapLibre style, graticule, GeoJSON helpers, map view.
   state/useDashboard.ts  URL sync + filtering + selection.
   components/            Chrome, panels, detail card.
   types/intel.ts         Shared contracts.
-public/data/             Natural Earth 110m countries (beige land / pale ocean).
+public/data/             Natural Earth 110m countries + live API snapshots.
 ```
 
 The map prefers **MapLibre GL JS** with a local style (pale-blue ocean, 10° graticule, beige Natural Earth land). No commercial tile key is required. If WebGL is unavailable or only a software fallback exists, SignalMap automatically uses a Canvas2D equirectangular renderer with the same GeoJSON, markers, and interactions so the dashboard still looks alive.
 
-## Swap mocks for live APIs
+## Live vs sample layers
 
-`src/api/client.ts` is the only module the UI talks to. Keep returning an `IntelBundle`:
+`src/api/client.ts` is the only module the UI talks to. It returns an `IntelBundle` plus per-layer source metadata (live / sample / fallback). Time chips map to API windows (1H/6H/24H/48H/7D/ALL → USGS `starttime` + magnitude floor).
 
-```ts
-{
-  events: IntelEvent[]
-  polygons: IntelPolygon[]
-  news: NewsItem[]
-  generatedAt: string
-}
-```
+| Layer | Status | Source | Notes |
+| --- | --- | --- | --- |
+| Natural events | **Live** | [USGS FDSN event API](https://earthquake.usgs.gov/fdsnws/event/1/) GeoJSON | CORS-safe. Magnitude floor rises for longer windows (M2.5 → M4.5). |
+| Severe weather | **Live** | [NWS alerts](https://api.weather.gov/alerts/active) + [Open-Meteo](https://open-meteo.com/) current conditions + [NHC CurrentStorms](https://www.nhc.noaa.gov/CurrentStorms.json) | NWS and Open-Meteo are browser-callable. NHC has no CORS header; the scheduled snapshot covers it. |
+| Internet disruptions | **Sample** (hooked) | Cloudflare Radar annotations if `VITE_CLOUDFLARE_RADAR_TOKEN` is set, else `public/data/live/outages.json`, else fixtures | Radar needs a token and usually fails CORS in the browser. |
+| Conflict zones | **Sample** | Curated fixtures | ACLED needs a key; license for redistribution is not assumed. |
+| Intel hotspots | **Sample** | Curated fixtures | The Brief list still ranks whatever is visible, including live quakes. |
+| Sanctions | **Sample** | Curated fixtures | OFAC SDN / EU lists are legal text, not geometries. Overlays are illustrative only. |
 
-Suggested public sources (read each provider’s terms first):
+Layer chips show **Live** or **Sample**. The footer lists providers and last-updated time.
 
-| Layer | Starting point |
-| --- | --- |
-| Natural events | [USGS earthquake GeoJSON](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson) |
-| Weather | [Open-Meteo](https://api.open-meteo.com/) or [NWS alerts](https://api.weather.gov/alerts/active) |
-| Outages | IODA / Cloudflare Radar (keys + attribution often required) |
-| Conflicts | Licensed incident feeds (e.g. ACLED). Do not scrape other dashboards. |
-| Sanctions | Official list text + your own geocoding — lists are not geometries |
+Fallback order for live layers: **browser API → `public/data/live/` snapshot → in-memory fixtures**.
+
+## Snapshots (GitHub Actions)
+
+[`.github/workflows/refresh-live-data.yml`](.github/workflows/refresh-live-data.yml) runs every 6 hours and writes:
+
+- `public/data/live/earthquakes.geojson`
+- `public/data/live/weather-alerts.geojson`
+- `public/data/live/storms.json`
+- `public/data/live/sources.json`
+
+Refresh locally with `node scripts/refresh-live-data.mjs`.
 
 Do **not** call World Monitor or scrape another commercial dashboard.
 
@@ -112,4 +121,13 @@ Do **not** call World Monitor or scrape another commercial dashboard.
 
 ## License / data
 
-Application code is original to this repository. Country polygons are [Natural Earth](https://www.naturalearthdata.com/) 110m (public domain). Fixture headlines and incident descriptions are invented for the demo and are not real-time reporting.
+Application code is original to this repository. Country polygons are [Natural Earth](https://www.naturalearthdata.com/) 110m (public domain).
+
+**Attribution (live feeds):**
+
+- Earthquakes: [U.S. Geological Survey](https://earthquake.usgs.gov/) (U.S. public domain)
+- U.S. alerts: [National Weather Service](https://www.weather.gov/documentation/services-web-api) (U.S. public domain)
+- Active cyclones: [National Hurricane Center](https://www.nhc.noaa.gov/) (U.S. public domain)
+- Global station weather: [Open-Meteo](https://open-meteo.com/) ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))
+
+Sample-layer headlines and conflict / sanctions / outage geometries are invented for the demo and are not official reporting or legal coverage.

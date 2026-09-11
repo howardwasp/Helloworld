@@ -41,8 +41,23 @@ export function DetailCard({
         <span className="text-[#8a8376]">{formatRelative(feature.occurredAt)}</span>
       </div>
       <p className="text-[13px] leading-relaxed text-[#3f3b34]">{feature.description}</p>
-      <div className="mt-3 flex items-center justify-between border-t border-[#f0ebe1] pt-2 text-[11px] text-[#8a8376]">
-        <span>Source · {feature.source}</span>
+      <div className="mt-3 flex items-center justify-between gap-2 border-t border-[#f0ebe1] pt-2 text-[11px] text-[#8a8376]">
+        <span>
+          Source · {feature.source}
+          {feature.url && (
+            <>
+              {' · '}
+              <a
+                href={feature.url}
+                target="_blank"
+                rel="noreferrer"
+                className="text-[#1f7a45] underline-offset-2 hover:underline"
+              >
+                Open record
+              </a>
+            </>
+          )}
+        </span>
         <span className="font-mono">{formatAbsolute(feature.occurredAt)}</span>
       </div>
     </aside>

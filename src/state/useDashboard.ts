@@ -35,12 +35,16 @@ export function useDashboard() {
   const [liveIndex, setLiveIndex] = useState(0)
   const skipUrlWrite = useRef(true)
 
+  const requestId = useRef(0)
+
   const load = useCallback(async () => {
+    const id = ++requestId.current
     setLoading(true)
-    const next = await fetchIntelBundle()
+    const next = await fetchIntelBundle({ timeRange })
+    if (id !== requestId.current) return
     setBundle(next)
     setLoading(false)
-  }, [])
+  }, [timeRange])
 
   useEffect(() => {
     void load()
@@ -98,6 +102,14 @@ export function useDashboard() {
     if (newsSource === 'all') return items
     return items.filter((item) => item.sourceId === newsSource)
   }, [bundle, timeRange, newsSource])
+
+  const watchLevel = useMemo(() => {
+    const live = visibleEvents.filter((event) => event.layer === 'natural' || event.layer === 'weather')
+    if (live.some((event) => event.severity === 'critical')) return 4
+    if (live.some((event) => event.severity === 'high')) return 3
+    if (live.some((event) => event.severity === 'elevated')) return 2
+    return live.length > 0 ? 1 : 2
+  }, [visibleEvents])
 
   const hotspots = useMemo(() => {
     const rank: Record<string, number> = {
@@ -189,6 +201,8 @@ export function useDashboard() {
     hotspots,
     searchHits,
     lastUpdated: bundle?.generatedAt ?? null,
+    sources: bundle?.sources ?? [],
+    watchLevel,
     setRegion,
     setTimeRange,
     toggleLayer,

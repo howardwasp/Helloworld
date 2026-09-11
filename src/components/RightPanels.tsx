@@ -127,6 +127,15 @@ function NewsList({ dash }: { dash: DashboardModel }) {
             <div className="mb-1 flex items-center justify-between gap-2">
               <span className="text-[10px] font-semibold uppercase tracking-[0.12em] text-[#8a8376]">
                 {item.source} · {item.region}
+                {item.sourceId === 'reuters' ||
+                item.sourceId === 'ap' ||
+                item.sourceId === 'bbc' ||
+                item.sourceId === 'afp' ||
+                item.sourceId === 'aljazeera' ||
+                item.sourceId === 'nhk' ||
+                item.sourceId === 'france24'
+                  ? ' · sample'
+                  : ''}
               </span>
               <span
                 className="rounded-full px-1.5 py-0.5 text-[9px] font-semibold uppercase text-white"

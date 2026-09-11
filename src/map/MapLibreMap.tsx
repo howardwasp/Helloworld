@@ -69,7 +69,8 @@ export function MapLibreMap({
     map.addControl(
       new maplibregl.AttributionControl({
         compact: true,
-        customAttribution: 'Land © Natural Earth · Demo intel (mock)',
+        customAttribution:
+          'Land © Natural Earth · Earthquakes USGS · Alerts NWS · Weather Open-Meteo (CC BY 4.0)',
       }),
       'bottom-right',
     )
