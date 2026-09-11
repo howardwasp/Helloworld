@@ -6,6 +6,10 @@ function sourceIdFor(event: IntelEvent): string {
   if (event.source === 'USGS') return 'usgs'
   if (event.source === 'NWS' || event.source === 'NHC') return 'nws'
   if (event.source === 'Open-Meteo') return 'openmeteo'
+  if (event.source === 'GDELT' || event.source === 'GDELT cluster') return 'gdelt'
+  if (event.source === 'IODA') return 'ioda'
+  if (event.source === 'OFAC') return 'ofac'
+  if (event.source === 'Cloudflare Radar') return 'radar'
   return 'all'
 }
 
@@ -18,9 +22,11 @@ function newsFromLive(events: IntelEvent[]): NewsItem[] {
     info: 4,
   }
   return [...events]
-    .filter((event) => event.layer === 'natural' || event.layer === 'weather')
+    .filter((event) =>
+      ['natural', 'weather', 'conflicts', 'hotspots', 'sanctions', 'outages'].includes(event.layer),
+    )
     .sort((a, b) => rank[a.severity] - rank[b.severity] || b.occurredAt.localeCompare(a.occurredAt))
-    .slice(0, 12)
+    .slice(0, 16)
     .map((event) => ({
       id: `news-${event.id}`,
       source: event.source,
@@ -38,8 +44,7 @@ export function assembleNews(
   liveEvents: IntelEvent[],
   now: number,
 ): { news: NewsItem[]; source: LayerSourceInfo } {
-  const live = newsFromLive(liveEvents)
-  // Fixture briefings that belong to sample layers only (skip mock quake/weather copy).
+  const live = newsFromLive(liveEvents.filter((event) => !/\(sample\)|\(mock\)/.test(event.source)))
   const sample = buildFixtureNews(now).filter((item) => {
     const id = item.relatedEventId ?? ''
     return id.startsWith('cf-') || id.startsWith('hs-') || id.startsWith('sn-') || id.startsWith('ou-')
@@ -52,8 +57,9 @@ export function assembleNews(
       id: 'news',
       label: 'Briefings',
       mode: liveOn ? 'live' : 'sample',
-      provider: liveOn ? 'Derived from live USGS / NWS / Open-Meteo + sample desks' : 'Sample desks',
-      attribution: 'Live cards quote public API fields. Outlet tabs (Reuters, AP, …) remain sample copy.',
+      provider: liveOn ? 'Derived from live layers + sample desks' : 'Sample desks',
+      attribution:
+        'Live cards quote public API fields (USGS, NWS, GDELT, OFAC, IODA). Outlet tabs (Reuters, AP, …) remain sample copy.',
       fetchedAt: new Date(now).toISOString(),
       note: liveOn
         ? `${live.length} live cards · ${sample.length} sample desk cards`

@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: 22
 
-      - name: Fetch USGS, NWS, and NHC snapshots
+      - name: Fetch USGS, NWS, NHC, GDELT, OFAC, and IODA snapshots
         run: node scripts/refresh-live-data.mjs
 
       - name: Commit if changed
@@ -35,6 +35,6 @@ jobs:
           if git diff --staged --quiet; then
             echo 'No snapshot changes'
           else
-            git commit -m "Refresh USGS / NWS / NHC snapshots"
+            git commit -m "Refresh live data snapshots (USGS / NWS / NHC / GDELT / OFAC / IODA)"
             git push
           fi

@@ -106,18 +106,18 @@ export async function fetchEarthquakes(range: TimeRange, now = Date.now()): Prom
   if (items.length > 0) {
     return {
       items,
-      source: {
-        id: 'natural',
-        label: 'Natural Events',
-        mode: 'live',
-        provider: 'USGS Earthquake Hazards Program',
-        attribution: 'U.S. Geological Survey (public domain)',
-        url: 'https://earthquake.usgs.gov/fdsnws/event/1/',
-        fetchedAt: snapshot?.metadata?.generated
-          ? new Date(snapshot.metadata.generated).toISOString()
-          : new Date(now).toISOString(),
-        note: 'Snapshot in public/data/live (refreshed by GitHub Actions)',
-      },
+        source: {
+          id: 'natural',
+          label: 'Natural Events',
+          mode: 'cached',
+          provider: 'USGS Earthquake Hazards Program',
+          attribution: 'U.S. Geological Survey (public domain)',
+          url: 'https://earthquake.usgs.gov/fdsnws/event/1/',
+          fetchedAt: snapshot?.metadata?.generated
+            ? new Date(snapshot.metadata.generated).toISOString()
+            : new Date(now).toISOString(),
+          note: 'Live (cached) snapshot in public/data/live (refreshed by GitHub Actions)',
+        },
     }
   }
 

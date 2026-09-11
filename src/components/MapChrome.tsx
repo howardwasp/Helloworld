@@ -97,11 +97,13 @@ export function LayerChips({ dash }: { dash: DashboardModel }) {
           ? null
           : source?.mode === 'live'
             ? 'Live'
-            : source?.mode === 'fallback'
-              ? 'Fallback'
-              : source
-                ? 'Sample'
-                : null
+            : source?.mode === 'cached'
+              ? 'Live (cached)'
+              : source?.mode === 'fallback'
+                ? 'Fallback'
+                : source
+                  ? 'Sample'
+                  : null
         return (
           <button
             key={chip.id}
@@ -123,7 +125,7 @@ export function LayerChips({ dash }: { dash: DashboardModel }) {
                 {badge && (
                   <span
                     className={`rounded-full px-1.5 text-[8px] tracking-[0.08em] ${
-                      badge === 'Live'
+                      badge === 'Live' || badge === 'Live (cached)'
                         ? 'bg-[#e8f7ee] text-[#1f7a45]'
                         : badge === 'Fallback'
                           ? 'bg-[#fff4d6] text-[#8a6a12]'
@@ -198,7 +200,7 @@ export function MapLegend() {
         ))}
       </div>
       <div className="rounded-full border border-[#e4dfd4] bg-white/88 px-2.5 py-0.5 text-[9px] uppercase tracking-[0.12em] text-[#8a8376]">
-        Live USGS · NWS · Open-Meteo · Sample conflict / sanctions / outages
+        Live USGS · NWS · GDELT · OFAC · IODA · Open-Meteo
       </div>
     </div>
   )

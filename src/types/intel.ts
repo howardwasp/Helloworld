@@ -82,7 +82,7 @@ export interface NewsItem {
   relatedEventId?: string
 }
 
-export type LayerMode = 'live' | 'sample' | 'fallback'
+export type LayerMode = 'live' | 'cached' | 'sample' | 'fallback'
 
 export interface LayerSourceInfo {
   id: ActiveLayerId | 'news'

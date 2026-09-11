@@ -317,7 +317,8 @@ async function fetchOpenMeteo(): Promise<IntelEvent[]> {
 export async function fetchWeather(now = Date.now()): Promise<WeatherPayload> {
   const [nws, nhc, openMeteo] = await Promise.all([fetchNws(), fetchNhc(), fetchOpenMeteo()])
   const events = [...nws.events, ...nhc, ...openMeteo]
-  const live = nws.via !== 'none' || nhc.length > 0 || openMeteo.length > 0
+  const any = nws.via !== 'none' || nhc.length > 0 || openMeteo.length > 0
+  const onlySnapshot = nws.via === 'snapshot' && nhc.length === 0 && openMeteo.length === 0
   const parts = [
     nws.via === 'live' ? 'NWS alerts (live)' : nws.via === 'snapshot' ? 'NWS alerts (snapshot)' : null,
     nhc.length ? 'NHC active cyclones' : null,
@@ -327,12 +328,12 @@ export async function fetchWeather(now = Date.now()): Promise<WeatherPayload> {
   const source: LayerSourceInfo = {
     id: 'weather',
     label: 'Severe Weather Alerts',
-    mode: live ? 'live' : 'fallback',
+    mode: any ? (onlySnapshot ? 'cached' : 'live') : 'fallback',
     provider: 'NWS / NHC / Open-Meteo',
     attribution: 'NWS & NHC (U.S. public domain); Open-Meteo (CC BY 4.0)',
     url: 'https://www.weather.gov/documentation/services-web-api',
     fetchedAt: new Date(now).toISOString(),
-    note: live
+    note: any
       ? parts.join(' · ')
       : 'Live weather feeds unavailable — using curated sample alerts',
   }

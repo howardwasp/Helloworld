@@ -7,9 +7,11 @@
  *
  * Do not scrape World Monitor or any third-party dashboard.
  */
-import { fetchOutages } from '@/api/outages'
+import { fetchConflicts } from '@/api/conflicts'
+import { fetchHotspots } from '@/api/hotspots'
 import { assembleNews } from '@/api/news'
-import { sampleConflictBundle } from '@/api/sampleLayers'
+import { fetchOutages } from '@/api/outages'
+import { fetchSanctions } from '@/api/sanctions'
 import { fetchEarthquakes } from '@/api/usgs'
 import { fetchWeather } from '@/api/weather'
 import { buildFixtureEvents, buildFixturePolygons } from '@/data/fixtures'
@@ -32,13 +34,14 @@ export async function fetchIntelBundle(options: FetchIntelOptions = {}): Promise
   const timeRange = options.timeRange ?? '7d'
   const now = options.now ?? Date.now()
 
-  const [quakes, weather, outages] = await Promise.all([
+  const [quakes, weather, outages, conflicts, sanctions] = await Promise.all([
     fetchEarthquakes(timeRange, now),
     fetchWeather(now),
-    fetchOutages(now),
+    fetchOutages(timeRange, now),
+    fetchConflicts(timeRange, now),
+    fetchSanctions(now),
   ])
 
-  const sample = sampleConflictBundle(now)
   const fixtureEvents = buildFixtureEvents(now)
   const fixturePolygons = buildFixturePolygons(now)
 
@@ -66,9 +69,52 @@ export async function fetchIntelBundle(options: FetchIntelOptions = {}): Promise
     outages.events.length > 0
       ? outages.events
       : withSampleSource(fixtureEvents.filter((event) => event.layer === 'outages'))
+  if (outages.events.length === 0) {
+    outages.source.mode = 'fallback'
+  }
 
-  const events = [...naturalEvents, ...weatherEvents, ...outageEvents, ...sample.events]
-  const polygons = [...weatherPolygons, ...sample.polygons]
+  const conflictEvents =
+    conflicts.events.length > 0
+      ? conflicts.events
+      : withSampleSource(fixtureEvents.filter((event) => event.layer === 'conflicts'))
+  const conflictPolygons =
+    conflicts.polygons.length > 0
+      ? conflicts.polygons
+      : fixturePolygons.filter((polygon) => polygon.layer === 'conflicts')
+  if (conflicts.events.length === 0) {
+    conflicts.source.mode = 'fallback'
+  }
+
+  const hotspots = await fetchHotspots(timeRange, conflictEvents, conflicts.source.mode, now)
+  const hotspotEvents =
+    hotspots.events.length > 0
+      ? hotspots.events
+      : withSampleSource(fixtureEvents.filter((event) => event.layer === 'hotspots'))
+  if (hotspots.events.length === 0) {
+    hotspots.source.mode = 'fallback'
+  }
+
+  const sanctionEvents =
+    sanctions.events.length > 0
+      ? sanctions.events
+      : withSampleSource(fixtureEvents.filter((event) => event.layer === 'sanctions'))
+  const sanctionPolygons =
+    sanctions.polygons.length > 0
+      ? sanctions.polygons
+      : fixturePolygons.filter((polygon) => polygon.layer === 'sanctions')
+  if (sanctions.events.length === 0) {
+    sanctions.source.mode = 'fallback'
+  }
+
+  const events = [
+    ...naturalEvents,
+    ...weatherEvents,
+    ...outageEvents,
+    ...conflictEvents,
+    ...hotspotEvents,
+    ...sanctionEvents,
+  ]
+  const polygons = [...weatherPolygons, ...conflictPolygons, ...sanctionPolygons]
   const news = assembleNews(events, now)
 
   return {
@@ -76,7 +122,15 @@ export async function fetchIntelBundle(options: FetchIntelOptions = {}): Promise
     polygons,
     news: news.news,
     generatedAt: new Date(now).toISOString(),
-    sources: [quakes.source, weather.source, outages.source, ...sample.sources, news.source],
+    sources: [
+      quakes.source,
+      weather.source,
+      conflicts.source,
+      hotspots.source,
+      sanctions.source,
+      outages.source,
+      news.source,
+    ],
   }
 }
 
@@ -85,8 +139,10 @@ export const LIVE_API_NOTES = {
   weather:
     'NWS active alerts + Open-Meteo current conditions + NHC storms (NHC may need the Action snapshot).',
   outages:
-    'Hooked for Cloudflare Radar / public/data/live/outages.json. Sample fixtures until a CORS-safe feed exists.',
-  conflicts: 'Sample fixtures. ACLED needs a key; do not scrape commercial dashboards.',
-  sanctions: 'Sample overlays. Official lists are legal text, not geometries.',
-  hotspots: 'Sample points, plus a derived ranking of whatever is on the map.',
+    'IODA country outages (live if CORS allows, else public/data/live/outages.json). Optional Cloudflare Radar token.',
+  conflicts:
+    'GDELT 2.0 15-minute export ZIPs (CORS-safe) + DOC headlines; snapshot public/data/live/conflicts.json.',
+  sanctions:
+    'US Treasury OFAC SDN aggregated by country into public/data/live/sanctions.json (Actions, every 6h).',
+  hotspots: 'Derived from GDELT conflict-point density for the selected time range.',
 } as const
