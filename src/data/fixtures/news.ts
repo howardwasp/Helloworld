@@ -1,0 +1,223 @@
+import { hoursAgo, minutesAgo } from '@/lib/time'
+import type { NewsItem } from '@/types/intel'
+
+export function buildFixtureNews(now = Date.now()): NewsItem[] {
+  return [
+    {
+      id: 'n1',
+      source: 'Reuters',
+      sourceId: 'reuters',
+      headline: 'Caribbean quake cluster keeps tsunami centers on information footing',
+      summary:
+        'A M4.7–M5.0 sequence from the Antilles to Pacific Colombia produced no tsunami threat, seismologists said, but coastal agencies kept sensors staffed overnight.',
+      region: 'Americas',
+      occurredAt: hoursAgo(4, now),
+      severity: 'elevated',
+      relatedEventId: 'eq-caribbean-47',
+    },
+    {
+      id: 'n2',
+      source: 'AP',
+      sourceId: 'ap',
+      headline: 'Haiti fuel corridor clashes delay aid trucks for a second day',
+      summary:
+        'Armed groups contested approaches to a Port-au-Prince depot. Humanitarian coordinators asked for a daylight-only movement window.',
+      region: 'Americas',
+      occurredAt: hoursAgo(5, now),
+      severity: 'critical',
+      relatedEventId: 'cf-haiti',
+    },
+    {
+      id: 'n3',
+      source: 'BBC',
+      sourceId: 'bbc',
+      headline: 'Cuba goes dark again as thermoelectric unit trips offline',
+      summary:
+        'Nationwide traffic graphs slumped in minutes. Authorities said Havana mobile data was returning in patches by late afternoon.',
+      region: 'Americas',
+      occurredAt: hoursAgo(3, now),
+      severity: 'critical',
+      relatedEventId: 'ou-cuba',
+    },
+    {
+      id: 'n4',
+      source: 'AFP',
+      sourceId: 'afp',
+      headline: 'Panama Canal backlog grows as lock work meets draft limits',
+      summary:
+        'More than forty ships were waiting at both mouths. Brokers said some owners were already pricing the Cape Horn diversion.',
+      region: 'Americas',
+      occurredAt: hoursAgo(2, now),
+      severity: 'elevated',
+      relatedEventId: 'hs-panama',
+    },
+    {
+      id: 'n5',
+      source: 'Al Jazeera',
+      sourceId: 'aljazeera',
+      headline: 'Catatumbo clashes push families toward Cucuta and the lake shore',
+      summary:
+        'Witnesses described night-time fire along river crossings. Local officials requested extra medical kits and fuel.',
+      region: 'Americas',
+      occurredAt: hoursAgo(19, now),
+      severity: 'high',
+      relatedEventId: 'cf-catatumbo',
+    },
+    {
+      id: 'n6',
+      source: 'Reuters',
+      sourceId: 'reuters',
+      headline: 'Sanctions desk flags new Caribbean product-trading fronts',
+      summary:
+        'A mock designation package names two intermediaries alleged to move refined barrels through cut-out tankers.',
+      region: 'Americas',
+      occurredAt: hoursAgo(10, now),
+      severity: 'high',
+      relatedEventId: 'sn-caracas',
+    },
+    {
+      id: 'n7',
+      source: 'France 24',
+      sourceId: 'france24',
+      headline: 'Tropical wave east of the Antilles begins to organize',
+      summary:
+        'Models still split on intensification, but islands from Barbados to Guadeloupe were placed on a mock storm watch.',
+      region: 'Americas',
+      occurredAt: minutesAgo(48, now),
+      severity: 'high',
+      relatedEventId: 'wx-caribbean',
+    },
+    {
+      id: 'n8',
+      source: 'AP',
+      sourceId: 'ap',
+      headline: 'Guerrero roadblocks after depot raid strand overnight coaches',
+      summary:
+        'State police said several trailers were used as improvised barriers on the Acapulco corridor.',
+      region: 'Americas',
+      occurredAt: hoursAgo(13, now),
+      severity: 'high',
+      relatedEventId: 'cf-guerrero',
+    },
+    {
+      id: 'n9',
+      source: 'NHK',
+      sourceId: 'nhk',
+      headline: 'Offshore Fukushima quake, no tsunami — JMA bulletin',
+      summary:
+        'A M5.2 event was widely felt along the coast. Rail operators ran inspection passes before restoring full speed.',
+      region: 'Asia',
+      occurredAt: hoursAgo(14, now),
+      severity: 'high',
+      relatedEventId: 'eq-japan',
+    },
+    {
+      id: 'n10',
+      source: 'BBC',
+      sourceId: 'bbc',
+      headline: 'North Sea gale warnings halt some platform transfers',
+      summary:
+        'Helicopter operators cancelled afternoon rotations. Ferries on northern routes advised passengers of cancellations.',
+      region: 'Europe',
+      occurredAt: hoursAgo(5, now),
+      severity: 'high',
+      relatedEventId: 'wx-europe',
+    },
+    {
+      id: 'n11',
+      source: 'AFP',
+      sourceId: 'afp',
+      headline: 'Sahel convoy ambushed on laterite track west of Gao',
+      summary:
+        'Casualty figures were still being reconciled. An air-cover request went out after the second explosion.',
+      region: 'Global',
+      occurredAt: hoursAgo(9, now),
+      severity: 'critical',
+      relatedEventId: 'cf-sahel',
+    },
+    {
+      id: 'n12',
+      source: 'Al Jazeera',
+      sourceId: 'aljazeera',
+      headline: 'Red Sea splash incident sends war-risk premia higher',
+      summary:
+        'A projectile landed near a bulk carrier in the southern Red Sea. Owners were waiting on updated transit advice.',
+      region: 'Global',
+      occurredAt: hoursAgo(7, now),
+      severity: 'high',
+      relatedEventId: 'cf-redsea',
+    },
+    {
+      id: 'n13',
+      source: 'Reuters',
+      sourceId: 'reuters',
+      headline: 'Eastern front rail junction under overnight artillery',
+      summary:
+        'Two villages lost grid power after strikes around a logistics node. Repair crews were holding until first light.',
+      region: 'Europe',
+      occurredAt: hoursAgo(4, now),
+      severity: 'critical',
+      relatedEventId: 'cf-donbas',
+    },
+    {
+      id: 'n14',
+      source: 'France 24',
+      sourceId: 'france24',
+      headline: 'Essequibo patrols keep diplomats on a short leash',
+      summary:
+        'Neighboring navies operated in overlapping claim zones. Georgetown and Caracas traded familiar talking points.',
+      region: 'Americas',
+      occurredAt: hoursAgo(36, now),
+      severity: 'elevated',
+      relatedEventId: 'cf-essequibo',
+    },
+    {
+      id: 'n15',
+      source: 'NHK',
+      sourceId: 'nhk',
+      headline: 'Taiwan Strait live-fire boxes push flights south',
+      summary:
+        'Airlines published extra burn for the longer track. Markets treated the notice as signaling, not a closure.',
+      region: 'Asia',
+      occurredAt: hoursAgo(19, now),
+      severity: 'elevated',
+      relatedEventId: 'hs-taiwan-strait',
+    },
+    {
+      id: 'n16',
+      source: 'AP',
+      sourceId: 'ap',
+      headline: 'Southern California red-flag outlook as offshore winds rise',
+      summary:
+        'Utilities pre-positioned crews. A mock NWS product highlighted foothill canyons east of Los Angeles.',
+      region: 'Americas',
+      occurredAt: hoursAgo(12, now),
+      severity: 'high',
+      relatedEventId: 'wx-california',
+    },
+    {
+      id: 'n17',
+      source: 'BBC',
+      sourceId: 'bbc',
+      headline: 'Yangon mobile data drops on a familiar nightly cadence',
+      summary:
+        'Measurement probes saw a 01:00–05:00 local outage window. Fixed wireless held up better than the cellular layer.',
+      region: 'Asia',
+      occurredAt: hoursAgo(31, now),
+      severity: 'elevated',
+      relatedEventId: 'ou-myanmar',
+    },
+    {
+      id: 'n18',
+      source: 'AFP',
+      sourceId: 'afp',
+      headline: 'Popocatépetl ash pulse delays a handful of Mexico City arrivals',
+      summary:
+        'The plume stayed below FL200. Airport operators said operations continued with extra inspection time.',
+      region: 'Americas',
+      occurredAt: hoursAgo(16, now),
+      severity: 'elevated',
+      relatedEventId: 'nt-popocatepetl',
+    },
+  ]
+}
