@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T06:30:51.428Z",
+  "generatedAt": "2026-09-12T12:30:21.601Z",
   "sources": [
     {
       "id": "natural",
@@ -13,7 +13,7 @@
       "provider": "National Weather Service",
       "url": "https://api.weather.gov/alerts/active",
       "license": "U.S. public domain",
-      "count": 68
+      "count": 72
     },
     {
       "id": "storms",
@@ -41,7 +41,7 @@
       "provider": "US Treasury OFAC SDN",
       "url": "https://ofac.treasury.gov/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
       "license": "U.S. public domain. Country aggregates only — not the full SDN file.",
-      "count": 48
+      "count": 19
     },
     {
       "id": "outages",
