@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-09-12T12:30:21.601Z",
+  "generatedAt": "2026-09-12T18:27:18.683Z",
   "sources": [
     {
       "id": "natural",
       "provider": "USGS Earthquake Hazards Program",
       "url": "https://earthquake.usgs.gov/fdsnws/event/1/",
       "license": "U.S. public domain",
-      "count": 85
+      "count": 82
     },
     {
       "id": "weather",
       "provider": "National Weather Service",
       "url": "https://api.weather.gov/alerts/active",
       "license": "U.S. public domain",
-      "count": 72
+      "count": 86
     },
     {
       "id": "storms",
@@ -41,7 +41,7 @@
       "provider": "US Treasury OFAC SDN",
       "url": "https://ofac.treasury.gov/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
       "license": "U.S. public domain. Country aggregates only — not the full SDN file.",
-      "count": 19
+      "count": 48
     },
     {
       "id": "outages",
