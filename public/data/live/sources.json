@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T18:27:18.683Z",
+  "generatedAt": "2026-09-13T00:34:34.966Z",
   "sources": [
     {
       "id": "natural",
@@ -13,7 +13,7 @@
       "provider": "National Weather Service",
       "url": "https://api.weather.gov/alerts/active",
       "license": "U.S. public domain",
-      "count": 86
+      "count": 108
     },
     {
       "id": "storms",
