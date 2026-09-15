@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-14T18:31:20.590Z",
-  "listDate": "2026-09-14T18:31:20.585Z",
+  "generatedAt": "2026-09-15T00:35:42.805Z",
+  "listDate": "2026-09-15T00:35:42.797Z",
   "countries": [
     {
       "code": "RU",
@@ -38,7 +38,7 @@
       "name": "Iran",
       "longitude": 53.4092,
       "latitude": 33.3488,
-      "count": 3348,
+      "count": 3349,
       "programs": [
         "IRAN",
         "SDGT",
@@ -452,9 +452,9 @@
         "IRAN",
         "FTO",
         "UKRAINE-EO13662",
+        "IRAN-EO13902",
         "RUSSIA-EO14024",
-        "DPRK3",
-        "IRAN-EO13846"
+        "DPRK3"
       ],
       "samples": []
     },
