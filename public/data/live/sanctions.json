@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-17T12:33:00.550Z",
-  "listDate": "2026-09-17T12:33:00.543Z",
+  "generatedAt": "2026-09-17T18:30:32.200Z",
+  "listDate": "2026-09-17T18:30:32.192Z",
   "countries": [
     {
       "code": "RU",
@@ -38,7 +38,7 @@
       "name": "Iran",
       "longitude": 53.4092,
       "latitude": 33.3488,
-      "count": 3349,
+      "count": 3354,
       "programs": [
         "IRAN",
         "SDGT",
@@ -301,7 +301,7 @@
       "name": "Belarus",
       "longitude": 28.2222,
       "latitude": 53.3109,
-      "count": 296,
+      "count": 294,
       "programs": [
         "BELARUS",
         "IRAN",
@@ -398,7 +398,7 @@
       "name": "Cuba",
       "longitude": -79.6713,
       "latitude": 21.6871,
-      "count": 176,
+      "count": 187,
       "programs": [
         "CUBA",
         "CUBA-EO14404",
