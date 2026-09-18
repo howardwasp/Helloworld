@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-18T12:31:30.418Z",
-  "listDate": "2026-09-18T12:31:30.411Z",
+  "generatedAt": "2026-09-18T18:28:57.557Z",
+  "listDate": "2026-09-18T18:28:57.549Z",
   "countries": [
     {
       "code": "RU",
@@ -105,7 +105,7 @@
       "name": "United Arab Emirates",
       "longitude": 54.3703,
       "latitude": 24.193,
-      "count": 760,
+      "count": 759,
       "programs": [
         "IRAQ2",
         "SDGT",
