@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-09-19T06:30:46.736Z",
+  "generatedAt": "2026-09-19T12:30:18.847Z",
   "sources": [
     {
       "id": "natural",
       "provider": "USGS Earthquake Hazards Program",
       "url": "https://earthquake.usgs.gov/fdsnws/event/1/",
       "license": "U.S. public domain",
-      "count": 94
+      "count": 96
     },
     {
       "id": "weather",
       "provider": "National Weather Service",
       "url": "https://api.weather.gov/alerts/active",
       "license": "U.S. public domain",
-      "count": 83
+      "count": 115
     },
     {
       "id": "storms",
