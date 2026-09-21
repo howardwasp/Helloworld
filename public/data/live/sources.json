@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-09-20T18:27:48.766Z",
+  "generatedAt": "2026-09-21T00:34:08.758Z",
   "sources": [
     {
       "id": "natural",
       "provider": "USGS Earthquake Hazards Program",
       "url": "https://earthquake.usgs.gov/fdsnws/event/1/",
       "license": "U.S. public domain",
-      "count": 110
+      "count": 111
     },
     {
       "id": "weather",
       "provider": "National Weather Service",
       "url": "https://api.weather.gov/alerts/active",
       "license": "U.S. public domain",
-      "count": 151
+      "count": 152
     },
     {
       "id": "storms",
       "provider": "National Hurricane Center",
       "url": "https://www.nhc.noaa.gov/CurrentStorms.json",
       "license": "U.S. public domain",
-      "count": 2
+      "count": 3
     },
     {
       "id": "conflicts",
