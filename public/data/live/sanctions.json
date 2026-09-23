@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-23T12:32:44.804Z",
-  "listDate": "2026-09-23T12:32:44.788Z",
+  "generatedAt": "2026-09-23T18:30:35.412Z",
+  "listDate": "2026-09-23T18:30:35.403Z",
   "countries": [
     {
       "code": "RU",
@@ -495,7 +495,7 @@
       "name": "Dem. Rep. Congo",
       "longitude": 22.949,
       "latitude": -3.8313,
-      "count": 145,
+      "count": 143,
       "programs": [
         "DRCONGO",
         "SDGT",
