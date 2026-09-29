@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-29T12:36:03.665Z",
-  "listDate": "2026-09-29T12:36:03.660Z",
+  "generatedAt": "2026-09-29T18:34:28.745Z",
+  "listDate": "2026-09-29T18:34:28.733Z",
   "countries": [
     {
       "code": "RU",
@@ -38,7 +38,7 @@
       "name": "Iran",
       "longitude": 53.4092,
       "latitude": 33.3488,
-      "count": 3354,
+      "count": 3359,
       "programs": [
         "IRAN",
         "SDGT",
@@ -65,29 +65,11 @@
       ]
     },
     {
-      "code": "CN",
-      "name": "China",
-      "longitude": 105.7794,
-      "latitude": 37.285,
-      "count": 1173,
-      "programs": [
-        "SDGT",
-        "IRAQ2",
-        "SDNTK",
-        "NPWMD",
-        "DPRK2",
-        "IFSR",
-        "BELARUS",
-        "IRAN"
-      ],
-      "samples": []
-    },
-    {
       "code": "MX",
       "name": "Mexico",
       "longitude": -103.0479,
       "latitude": 23.8233,
-      "count": 1172,
+      "count": 1215,
       "programs": [
         "CUBA",
         "SDNTK",
@@ -97,6 +79,24 @@
         "SDNT",
         "TCO",
         "GLOMAG"
+      ],
+      "samples": []
+    },
+    {
+      "code": "CN",
+      "name": "China",
+      "longitude": 105.7794,
+      "latitude": 37.285,
+      "count": 1176,
+      "programs": [
+        "SDGT",
+        "IRAQ2",
+        "SDNTK",
+        "NPWMD",
+        "DPRK2",
+        "IFSR",
+        "BELARUS",
+        "IRAN"
       ],
       "samples": []
     },
@@ -185,7 +185,7 @@
       "name": "Turkey",
       "longitude": 36.5985,
       "latitude": 38.4246,
-      "count": 381,
+      "count": 382,
       "programs": [
         "SDGT",
         "SDNTK",
@@ -427,7 +427,7 @@
       "name": "Pakistan",
       "longitude": 69.3144,
       "latitude": 30.718,
-      "count": 169,
+      "count": 171,
       "programs": [
         "SDGT",
         "FTO",
