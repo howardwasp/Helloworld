@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T00:35:22.696Z",
+  "generatedAt": "2026-09-29T06:34:52.423Z",
   "sources": [
     {
       "id": "natural",
@@ -48,7 +48,7 @@
       "provider": "IODA / Georgia Institute of Technology",
       "url": "https://ioda.inetintel.cc.gatech.edu/",
       "license": "Attribution required. Live client fetch preferred; this file is a short snapshot.",
-      "count": 32
+      "count": 31
     }
   ]
 }
