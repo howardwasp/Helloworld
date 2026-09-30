@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-30T12:39:06.080Z",
-  "listDate": "2026-09-30T12:39:06.074Z",
+  "generatedAt": "2026-09-30T18:31:58.091Z",
+  "listDate": "2026-09-30T18:31:58.072Z",
   "countries": [
     {
       "code": "RU",
@@ -69,7 +69,7 @@
       "name": "Mexico",
       "longitude": -103.0479,
       "latitude": 23.8233,
-      "count": 1215,
+      "count": 1220,
       "programs": [
         "CUBA",
         "SDNTK",
@@ -154,7 +154,7 @@
       "name": "Venezuela",
       "longitude": -66.9188,
       "latitude": 7.2356,
-      "count": 481,
+      "count": 487,
       "programs": [
         "SDGT",
         "SDNTK",
@@ -301,7 +301,7 @@
       "name": "Belarus",
       "longitude": 28.2222,
       "latitude": 53.3109,
-      "count": 294,
+      "count": 293,
       "programs": [
         "BELARUS",
         "IRAN",
@@ -688,11 +688,29 @@
       ]
     },
     {
+      "code": "IT",
+      "name": "Italy",
+      "longitude": 12.6602,
+      "latitude": 43.0281,
+      "count": 81,
+      "programs": [
+        "CUBA",
+        "SDGT",
+        "IRAQ2",
+        "SDNTK",
+        "IRAN",
+        "TCO",
+        "LIBYA3",
+        "NPWMD"
+      ],
+      "samples": []
+    },
+    {
       "code": "LY",
       "name": "Libya",
       "longitude": 16.4862,
       "latitude": 28.5946,
-      "count": 82,
+      "count": 81,
       "programs": [
         "SDGT",
         "LIBYA2",
@@ -715,24 +733,6 @@
           "program": "LIBYA2"
         }
       ]
-    },
-    {
-      "code": "IT",
-      "name": "Italy",
-      "longitude": 12.6602,
-      "latitude": 43.0281,
-      "count": 81,
-      "programs": [
-        "CUBA",
-        "SDGT",
-        "IRAQ2",
-        "SDNTK",
-        "IRAN",
-        "TCO",
-        "LIBYA3",
-        "NPWMD"
-      ],
-      "samples": []
     },
     {
       "code": "CH",
