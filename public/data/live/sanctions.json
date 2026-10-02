@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-02T12:35:59.050Z",
-  "listDate": "2026-10-02T12:35:59.044Z",
+  "generatedAt": "2026-10-02T18:33:32.675Z",
+  "listDate": "2026-10-02T18:33:32.666Z",
   "countries": [
     {
       "code": "RU",
@@ -926,6 +926,24 @@
       "samples": []
     },
     {
+      "code": "FR",
+      "name": "France",
+      "longitude": 3.2386,
+      "latitude": 46.9523,
+      "count": 48,
+      "programs": [
+        "CUBA",
+        "SDGT",
+        "IRAN",
+        "IFSR",
+        "DRCONGO",
+        "SDNTK",
+        "UKRAINE-EO13661",
+        "RUSSIA-EO14024"
+      ],
+      "samples": []
+    },
+    {
       "code": "ZA",
       "name": "South Africa",
       "longitude": 24.823,
@@ -937,24 +955,6 @@
         "SDNTK",
         "GLOMAG",
         "IRAN-EO13846",
-        "RUSSIA-EO14024"
-      ],
-      "samples": []
-    },
-    {
-      "code": "FR",
-      "name": "France",
-      "longitude": 3.2386,
-      "latitude": 46.9523,
-      "count": 44,
-      "programs": [
-        "CUBA",
-        "SDGT",
-        "IRAN",
-        "IFSR",
-        "DRCONGO",
-        "SDNTK",
-        "UKRAINE-EO13661",
         "RUSSIA-EO14024"
       ],
       "samples": []
