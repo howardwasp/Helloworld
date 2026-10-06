@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-05T18:36:08.995Z",
-  "listDate": "2026-10-05T18:36:08.988Z",
+  "generatedAt": "2026-10-06T00:40:43.912Z",
+  "listDate": "2026-10-06T00:40:43.905Z",
   "countries": [
     {
       "code": "RU",
@@ -69,16 +69,16 @@
       "name": "Mexico",
       "longitude": -103.0479,
       "latitude": 23.8233,
-      "count": 1220,
+      "count": 1213,
       "programs": [
         "CUBA",
         "SDNTK",
         "ILLICIT-DRUGS-EO14059",
         "FTO",
         "SDGT",
-        "SDNT",
         "TCO",
-        "GLOMAG"
+        "GLOMAG",
+        "VENEZUELA-EO13850"
       ],
       "samples": []
     },
@@ -87,16 +87,16 @@
       "name": "China",
       "longitude": 105.7794,
       "latitude": 37.285,
-      "count": 1188,
+      "count": 1187,
       "programs": [
         "SDGT",
-        "IRAQ2",
         "SDNTK",
         "NPWMD",
         "DPRK2",
         "IFSR",
         "BELARUS",
-        "IRAN"
+        "IRAN",
+        "UKRAINE-EO13662"
       ],
       "samples": []
     },
@@ -154,7 +154,7 @@
       "name": "Venezuela",
       "longitude": -66.9188,
       "latitude": 7.2356,
-      "count": 487,
+      "count": 484,
       "programs": [
         "SDGT",
         "SDNTK",
@@ -203,16 +203,16 @@
       "name": "Lebanon",
       "longitude": 35.8547,
       "latitude": 33.8503,
-      "count": 369,
+      "count": 367,
       "programs": [
         "SDGT",
         "IRAQ2",
         "IRAN",
         "IFSR",
-        "SDNT",
         "IRGC",
         "SDNTK",
-        "FTO"
+        "FTO",
+        "NPWMD"
       ],
       "samples": [
         {
@@ -226,55 +226,6 @@
         {
           "name": "MAKHLUF, Hafiz",
           "program": "LEBANON"
-        }
-      ]
-    },
-    {
-      "code": "CO",
-      "name": "Colombia",
-      "longitude": -72.7113,
-      "latitude": 4.5234,
-      "count": 358,
-      "programs": [
-        "SDNT",
-        "SDNTK",
-        "SDGT",
-        "ILLICIT-DRUGS-EO14059",
-        "FTO",
-        "TCO",
-        "VENEZUELA-EO13850",
-        "SUDAN-EO14098"
-      ],
-      "samples": []
-    },
-    {
-      "code": "IQ",
-      "name": "Iraq",
-      "longitude": 44.5782,
-      "latitude": 33.4827,
-      "count": 306,
-      "programs": [
-        "SDGT",
-        "FTO",
-        "IRAQ2",
-        "IRAQ3",
-        "IRAN",
-        "IRAN-EO13902",
-        "IFSR",
-        "IRGC"
-      ],
-      "samples": [
-        {
-          "name": "AL-TIKRITI, Saddam Hussein",
-          "program": "IRAQ2"
-        },
-        {
-          "name": "AL-TIKRITI, Qusay Saddam Hussein",
-          "program": "IRAQ2"
-        },
-        {
-          "name": "AL-TIKRITI, Uday Saddam Hussein",
-          "program": "IRAQ2"
         }
       ]
     },
@@ -297,11 +248,29 @@
       "samples": []
     },
     {
+      "code": "CO",
+      "name": "Colombia",
+      "longitude": -72.7113,
+      "latitude": 4.5234,
+      "count": 293,
+      "programs": [
+        "SDNT",
+        "SDNTK",
+        "SDGT",
+        "ILLICIT-DRUGS-EO14059",
+        "FTO",
+        "TCO",
+        "VENEZUELA-EO13850",
+        "SUDAN-EO14098"
+      ],
+      "samples": []
+    },
+    {
       "code": "BY",
       "name": "Belarus",
       "longitude": 28.2222,
       "latitude": 53.3109,
-      "count": 293,
+      "count": 292,
       "programs": [
         "BELARUS",
         "IRAN",
@@ -324,6 +293,37 @@
         {
           "name": "ZIMOUSKY, Aliaksandr Leanidavich",
           "program": "BELARUS"
+        }
+      ]
+    },
+    {
+      "code": "IQ",
+      "name": "Iraq",
+      "longitude": 44.5782,
+      "latitude": 33.4827,
+      "count": 265,
+      "programs": [
+        "SDGT",
+        "FTO",
+        "IRAQ2",
+        "IRAQ3",
+        "IRAN",
+        "IRAN-EO13902",
+        "IFSR",
+        "IRGC"
+      ],
+      "samples": [
+        {
+          "name": "AL-TIKRITI, Saddam Hussein",
+          "program": "IRAQ2"
+        },
+        {
+          "name": "AL-TIKRITI, Qusay Saddam Hussein",
+          "program": "IRAQ2"
+        },
+        {
+          "name": "AL-TIKRITI, Uday Saddam Hussein",
+          "program": "IRAQ2"
         }
       ]
     },
@@ -376,24 +376,6 @@
       ]
     },
     {
-      "code": "GB",
-      "name": "United Kingdom",
-      "longitude": -3.0844,
-      "latitude": 53.9072,
-      "count": 192,
-      "programs": [
-        "CUBA",
-        "IRAN",
-        "SDGT",
-        "IFSR",
-        "FTO",
-        "IRAQ2",
-        "SDNTK",
-        "NPWMD"
-      ],
-      "samples": []
-    },
-    {
       "code": "CU",
       "name": "Cuba",
       "longitude": -79.6713,
@@ -421,6 +403,24 @@
           "program": "CUBA"
         }
       ]
+    },
+    {
+      "code": "GB",
+      "name": "United Kingdom",
+      "longitude": -3.0844,
+      "latitude": 53.9072,
+      "count": 184,
+      "programs": [
+        "CUBA",
+        "IRAN",
+        "SDGT",
+        "IFSR",
+        "FTO",
+        "IRAQ2",
+        "SDNTK",
+        "NPWMD"
+      ],
+      "samples": []
     },
     {
       "code": "PK",
@@ -477,16 +477,16 @@
       "name": "Panama",
       "longitude": -80.3753,
       "latitude": 8.4924,
-      "count": 151,
+      "count": 147,
       "programs": [
         "CUBA",
         "SDNTK",
-        "SDNT",
         "IRAN",
         "DPRK",
         "UKRAINE-EO13661",
         "DPRK4",
-        "TCO"
+        "TCO",
+        "VENEZUELA-EO13850"
       ],
       "samples": []
     },
@@ -688,24 +688,6 @@
       ]
     },
     {
-      "code": "IT",
-      "name": "Italy",
-      "longitude": 12.6602,
-      "latitude": 43.0281,
-      "count": 81,
-      "programs": [
-        "CUBA",
-        "SDGT",
-        "IRAQ2",
-        "SDNTK",
-        "IRAN",
-        "TCO",
-        "LIBYA3",
-        "NPWMD"
-      ],
-      "samples": []
-    },
-    {
       "code": "LY",
       "name": "Libya",
       "longitude": 16.4862,
@@ -735,20 +717,20 @@
       ]
     },
     {
-      "code": "CH",
-      "name": "Switzerland",
-      "longitude": 8.2505,
-      "latitude": 46.7652,
+      "code": "IT",
+      "name": "Italy",
+      "longitude": 12.6602,
+      "latitude": 43.0281,
       "count": 80,
       "programs": [
         "CUBA",
-        "IRAQ2",
         "SDGT",
-        "NPWMD",
+        "SDNTK",
         "IRAN",
-        "LIBYA2",
         "TCO",
-        "UKRAINE-EO13661"
+        "LIBYA3",
+        "NPWMD",
+        "IFSR"
       ],
       "samples": []
     },
@@ -771,20 +753,38 @@
       "samples": []
     },
     {
+      "code": "CH",
+      "name": "Switzerland",
+      "longitude": 8.2505,
+      "latitude": 46.7652,
+      "count": 79,
+      "programs": [
+        "CUBA",
+        "IRAQ2",
+        "SDGT",
+        "NPWMD",
+        "IRAN",
+        "LIBYA2",
+        "TCO",
+        "UKRAINE-EO13661"
+      ],
+      "samples": []
+    },
+    {
       "code": "US",
       "name": "United States",
       "longitude": -90.225,
       "latitude": 38.228,
-      "count": 75,
+      "count": 74,
       "programs": [
         "SDGT",
         "SDNTK",
         "CUBA",
-        "IRAQ2",
         "BELARUS",
         "IRGC",
         "IFSR",
-        "FTO"
+        "FTO",
+        "TCO"
       ],
       "samples": []
     },
@@ -811,10 +811,9 @@
       "name": "Guatemala",
       "longitude": -90.2122,
       "latitude": 15.5603,
-      "count": 65,
+      "count": 63,
       "programs": [
         "SDNTK",
-        "SDNT",
         "FTO",
         "SDGT",
         "TCO",
