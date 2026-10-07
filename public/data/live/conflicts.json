@@ -1,6 +1,19 @@
 {
-  "generatedAt": "2026-10-07T06:36:01.505Z",
+  "generatedAt": "2026-10-07T12:38:26.250Z",
   "events": [
+    {
+      "id": "gdelt-1326696217",
+      "title": "Mass violence — Israel",
+      "description": "GDELT CAMEO 20 (mass violence) near Israel. 10 mentions, Goldstein -10. Actor: ISRAEL. News-mention event, not a verified incident.",
+      "severity": "critical",
+      "occurredAt": "2026-10-07T07:45:00.000Z",
+      "longitude": 34.75,
+      "latitude": 31.5,
+      "country": "Israel",
+      "label": "Mass",
+      "url": "https://www.express.co.uk/showbiz/tv-radio/2255075/furious-nick-ferrari-suddenly-quits-lbc",
+      "source": "GDELT"
+    },
     {
       "id": "gdelt-1326680054",
       "title": "Mass violence — Gaza",
@@ -171,58 +184,6 @@
       "source": "GDELT"
     },
     {
-      "id": "gdelt-1326550487",
-      "title": "Mass violence — West Bank",
-      "description": "GDELT CAMEO 20 (mass violence) near West Bank. 8 mentions, Goldstein -10. Actor: UNITED KINGDOM. News-mention event, not a verified incident.",
-      "severity": "critical",
-      "occurredAt": "2026-10-06T12:15:00.000Z",
-      "longitude": 35.25,
-      "latitude": 31.666667,
-      "country": "West Bank",
-      "label": "Mass",
-      "url": "https://www.dailymirror.lk/international/UK-threatens-to-expel-Israeli-diplomats/107-351908",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326550488",
-      "title": "Mass violence — United Kingdom",
-      "description": "GDELT CAMEO 20 (mass violence) near United Kingdom. 2 mentions, Goldstein -10. Actor: UNITED KINGDOM. News-mention event, not a verified incident.",
-      "severity": "critical",
-      "occurredAt": "2026-10-06T12:15:00.000Z",
-      "longitude": -4,
-      "latitude": 54,
-      "country": "United Kingdom",
-      "label": "Mass",
-      "url": "https://www.dailymirror.lk/international/UK-threatens-to-expel-Israeli-diplomats/107-351908",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326529372",
-      "title": "Armed clash — Jizan",
-      "description": "GDELT CAMEO 19 (armed clash) near Jizan, Jizan, Saudi Arabia. 50 mentions, Goldstein -10. Actor: YEMEN. News-mention event, not a verified incident.",
-      "severity": "critical",
-      "occurredAt": "2026-10-06T09:45:00.000Z",
-      "longitude": 42.5511,
-      "latitude": 16.8892,
-      "country": "Saudi Arabia",
-      "label": "Armed",
-      "url": "http://www.bozemandailychronicle.com/wire/news/saudi-arabia-says-2-airports-were-hit-in-renewed-fighting-with-houthis-and-other-mideast/article_a5ca78e1-b872-5e1a-8027-e1f56908bd18.html",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326517014",
-      "title": "Mass violence — Jerusalem",
-      "description": "GDELT CAMEO 20 (mass violence) near Jerusalem, Israel (general), Israel. 10 mentions, Goldstein -10. Actor: PALESTINIAN. News-mention event, not a verified incident.",
-      "severity": "critical",
-      "occurredAt": "2026-10-06T08:15:00.000Z",
-      "longitude": 35.2333,
-      "latitude": 31.7667,
-      "country": "Israel",
-      "label": "Mass",
-      "url": "https://socialistworker.co.uk/news/why-greens-were-right-to-pass-zionism-is-racism-motion/",
-      "source": "GDELT"
-    },
-    {
       "id": "gdelt-1326368875",
       "title": "Mass violence — London",
       "description": "GDELT CAMEO 20 (mass violence) near London, London, City of, United Kingdom. 2 mentions, Goldstein -10. Actor: UNITED KINGDOM. News-mention event, not a verified incident.",
@@ -233,6 +194,435 @@
       "country": "United Kingdom",
       "label": "Mass",
       "url": "https://cyprus-mail.com/2026/10/05/uk-green-party-declares-zionism-is-racism-angering-israel",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326739114",
+      "title": "Armed clash — Kidal",
+      "description": "GDELT CAMEO 19 (armed clash) near Kidal, Kidal, Mali. 10 mentions, Goldstein -10. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T12:45:00.000Z",
+      "longitude": 1.40778,
+      "latitude": 18.4411,
+      "country": "Mali",
+      "label": "Armed",
+      "url": "https://www.aol.co.uk/articles/malian-army-retakes-strategic-city-121956000.html",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326739436",
+      "title": "Armed clash — Iran",
+      "description": "GDELT CAMEO 19 (armed clash) near Iran. 10 mentions, Goldstein -10. Actor: IMMIGRANT. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T12:45:00.000Z",
+      "longitude": 53,
+      "latitude": 32,
+      "country": "Iran",
+      "label": "Armed",
+      "url": "https://ledgertranscript.com/2026/10/07/voters-choose-democratic-candidates/",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326740018",
+      "title": "Armed clash — Maiduguri",
+      "description": "GDELT CAMEO 19 (armed clash) near Maiduguri, Borno, Nigeria. 10 mentions, Goldstein -10. Actor: ARMY. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T12:45:00.000Z",
+      "longitude": 13.1603,
+      "latitude": 11.8464,
+      "country": "Nigeria",
+      "label": "Armed",
+      "url": "http://silverbirdtv.com/army-foil-multi-flank-iswap-attack-in-borno-kill-over-25-terrorists/",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326734161",
+      "title": "Armed clash — Tigray",
+      "description": "GDELT CAMEO 19 (armed clash) near Tigray, Tigray, Ethiopia. 10 mentions, Goldstein -10. Actor: ETHIOPIA. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
+      "longitude": 39.5,
+      "latitude": 13.5,
+      "country": "Ethiopia",
+      "label": "Armed",
+      "url": "https://article.wn.com/view/2026/10/07/Children_bear_brunt_of_Ethiopia_s_Tigray_clashes/",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326734662",
+      "title": "Armed clash — Auvergne",
+      "description": "GDELT CAMEO 19 (armed clash) near Auvergne, Haute-Normandie, France. 10 mentions, Goldstein -10. Actor: FRANCE. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
+      "longitude": 0.729027,
+      "latitude": 48.8823,
+      "country": "France",
+      "label": "Armed",
+      "url": "https://www.naharnet.com/stories/en/322939-france-test-fires-new-nuclear-capable-missile",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326735493",
+      "title": "Armed clash — Moscow",
+      "description": "GDELT CAMEO 19 (armed clash) near Moscow, Moskva, Russia. 16 mentions, Goldstein -10. Actor: RUSSIA. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
+      "longitude": 37.6156,
+      "latitude": 55.7522,
+      "country": "Russia",
+      "label": "Armed",
+      "url": "https://nypost.com/2026/10/07/world-news/russian-strikes-on-ukrainian-cities-kill-at-least-19-in-a-major-attack-that-kyiv-saw-coming/",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326729801",
+      "title": "Armed clash — Moscow",
+      "description": "GDELT CAMEO 19 (armed clash) near Moscow, Moskva, Russia. 10 mentions, Goldstein -10. Actor: BULGARIAN. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T11:45:00.000Z",
+      "longitude": 37.6156,
+      "latitude": 55.7522,
+      "country": "Russia",
+      "label": "Armed",
+      "url": "https://www.bbc.co.uk/news/articles/ckr5ym098vdeo",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326729930",
+      "title": "Armed clash — London",
+      "description": "GDELT CAMEO 19 (armed clash) near London, London, City of, United Kingdom. 10 mentions, Goldstein -9.5. Actor: POLICE. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T11:45:00.000Z",
+      "longitude": -0.116667,
+      "latitude": 51.5,
+      "country": "United Kingdom",
+      "label": "Armed",
+      "url": "https://www.express.co.uk/news/uk/2255200/london-march-live-pro-palestine",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326730452",
+      "title": "Armed clash — Iraq",
+      "description": "GDELT CAMEO 19 (armed clash) near Iraq. 10 mentions, Goldstein -10. Actor: JUDGE. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T11:45:00.000Z",
+      "longitude": 44,
+      "latitude": 33,
+      "country": "Iraq",
+      "label": "Armed",
+      "url": "https://www.iraqinews.com/iraq/iraq-integrity-commission-uncovers-saladin-traffic-embezzlement-2026/",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326725532",
+      "title": "Armed clash — Ukraine",
+      "description": "GDELT CAMEO 19 (armed clash) near Ukraine. 10 mentions, Goldstein -10. Actor: CIVILIAN. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T11:15:00.000Z",
+      "longitude": 32,
+      "latitude": 49,
+      "country": "Ukraine",
+      "label": "Armed",
+      "url": "http://www.bignewsnetwork.com/news/279357302/child-killed-in-ukrainian-strike-on-russia-belgorod-region-officials",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326725569",
+      "title": "Armed clash — Gaza",
+      "description": "GDELT CAMEO 19 (armed clash) near Gaza, Israel (general), Israel. 10 mentions, Goldstein -9.5. Actor: SCHOOL. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T11:15:00.000Z",
+      "longitude": 34.3333,
+      "latitude": 31.4167,
+      "country": "Israel",
+      "label": "Armed",
+      "url": "https://www.newyorker.com/news/the-lede/back-to-school-in-gaza",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326725607",
+      "title": "Armed clash — New York",
+      "description": "GDELT CAMEO 19 (armed clash) near New York, United States. 10 mentions, Goldstein -10. Actor: ETHIOPIA. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T11:15:00.000Z",
+      "longitude": -74.9384,
+      "latitude": 42.1497,
+      "country": "United States",
+      "label": "Armed",
+      "url": "https://www.newyorker.com/news/global-notes/the-fighting-in-ethiopia-is-part-of-a-far-bigger-conflict",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326721462",
+      "title": "Armed clash — Ben Gurion",
+      "description": "GDELT CAMEO 19 (armed clash) near Ben Gurion, HaMerkaz, Israel. 10 mentions, Goldstein -10. Actor: ISRAELI. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T10:45:00.000Z",
+      "longitude": 34.8867,
+      "latitude": 32.0114,
+      "country": "Israel",
+      "label": "Armed",
+      "url": "https://www.foxnews.com/opinion/danny-danon-oct-7-flight-1073-resilience-keeps-israel-standing",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326721858",
+      "title": "Armed clash — Gaza",
+      "description": "GDELT CAMEO 19 (armed clash) near Gaza, Israel (general), Israel. 10 mentions, Goldstein -10. Actor: HAMAS. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T10:45:00.000Z",
+      "longitude": 34.3333,
+      "latitude": 31.4167,
+      "country": "Israel",
+      "label": "Armed",
+      "url": "https://www.foxnews.com/opinion/danny-danon-oct-7-flight-1073-resilience-keeps-israel-standing",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326716929",
+      "title": "Armed clash — Dera Ismail Khan",
+      "description": "GDELT CAMEO 19 (armed clash) near Dera Ismail Khan, North-West Frontier, Pakistan. 10 mentions, Goldstein -10. Actor: CIVILIAN. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T10:15:00.000Z",
+      "longitude": 70.9024,
+      "latitude": 31.8327,
+      "country": "Pakistan",
+      "label": "Armed",
+      "url": "https://voiceofvienna.org/pakistan-faces-fresh-wave-of-terrorism-as-18-militants-reportedly-killed/",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326717004",
+      "title": "Armed clash — Moscow",
+      "description": "GDELT CAMEO 19 (armed clash) near Moscow, Moskva, Russia. 10 mentions, Goldstein -10. Actor: EUROPE. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T10:15:00.000Z",
+      "longitude": 37.6156,
+      "latitude": 55.7522,
+      "country": "Russia",
+      "label": "Armed",
+      "url": "https://www.nigerianeye.com/2026/10/us-who-seek-clarity-on-suspected-plague.html",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326717300",
+      "title": "Armed clash — Naama",
+      "description": "GDELT CAMEO 19 (armed clash) near Naama, HaMerkaz, Israel. 10 mentions, Goldstein -10. Actor: ADVOCATE. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T10:15:00.000Z",
+      "longitude": 34.8667,
+      "latitude": 31.8667,
+      "country": "Israel",
+      "label": "Armed",
+      "url": "https://honestreporting.com/silence-no-more-dr-cochav-elkayam-levy-on-october-7th-denial-and-the-fight-for-truth/",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326717368",
+      "title": "Armed clash — Belarus",
+      "description": "GDELT CAMEO 19 (armed clash) near Belarus. 10 mentions, Goldstein -10. Actor: LATVIA. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T10:15:00.000Z",
+      "longitude": 28,
+      "latitude": 53,
+      "country": "Belarus",
+      "label": "Armed",
+      "url": "https://www.express.co.uk/news/world/2255157/nato-member-soldiers-latvia-belarus",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326717698",
+      "title": "Armed clash — Gaza",
+      "description": "GDELT CAMEO 19 (armed clash) near Gaza, Israel (general), Israel. 10 mentions, Goldstein -10. Actor: TERRORIST. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T10:15:00.000Z",
+      "longitude": 34.3333,
+      "latitude": 31.4167,
+      "country": "Israel",
+      "label": "Armed",
+      "url": "https://honestreporting.com/the-minimization-of-october-7-an-analysis-of-the-first-three-years-of-coverage/",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326717699",
+      "title": "Armed clash — Moscow",
+      "description": "GDELT CAMEO 19 (armed clash) near Moscow, Moskva, Russia. 10 mentions, Goldstein -10. Actor: GUNMEN. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T10:15:00.000Z",
+      "longitude": 37.6156,
+      "latitude": 55.7522,
+      "country": "Russia",
+      "label": "Armed",
+      "url": "https://www.justiceinfo.net/en/166673-anna-politkovskaya-the-slain-reporter-who-predicted-russias-future.html",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326717870",
+      "title": "Armed clash — Khamis Mushait",
+      "description": "GDELT CAMEO 19 (armed clash) near Khamis Mushait, Saudi Arabia (general), Saudi Arabia. 10 mentions, Goldstein -10. Actor: YEMEN. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T10:15:00.000Z",
+      "longitude": 42.7292,
+      "latitude": 18.3064,
+      "country": "Saudi Arabia",
+      "label": "Armed",
+      "url": "https://www.middle-east-online.com/en/houthis-bring-yemen-battle-aden-airport",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326712821",
+      "title": "Armed clash — Israel",
+      "description": "GDELT CAMEO 19 (armed clash) near Israel. 10 mentions, Goldstein -10. Actor: HAMAS. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T09:45:00.000Z",
+      "longitude": 34.75,
+      "latitude": 31.5,
+      "country": "Israel",
+      "label": "Armed",
+      "url": "https://www.abc.net.au/listen/programs/pm/israel-marks-october-7-amid-election-campaign/107240380",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326708632",
+      "title": "Armed clash — Gaza",
+      "description": "GDELT CAMEO 19 (armed clash) near Gaza, Israel (general), Israel. 10 mentions, Goldstein -10. Actor: ISRAEL. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T09:15:00.000Z",
+      "longitude": 34.3333,
+      "latitude": 31.4167,
+      "country": "Israel",
+      "label": "Armed",
+      "url": "https://www.business-standard.com/world-news/october-7-attack-to-gaza-ceasefire-three-years-of-israel-hamas-conflict-126100700466_1.html",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326709034",
+      "title": "Armed clash — Black Sea",
+      "description": "GDELT CAMEO 19 (armed clash) near Black Sea, Oceans (general), Oceans. 10 mentions, Goldstein -10. Actor: RUSSIAN. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T09:15:00.000Z",
+      "longitude": 35,
+      "latitude": 43,
+      "country": "Oceans",
+      "label": "Armed",
+      "url": "https://www.novinite.com/articles/240912/Black+Sea+Shipping+Faces+Rising+Risks+as+War+Hits+Ports+and+Supply+Chains",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326704396",
+      "title": "Armed clash — Zakharivka",
+      "description": "GDELT CAMEO 19 (armed clash) near Zakharivka, Khersons'ka Oblast', Ukraine. 10 mentions, Goldstein -10. Actor: SETTLEMENT. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T08:45:00.000Z",
+      "longitude": 34.3175,
+      "latitude": 46.2687,
+      "country": "Ukraine",
+      "label": "Armed",
+      "url": "http://www.rightspeak.net/2026/10/172-c-clashes-in-f-line-23-in-pokrovsk.html",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326704781",
+      "title": "Armed clash — King Khalid International",
+      "description": "GDELT CAMEO 19 (armed clash) near King Khalid International, Ar Riya?, Saudi Arabia. 10 mentions, Goldstein -10. Actor: MILITARY. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T08:45:00.000Z",
+      "longitude": 46.6956,
+      "latitude": 24.9581,
+      "country": "Saudi Arabia",
+      "label": "Armed",
+      "url": "https://www.winnipegfreepress.com/world/2026/10/07/houthis-strike-saudi-targets-israel-marks-oct-7-anniversary-and-other-mideast-developments",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326700717",
+      "title": "Armed clash — Tehran",
+      "description": "GDELT CAMEO 19 (armed clash) near Tehran, Tehran, Iran. 10 mentions, Goldstein -10. Actor: AIRCRAFT CARRIER. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T08:15:00.000Z",
+      "longitude": 51.5148,
+      "latitude": 35.75,
+      "country": "Iran",
+      "label": "Armed",
+      "url": "https://www.wsws.org/en/articles/2026/10/07/osfi-o07.html",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326700874",
+      "title": "Armed clash — Rostov",
+      "description": "GDELT CAMEO 19 (armed clash) near Rostov, Rostovskaya Oblast', Russia. 10 mentions, Goldstein -10. Actor: RUSSIA. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T08:15:00.000Z",
+      "longitude": 39.7139,
+      "latitude": 47.2364,
+      "country": "Russia",
+      "label": "Armed",
+      "url": "https://www.kyivpost.com/post/86307",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326700878",
+      "title": "Armed clash — Chernihiv",
+      "description": "GDELT CAMEO 19 (armed clash) near Chernihiv, Chernihivs'ka Oblast', Ukraine. 10 mentions, Goldstein -10. Actor: RUSSIAN. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T08:15:00.000Z",
+      "longitude": 31.2849,
+      "latitude": 51.5055,
+      "country": "Ukraine",
+      "label": "Armed",
+      "url": "https://en.interfax.com.ua/news/general/1215643.html",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326695682",
+      "title": "Armed clash — Balochistan",
+      "description": "GDELT CAMEO 19 (armed clash) near Balochistan, Balochistan, Pakistan. 10 mentions, Goldstein -10. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T07:45:00.000Z",
+      "longitude": 65.6436,
+      "latitude": 28.4785,
+      "country": "Pakistan",
+      "label": "Armed",
+      "url": "https://pakobserver.net/security-forces-kill-13-terrorists-in-kp-five-in-balochistan/",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326695713",
+      "title": "Armed clash — Tehran",
+      "description": "GDELT CAMEO 19 (armed clash) near Tehran, Tehran, Iran. 10 mentions, Goldstein -10. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T07:45:00.000Z",
+      "longitude": 51.5148,
+      "latitude": 35.75,
+      "country": "Iran",
+      "label": "Armed",
+      "url": "https://www.bankingnews.gr/diethni/articles/903738/we-ll-finish-the-job-trump-vows-push-on-iran-despite-81-aircraft-lost",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326691984",
+      "title": "Armed clash — Tehran",
+      "description": "GDELT CAMEO 19 (armed clash) near Tehran, Tehran, Iran. 12 mentions, Goldstein -10. Actor: UNITED KINGDOM. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T07:15:00.000Z",
+      "longitude": 51.5148,
+      "latitude": 35.75,
+      "country": "Iran",
+      "label": "Armed",
+      "url": "https://www.express.co.uk/news/uk/2255067/raf-fairford-theories-swirl-drone",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326692211",
+      "title": "Armed clash — Riyadh",
+      "description": "GDELT CAMEO 19 (armed clash) near Riyadh, Ar Riya?, Saudi Arabia. 10 mentions, Goldstein -10. Actor: SPOKESMAN. News-mention event, not a verified incident.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T07:15:00.000Z",
+      "longitude": 46.7728,
+      "latitude": 24.6408,
+      "country": "Saudi Arabia",
+      "label": "Armed",
+      "url": "https://news.az/news/houthis-claim-strikes-on-saudi-airports-military-bases",
       "source": "GDELT"
     },
     {
@@ -1182,353 +1572,16 @@
       "source": "GDELT"
     },
     {
-      "id": "gdelt-1326550025",
-      "title": "Armed clash — Kyiv",
-      "description": "GDELT CAMEO 19 (armed clash) near Kyiv, Kyyiv, Misto, Ukraine. 10 mentions, Goldstein -10. News-mention event, not a verified incident.",
+      "id": "gdelt-1326553123",
+      "title": "Armed clash — Somaliland",
+      "description": "GDELT CAMEO 19 (armed clash) near Somaliland, Somalia (general), Somalia. 10 mentions, Goldstein -10. Actor: SOMALIA. News-mention event, not a verified incident.",
       "severity": "high",
-      "occurredAt": "2026-10-06T12:15:00.000Z",
-      "longitude": 30.5167,
-      "latitude": 50.4333,
-      "country": "Ukraine",
+      "occurredAt": "2026-10-06T12:30:00.000Z",
+      "longitude": 46,
+      "latitude": 9,
+      "country": "Somalia",
       "label": "Armed",
-      "url": "https://www.capitalgazette.com/2026/10/06/wine-etc-despite-ravages-of-war-ukranians-still-have-a-thirst-for-wine-commentary/",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326550411",
-      "title": "Armed clash — Eritrea",
-      "description": "GDELT CAMEO 19 (armed clash) near Eritrea. 10 mentions, Goldstein -10. Actor: ERITREA. News-mention event, not a verified incident.",
-      "severity": "high",
-      "occurredAt": "2026-10-06T12:15:00.000Z",
-      "longitude": 39,
-      "latitude": 15,
-      "country": "Eritrea",
-      "label": "Armed",
-      "url": "https://wardheernews.com/abiy-begins-third-term-as-ethiopia-enters-a-period-of-political-and-security-uncertainty/",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326551182",
-      "title": "Armed clash — Jerusalem",
-      "description": "GDELT CAMEO 19 (armed clash) near Jerusalem, Israel (general), Israel. 20 mentions, Goldstein -10. Actor: YEMEN. News-mention event, not a verified incident.",
-      "severity": "high",
-      "occurredAt": "2026-10-06T12:15:00.000Z",
-      "longitude": 35.2333,
-      "latitude": 31.7667,
-      "country": "Israel",
-      "label": "Armed",
-      "url": "https://www.sandiegouniontribune.com/2026/10/06/saudi-arabia-attacks-airports-houthis-mideast-news/",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326546581",
-      "title": "Armed clash — Balakot",
-      "description": "GDELT CAMEO 19 (armed clash) near Balakot, North-West Frontier, Pakistan. 10 mentions, Goldstein -10. Actor: GOVERNMENT. News-mention event, not a verified incident.",
-      "severity": "high",
-      "occurredAt": "2026-10-06T11:45:00.000Z",
-      "longitude": 72.5701,
-      "latitude": 34.8563,
-      "country": "Pakistan",
-      "label": "Armed",
-      "url": "https://ianslive.in/modi25-rewriting-indias-security-doctrine-from-strategic-restraint-to-zero-tolerance--20261006123055",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326546875",
-      "title": "Armed clash — Unknown location",
-      "description": "GDELT CAMEO 19 (armed clash) near Unknown location. 10 mentions, Goldstein -10. Actor: ARMY. News-mention event, not a verified incident.",
-      "severity": "high",
-      "occurredAt": "2026-10-06T11:45:00.000Z",
-      "longitude": 0,
-      "latitude": 0,
-      "label": "Armed",
-      "url": "https://theaviationist.com/2026/10/05/northrop-grumman-and-sandboxaq-lumberjack-aqnav/",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326546878",
-      "title": "Armed clash — Texas",
-      "description": "GDELT CAMEO 19 (armed clash) near Texas, United States. 10 mentions, Goldstein -10. Actor: ARMY. News-mention event, not a verified incident.",
-      "severity": "high",
-      "occurredAt": "2026-10-06T11:45:00.000Z",
-      "longitude": -97.6475,
-      "latitude": 31.106,
-      "country": "United States",
-      "label": "Armed",
-      "url": "https://metro.co.uk/2026/10/06/death-row-inmate-executed-firing-squad-first-time-60-years-29682879/",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326547162",
-      "title": "Armed clash — Gaza",
-      "description": "GDELT CAMEO 19 (armed clash) near Gaza, Israel (general), Israel. 10 mentions, Goldstein -10. Actor: YEMEN. News-mention event, not a verified incident.",
-      "severity": "high",
-      "occurredAt": "2026-10-06T11:45:00.000Z",
-      "longitude": 34.3333,
-      "latitude": 31.4167,
-      "country": "Israel",
-      "label": "Armed",
-      "url": "https://www.deccanchronicle.com/west-asia/saudi-arabia-says-2-airports-hit-in-houthi-attacks-3-injured-1993570",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326542455",
-      "title": "Armed clash — India",
-      "description": "GDELT CAMEO 19 (armed clash) near India. 10 mentions, Goldstein -10. Actor: NAVY. News-mention event, not a verified incident.",
-      "severity": "high",
-      "occurredAt": "2026-10-06T11:15:00.000Z",
-      "longitude": 77,
-      "latitude": 20,
-      "country": "India",
-      "label": "Armed",
-      "url": "https://timesofindia.indiatimes.com/defence/news/navy-gets-big-brahmos-boost-as-defence-ministry-signs-rs-661-5-cr-deal-for-fire-control-systems-launchers-for-warships/articleshow/134737420.cms",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326537157",
-      "title": "Armed clash — Amhara",
-      "description": "GDELT CAMEO 19 (armed clash) near Amhara, Amara, Ethiopia. 10 mentions, Goldstein -10. News-mention event, not a verified incident.",
-      "severity": "high",
-      "occurredAt": "2026-10-06T10:45:00.000Z",
-      "longitude": 39.1667,
-      "latitude": 11.1667,
-      "country": "Ethiopia",
-      "label": "Armed",
-      "url": "https://www.bankingnews.gr/diethni/articles/903557/red-sea-crisis-escalates-across-both-shores-of-bab-el-mandeb",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326537884",
-      "title": "Armed clash — Benin",
-      "description": "GDELT CAMEO 19 (armed clash) near Benin. 10 mentions, Goldstein -10. Actor: SPECIAL FORCES. News-mention event, not a verified incident.",
-      "severity": "high",
-      "occurredAt": "2026-10-06T10:45:00.000Z",
-      "longitude": 2.25,
-      "latitude": 9.5,
-      "country": "Benin",
-      "label": "Armed",
-      "url": "https://www.africanews.com/2026/10/06/benins-president-wadagni-holds-talks-with-macron-during-first-official-visit-to-france/",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326537935",
-      "title": "Armed clash — Taipei",
-      "description": "GDELT CAMEO 19 (armed clash) near Taipei, T'ai-pei, Taiwan. 10 mentions, Goldstein -10. Actor: DETAINEE. News-mention event, not a verified incident.",
-      "severity": "high",
-      "occurredAt": "2026-10-06T10:45:00.000Z",
-      "longitude": 121.532,
-      "latitude": 25.0478,
-      "country": "Taiwan",
-      "label": "Armed",
-      "url": "https://www.attitude.co.uk/news/protests-erupt-in-taipei-after-police-raid-gay-bar-536314/",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326538007",
-      "title": "Armed clash — Riyadh",
-      "description": "GDELT CAMEO 19 (armed clash) near Riyadh, Ar Riya?, Saudi Arabia. 10 mentions, Goldstein -10. Actor: REBEL. News-mention event, not a verified incident.",
-      "severity": "high",
-      "occurredAt": "2026-10-06T10:45:00.000Z",
-      "longitude": 46.7728,
-      "latitude": 24.6408,
-      "country": "Saudi Arabia",
-      "label": "Armed",
-      "url": "https://www.bankingnews.gr/diethni/articles/903550/yemen-houthis-dismantle-saudi-arabia-turkey-and-pakistan-rush-to-support-bab-el-mandeb-boiling",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326538051",
-      "title": "Armed clash — Gaza",
-      "description": "GDELT CAMEO 19 (armed clash) near Gaza, Israel (general), Israel. 10 mentions, Goldstein -10. Actor: SAUDI ARABIA. News-mention event, not a verified incident.",
-      "severity": "high",
-      "occurredAt": "2026-10-06T10:45:00.000Z",
-      "longitude": 34.3333,
-      "latitude": 31.4167,
-      "country": "Israel",
-      "label": "Armed",
-      "url": "https://www.business-standard.com/world-news/saudi-arabia-says-2-airports-hit-in-renewed-fighting-with-yemen-s-houthis-126100600730_1.html",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326533235",
-      "title": "Armed clash — India",
-      "description": "GDELT CAMEO 19 (armed clash) near India. 10 mentions, Goldstein -10. Actor: ARMED FORCES. News-mention event, not a verified incident.",
-      "severity": "high",
-      "occurredAt": "2026-10-06T10:15:00.000Z",
-      "longitude": 77,
-      "latitude": 20,
-      "country": "India",
-      "label": "Armed",
-      "url": "https://www.businesstoday.in/india/story/defence-ministry-signs-rs661-crore-contract-for-brahmos-fire-control-systems-launchers-for-navy-ships-559851-2026-10-06",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326533244",
-      "title": "Armed clash — Jordan",
-      "description": "GDELT CAMEO 19 (armed clash) near Jordan. 10 mentions, Goldstein -10. Actor: CAPTAIN. News-mention event, not a verified incident.",
-      "severity": "high",
-      "occurredAt": "2026-10-06T10:15:00.000Z",
-      "longitude": 36,
-      "latitude": 31,
-      "country": "Jordan",
-      "label": "Armed",
-      "url": "https://www.jpost.com/israel-news/article-910749",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326533531",
-      "title": "Armed clash — Khartoum",
-      "description": "GDELT CAMEO 19 (armed clash) near Khartoum, Al Khartum, Sudan. 10 mentions, Goldstein -10. Actor: REUTERS. News-mention event, not a verified incident.",
-      "severity": "high",
-      "occurredAt": "2026-10-06T10:15:00.000Z",
-      "longitude": 32.5342,
-      "latitude": 15.5881,
-      "country": "Sudan",
-      "label": "Armed",
-      "url": "https://www.al-monitor.com/originals/2026/10/us-envoy-attends-event-sudanese-army-chief-egypt",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326528790",
-      "title": "Armed clash — Minsk",
-      "description": "GDELT CAMEO 19 (armed clash) near Minsk, Belarus (general), Belarus. 10 mentions, Goldstein -10. Actor: PRESIDENT. News-mention event, not a verified incident.",
-      "severity": "high",
-      "occurredAt": "2026-10-06T09:45:00.000Z",
-      "longitude": 27.5667,
-      "latitude": 53.9,
-      "country": "Belarus",
-      "label": "Armed",
-      "url": "https://www.sb.by/en/lukashenko-on-developments-in-interests-of-defence-capability-tasks-must-be-extremely-challenging.html",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326524820",
-      "title": "Armed clash — Ben Gurion",
-      "description": "GDELT CAMEO 19 (armed clash) near Ben Gurion, HaMerkaz, Israel. 10 mentions, Goldstein -10. Actor: DUBAI. News-mention event, not a verified incident.",
-      "severity": "high",
-      "occurredAt": "2026-10-06T09:15:00.000Z",
-      "longitude": 34.8867,
-      "latitude": 32.0114,
-      "country": "Israel",
-      "label": "Armed",
-      "url": "https://www.oneindia.com/international/flydubai-cockpit-attack-israel-prepared-to-shoot-down-plane-with-150-israelis-8226041.html",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326516379",
-      "title": "Armed clash — Bondi Beach",
-      "description": "GDELT CAMEO 19 (armed clash) near Bondi Beach, New South Wales, Australia. 21 mentions, Goldstein -10. Actor: AUSTRALIAN. News-mention event, not a verified incident.",
-      "severity": "high",
-      "occurredAt": "2026-10-06T08:15:00.000Z",
-      "longitude": 151.276,
-      "latitude": -33.8902,
-      "country": "Australia",
-      "label": "Armed",
-      "url": "https://www.watoday.com.au/politics/federal/the-world-will-never-be-the-same-again-how-october-7-changed-israel-gaza-and-australia-20261006-p6137d.html",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326516506",
-      "title": "Armed clash — Gaza",
-      "description": "GDELT CAMEO 19 (armed clash) near Gaza, Israel (general), Israel. 12 mentions, Goldstein -10. Actor: AUSTRALIA. News-mention event, not a verified incident.",
-      "severity": "high",
-      "occurredAt": "2026-10-06T08:15:00.000Z",
-      "longitude": 34.3333,
-      "latitude": 31.4167,
-      "country": "Israel",
-      "label": "Armed",
-      "url": "https://www.watoday.com.au/politics/federal/the-world-will-never-be-the-same-again-how-october-7-changed-israel-gaza-and-australia-20261006-p6137d.html",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326516634",
-      "title": "Armed clash — Egypt",
-      "description": "GDELT CAMEO 19 (armed clash) near Egypt. 24 mentions, Goldstein -10. Actor: EGYPT. News-mention event, not a verified incident.",
-      "severity": "high",
-      "occurredAt": "2026-10-06T08:15:00.000Z",
-      "longitude": 30,
-      "latitude": 27,
-      "country": "Egypt",
-      "label": "Armed",
-      "url": "https://www.watoday.com.au/politics/federal/the-world-will-never-be-the-same-again-how-october-7-changed-israel-gaza-and-australia-20261006-p6137d.html",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326516932",
-      "title": "Armed clash — Saudi Arabia",
-      "description": "GDELT CAMEO 19 (armed clash) near Saudi Arabia. 10 mentions, Goldstein -10. Actor: CAPTAIN. News-mention event, not a verified incident.",
-      "severity": "high",
-      "occurredAt": "2026-10-06T08:15:00.000Z",
-      "longitude": 45,
-      "latitude": 25,
-      "country": "Saudi Arabia",
-      "label": "Armed",
-      "url": "https://www.thenationalnews.com/travel/2026/10/06/flydubai-etihad-uae-israel-flights-dubai-tel-aviv/",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326517069",
-      "title": "Armed clash — North Waziristan",
-      "description": "GDELT CAMEO 19 (armed clash) near North Waziristan, Federally Administered Tribal Areas, Pakistan. 10 mentions, Goldstein -10. Actor: INTELLIGENCE. News-mention event, not a verified incident.",
-      "severity": "high",
-      "occurredAt": "2026-10-06T08:15:00.000Z",
-      "longitude": 69.9576,
-      "latitude": 32.9509,
-      "country": "Pakistan",
-      "label": "Armed",
-      "url": "https://en.dailypakistan.com.pk/06-Oct-2026/five-terrorists-killed-in-intelligence-based-operation-in-north-waziristan",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326508274",
-      "title": "Armed clash — Kuala Lumpur",
-      "description": "GDELT CAMEO 19 (armed clash) near Kuala Lumpur, Kuala Lumpur, Malaysia. 10 mentions, Goldstein -10. Actor: MILITARY. News-mention event, not a verified incident.",
-      "severity": "high",
-      "occurredAt": "2026-10-06T07:15:00.000Z",
-      "longitude": 101.7,
-      "latitude": 3.16667,
-      "country": "Malaysia",
-      "label": "Armed",
-      "url": "https://www.straitstimes.com/asia/se-asia/myanmar-leader-to-visit-malaysia-in-next-few-days-anwar",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326509154",
-      "title": "Armed clash — Ukraine",
-      "description": "GDELT CAMEO 19 (armed clash) near Ukraine. 10 mentions, Goldstein -10. Actor: MILITARY. News-mention event, not a verified incident.",
-      "severity": "high",
-      "occurredAt": "2026-10-06T07:15:00.000Z",
-      "longitude": 32,
-      "latitude": 49,
-      "country": "Ukraine",
-      "label": "Armed",
-      "url": "https://www.eng.kavkaz-uzel.eu/articles/79156",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326509165",
-      "title": "Armed clash — Rostov",
-      "description": "GDELT CAMEO 19 (armed clash) near Rostov, Rostovskaya Oblast', Russia. 25 mentions, Goldstein -10. Actor: MILITARY. News-mention event, not a verified incident.",
-      "severity": "high",
-      "occurredAt": "2026-10-06T07:15:00.000Z",
-      "longitude": 39.7139,
-      "latitude": 47.2364,
-      "country": "Russia",
-      "label": "Armed",
-      "url": "https://www.eng.kavkaz-uzel.eu/articles/79156",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326505396",
-      "title": "Armed clash — Missoula",
-      "description": "GDELT CAMEO 19 (armed clash) near Missoula, Montana, United States. 10 mentions, Goldstein -10. Actor: MILITARY. News-mention event, not a verified incident.",
-      "severity": "high",
-      "occurredAt": "2026-10-06T06:45:00.000Z",
-      "longitude": -113.994,
-      "latitude": 46.8721,
-      "country": "United States",
-      "label": "Armed",
-      "url": "http://www.bozemandailychronicle.com/opinion/letters-to-the-editor/aaron-flint-has-earned-our-vote/article_c34351d8-e695-4dfa-ab53-6340676243a8.html",
+      "url": "https://www.dabangasudan.org/en/all-news/article/el-alamein-declaration-backs-sudan-led-political-process",
       "source": "GDELT"
     },
     {
@@ -2194,665 +2247,614 @@
       "source": "GDELT"
     },
     {
-      "id": "gdelt-1325570272",
-      "title": "Armed clash — Moscow",
-      "description": "GDELT CAMEO 19 (armed clash) near Moscow, Moskva, Russia. 10 mentions, Goldstein -10. Actor: NATO. News-mention event, not a verified incident.",
-      "severity": "high",
-      "occurredAt": "2026-09-30T06:30:00.000Z",
-      "longitude": 37.6156,
-      "latitude": 55.7522,
-      "country": "Russia",
+      "id": "gdelt-1326739030",
+      "title": "Armed clash — Islamabad",
+      "description": "GDELT CAMEO 19 (armed clash) near Islamabad, Islamabad, Pakistan. 5 mentions, Goldstein -10. News-mention event, not a verified incident.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:45:00.000Z",
+      "longitude": 73.1667,
+      "latitude": 33.7,
+      "country": "Pakistan",
       "label": "Armed",
-      "url": "https://www.express.co.uk/news/world/2253058/NATO-scrambles-jets-Russia-attacks-ww3",
+      "url": "https://pakobserver.net/fatah-4-er-pakistani-missile-that-could-push-beyond-1000-kilometers/",
       "source": "GDELT"
     },
     {
-      "id": "gdelt-1326688401",
-      "title": "Armed clash — Hilla",
-      "description": "GDELT CAMEO 19 (armed clash) near Hilla, Ha?afon, Israel. 2 mentions, Goldstein -10. News-mention event, not a verified incident.",
+      "id": "gdelt-1326739034",
+      "title": "Assault — Gaza",
+      "description": "GDELT CAMEO 18 (assault) near Gaza, Israel (general), Israel. 2 mentions, Goldstein -9.5. Actor: ISRAEL. News-mention event, not a verified incident.",
       "severity": "elevated",
-      "occurredAt": "2026-10-07T06:45:00.000Z",
-      "longitude": 35.2457,
-      "latitude": 33.0358,
+      "occurredAt": "2026-10-07T12:45:00.000Z",
+      "longitude": 34.3333,
+      "latitude": 31.4167,
       "country": "Israel",
-      "label": "Armed",
-      "url": "https://www.aol.co.uk/articles/freed-hamas-hostage-emily-hand-061422000.html",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326688454",
-      "title": "Armed clash — Afghanistan",
-      "description": "GDELT CAMEO 19 (armed clash) near Afghanistan. 4 mentions, Goldstein -10. Actor: AFGHANISTAN. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T06:45:00.000Z",
-      "longitude": 66,
-      "latitude": 33,
-      "country": "Afghanistan",
-      "label": "Armed",
-      "url": "https://kbec.com/local-news/934962",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326688586",
-      "title": "Assault — Unknown location",
-      "description": "GDELT CAMEO 18 (assault) near Unknown location. 10 mentions, Goldstein -9.5. Actor: CIVILIAN. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T06:45:00.000Z",
-      "longitude": 0,
-      "latitude": 0,
       "label": "Assault",
-      "url": "https://www.bnionline.net/en/news/four-killed-including-toddler-sagaing-airstrike-arakan-market-toll-rises-50",
+      "url": "https://plan-international.org/news/2026/10/07/gaza-broken-promises-ceasefire/",
       "source": "GDELT"
     },
     {
-      "id": "gdelt-1326688805",
-      "title": "Armed clash — France",
-      "description": "GDELT CAMEO 19 (armed clash) near France. 2 mentions, Goldstein -10. Actor: ISRAEL. News-mention event, not a verified incident.",
+      "id": "gdelt-1326739043",
+      "title": "Armed clash — China",
+      "description": "GDELT CAMEO 19 (armed clash) near China. 6 mentions, Goldstein -10. Actor: KUWAITI. News-mention event, not a verified incident.",
       "severity": "elevated",
-      "occurredAt": "2026-10-07T06:45:00.000Z",
+      "occurredAt": "2026-10-07T12:45:00.000Z",
+      "longitude": 105,
+      "latitude": 35,
+      "country": "China",
+      "label": "Armed",
+      "url": "https://www.thenationalnews.com/future/technology/2026/10/07/uaes-very-powerful-cyber-defences-can-repel-attacks-says-mistral-ai-boss/",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326739044",
+      "title": "Armed clash — France",
+      "description": "GDELT CAMEO 19 (armed clash) near France. 2 mentions, Goldstein -10. Actor: KUWAITI. News-mention event, not a verified incident.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:45:00.000Z",
       "longitude": 2,
       "latitude": 46,
       "country": "France",
       "label": "Armed",
-      "url": "https://countercurrents.org/2026/10/arabs-between-the-image-of-the-self-and-the-image-of-the-other/",
+      "url": "https://www.thenationalnews.com/future/technology/2026/10/07/uaes-very-powerful-cyber-defences-can-repel-attacks-says-mistral-ai-boss/",
       "source": "GDELT"
     },
     {
-      "id": "gdelt-1326689092",
-      "title": "Assault — Kyiv",
-      "description": "GDELT CAMEO 18 (assault) near Kyiv, Kyyiv, Misto, Ukraine. 2 mentions, Goldstein -9. Actor: RUSSIA. News-mention event, not a verified incident.",
+      "id": "gdelt-1326739094",
+      "title": "Armed clash — Kangwon",
+      "description": "GDELT CAMEO 19 (armed clash) near Kangwon, Kangwon-do, South Korea. 2 mentions, Goldstein -10. News-mention event, not a verified incident.",
       "severity": "elevated",
-      "occurredAt": "2026-10-07T06:45:00.000Z",
-      "longitude": 30.5167,
-      "latitude": 50.4333,
-      "country": "Ukraine",
-      "label": "Assault",
-      "url": "https://www.dailymail.com/news/article-16189109/Putin-marks-74th-birthday-massive-air-strike-Kyiv-city-state-fear.html",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326689093",
-      "title": "Assault — Russia",
-      "description": "GDELT CAMEO 18 (assault) near Russia. 8 mentions, Goldstein -9. Actor: RUSSIA. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T06:45:00.000Z",
-      "longitude": 100,
-      "latitude": 60,
-      "country": "Russia",
-      "label": "Assault",
-      "url": "https://www.dailymail.com/news/article-16189109/Putin-marks-74th-birthday-massive-air-strike-Kyiv-city-state-fear.html",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326689139",
-      "title": "Armed clash — Sumy Oblast",
-      "description": "GDELT CAMEO 19 (armed clash) near Sumy Oblast, Sums'ka Oblast', Ukraine. 2 mentions, Goldstein -10. Actor: UKRAINE. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T06:45:00.000Z",
-      "longitude": 34,
-      "latitude": 51,
-      "country": "Ukraine",
+      "occurredAt": "2026-10-07T12:45:00.000Z",
+      "longitude": 128.25,
+      "latitude": 37.75,
+      "country": "South Korea",
       "label": "Armed",
-      "url": "https://www.dailymail.com/news/article-16189109/Putin-marks-74th-birthday-massive-air-strike-Kyiv-city-state-fear.html",
+      "url": "https://www.ibtimes.co.uk/south-korea-medical-clinic-footage-overseas-websites-1824214",
       "source": "GDELT"
     },
     {
-      "id": "gdelt-1326689140",
+      "id": "gdelt-1326739209",
+      "title": "Armed clash — Balkan",
+      "description": "GDELT CAMEO 19 (armed clash) near Balkan, Khaskovo, Bulgaria. 2 mentions, Goldstein -10. Actor: BULGARIA. News-mention event, not a verified incident.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:45:00.000Z",
+      "longitude": 25.5667,
+      "latitude": 41.7667,
+      "country": "Bulgaria",
+      "label": "Armed",
+      "url": "http://www.bgnes.com/no-filter/bulgaria-in-the-world-press-the-black-sea-is-no-longer-a-distant-war",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326739210",
       "title": "Armed clash — Russia",
-      "description": "GDELT CAMEO 19 (armed clash) near Russia. 2 mentions, Goldstein -10. Actor: UKRAINE. News-mention event, not a verified incident.",
+      "description": "GDELT CAMEO 19 (armed clash) near Russia. 5 mentions, Goldstein -10. Actor: BULGARIAN. News-mention event, not a verified incident.",
       "severity": "elevated",
-      "occurredAt": "2026-10-07T06:45:00.000Z",
+      "occurredAt": "2026-10-07T12:45:00.000Z",
       "longitude": 100,
       "latitude": 60,
       "country": "Russia",
       "label": "Armed",
-      "url": "https://www.dailymail.com/news/article-16189109/Putin-marks-74th-birthday-massive-air-strike-Kyiv-city-state-fear.html",
+      "url": "http://www.bgnes.com/no-filter/bulgaria-in-the-world-press-the-black-sea-is-no-longer-a-distant-war",
       "source": "GDELT"
     },
     {
-      "id": "gdelt-1326685375",
-      "title": "Armed clash — Hawassa",
-      "description": "GDELT CAMEO 19 (armed clash) near Hawassa, YeDebub Biheroch Bihereseboch na Hizboch, Ethiopia. 2 mentions, Goldstein -10. News-mention event, not a verified incident.",
+      "id": "gdelt-1326739313",
+      "title": "Assault — Seoul",
+      "description": "GDELT CAMEO 18 (assault) near Seoul, Soul-t'ukpyolsi, South Korea. 5 mentions, Goldstein -9. Actor: CHRISTIANITY. News-mention event, not a verified incident.",
       "severity": "elevated",
-      "occurredAt": "2026-10-07T06:15:00.000Z",
-      "longitude": 38.4667,
-      "latitude": 7.05,
-      "country": "Ethiopia",
-      "label": "Armed",
-      "url": "https://allafrica.com/stories/202610070143.html",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326685389",
-      "title": "Armed clash — Yemen",
-      "description": "GDELT CAMEO 19 (armed clash) near Yemen. 2 mentions, Goldstein -10. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T06:15:00.000Z",
-      "longitude": 47.5,
-      "latitude": 15.5,
-      "country": "Yemen",
-      "label": "Armed",
-      "url": "https://www.irishtimes.com/world/2026/10/07/from-sympathy-to-isolation-how-israel-lost-the-worlds-support-after-october-7th/",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326685520",
-      "title": "Assault — Lahore",
-      "description": "GDELT CAMEO 18 (assault) near Lahore, Punjab, Pakistan. 10 mentions, Goldstein -9. Actor: POLICE. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T06:15:00.000Z",
-      "longitude": 74.3436,
-      "latitude": 31.5497,
-      "country": "Pakistan",
+      "occurredAt": "2026-10-07T12:45:00.000Z",
+      "longitude": 127,
+      "latitude": 37.5664,
+      "country": "South Korea",
       "label": "Assault",
-      "url": "https://www.freepressjournal.in/india/gujarat-woman-allegedly-sexually-assaulted-recorded-tied-to-tree-under-shuddhikaran-pretext-9-arrested",
+      "url": "https://aleteia.org/2017/03/02/how-korea-evangelized-itself/",
       "source": "GDELT"
     },
     {
-      "id": "gdelt-1326685538",
-      "title": "Armed clash — Kosti",
-      "description": "GDELT CAMEO 19 (armed clash) near Kosti, An Nil al Abya?, Sudan. 2 mentions, Goldstein -10. Actor: POLICE. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T06:15:00.000Z",
-      "longitude": 32.6667,
-      "latitude": 13.1667,
-      "country": "Sudan",
-      "label": "Armed",
-      "url": "https://allafrica.com/stories/202610070113.html",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326685907",
-      "title": "Assault — Gaza",
-      "description": "GDELT CAMEO 18 (assault) near Gaza, Israel (general), Israel. 6 mentions, Goldstein -10. Actor: ISRAEL. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T06:15:00.000Z",
-      "longitude": 34.3333,
-      "latitude": 31.4167,
-      "country": "Israel",
-      "label": "Assault",
-      "url": "https://www.irishtimes.com/world/2026/10/07/from-sympathy-to-isolation-how-israel-lost-the-worlds-support-after-october-7th/",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326685981",
+      "id": "gdelt-1326739804",
       "title": "Armed clash — Gaza",
-      "description": "GDELT CAMEO 19 (armed clash) near Gaza, Israel (general), Israel. 5 mentions, Goldstein -10. Actor: LEBANON. News-mention event, not a verified incident.",
+      "description": "GDELT CAMEO 19 (armed clash) near Gaza, Israel (general), Israel. 8 mentions, Goldstein -10. Actor: UNICEF. News-mention event, not a verified incident.",
       "severity": "elevated",
-      "occurredAt": "2026-10-07T06:15:00.000Z",
+      "occurredAt": "2026-10-07T12:45:00.000Z",
       "longitude": 34.3333,
       "latitude": 31.4167,
       "country": "Israel",
       "label": "Armed",
-      "url": "https://www.irishtimes.com/world/2026/10/07/from-sympathy-to-isolation-how-israel-lost-the-worlds-support-after-october-7th/",
+      "url": "https://plan-international.org/news/2026/10/07/gaza-broken-promises-ceasefire/",
       "source": "GDELT"
     },
     {
-      "id": "gdelt-1326685982",
-      "title": "Armed clash — India",
-      "description": "GDELT CAMEO 19 (armed clash) near India. 5 mentions, Goldstein -10. Actor: LIBERIA. News-mention event, not a verified incident.",
+      "id": "gdelt-1326739851",
+      "title": "Armed clash — Tehran",
+      "description": "GDELT CAMEO 19 (armed clash) near Tehran, Tehran, Iran. 4 mentions, Goldstein -10. Actor: IRAN. News-mention event, not a verified incident.",
       "severity": "elevated",
-      "occurredAt": "2026-10-07T06:15:00.000Z",
-      "longitude": 77,
-      "latitude": 20,
-      "country": "India",
-      "label": "Armed",
-      "url": "https://www.tribuneindia.com/news/world/23-indians-rescued-after-liberia-flagged-oil-tanker-attacked-off-russias-black-sea-coast/",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326685998",
-      "title": "Armed clash — Sanaa",
-      "description": "GDELT CAMEO 19 (armed clash) near Sanaa, Sana', Yemen. 4 mentions, Goldstein -10. Actor: MEDIA. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T06:15:00.000Z",
-      "longitude": 44.2067,
-      "latitude": 15.3547,
-      "country": "Yemen",
-      "label": "Armed",
-      "url": "https://www.khaama.com/two-houthi-missiles-target-aden-international-airport-in-yemen/",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326686045",
-      "title": "Assault — Iran",
-      "description": "GDELT CAMEO 18 (assault) near Iran. 5 mentions, Goldstein -10. Actor: HAMAS. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T06:15:00.000Z",
-      "longitude": 53,
-      "latitude": 32,
+      "occurredAt": "2026-10-07T12:45:00.000Z",
+      "longitude": 51.5148,
+      "latitude": 35.75,
       "country": "Iran",
-      "label": "Assault",
-      "url": "https://www.irishtimes.com/world/2026/10/07/from-sympathy-to-isolation-how-israel-lost-the-worlds-support-after-october-7th/",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326686063",
-      "title": "Armed clash — Kyiv",
-      "description": "GDELT CAMEO 19 (armed clash) near Kyiv, Kyyiv, Misto, Ukraine. 4 mentions, Goldstein -10. Actor: RUSSIA. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T06:15:00.000Z",
-      "longitude": 30.5167,
-      "latitude": 50.4333,
-      "country": "Ukraine",
       "label": "Armed",
-      "url": "https://en.tempo.co/read/2121088/cargo-ship-sinks-crew-missing-after-drone-attack-off-bulgaria",
+      "url": "https://bnn-news.com/world/white-house-defends-trump-s-ill-considered-remarks-about-los-angeles-and-san-diego-9jb5gy5",
       "source": "GDELT"
     },
     {
-      "id": "gdelt-1326686064",
-      "title": "Armed clash — Ukraine",
-      "description": "GDELT CAMEO 19 (armed clash) near Ukraine. 7 mentions, Goldstein -10. Actor: RUSSIA. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T06:15:00.000Z",
-      "longitude": 32,
-      "latitude": 49,
-      "country": "Ukraine",
-      "label": "Armed",
-      "url": "http://www.thejakartapost.com/opinion/2026/10/07/oils-new-problem-is-logistics",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326686071",
-      "title": "Armed clash — Black Sea",
-      "description": "GDELT CAMEO 19 (armed clash) near Black Sea, Oceans (general), Oceans. 2 mentions, Goldstein -10. Actor: RUSSIA. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T06:15:00.000Z",
-      "longitude": 35,
-      "latitude": 43,
-      "country": "Oceans",
-      "label": "Armed",
-      "url": "https://www.tribuneindia.com/news/world/23-indians-rescued-after-liberia-flagged-oil-tanker-attacked-off-russias-black-sea-coast/",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326686072",
-      "title": "Armed clash — Sochi",
-      "description": "GDELT CAMEO 19 (armed clash) near Sochi, Krasnodarskiy Kray, Russia. 3 mentions, Goldstein -10. Actor: RUSSIAN. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T06:15:00.000Z",
-      "longitude": 39.7257,
-      "latitude": 43.5992,
-      "country": "Russia",
-      "label": "Armed",
-      "url": "https://www.tribuneindia.com/news/world/23-indians-rescued-after-liberia-flagged-oil-tanker-attacked-off-russias-black-sea-coast/",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326686140",
-      "title": "Assault — Kyiv",
-      "description": "GDELT CAMEO 18 (assault) near Kyiv, Kyyiv, Misto, Ukraine. 8 mentions, Goldstein -9. Actor: UKRAINIAN. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T06:15:00.000Z",
-      "longitude": 30.5167,
-      "latitude": 50.4333,
-      "country": "Ukraine",
-      "label": "Assault",
-      "url": "https://news.webindia123.com/news/Articles/World/20261007/4508020.html",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326686256",
-      "title": "Assault — Venezuela",
-      "description": "GDELT CAMEO 18 (assault) near Venezuela. 2 mentions, Goldstein -9. Actor: VENEZUELA. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T06:15:00.000Z",
-      "longitude": -66,
-      "latitude": 8,
-      "country": "Venezuela",
-      "label": "Assault",
-      "url": "https://nypost.com/2026/10/07/us-news/denver-man-escapes-torture-chamber-home-directed-by-tren-de-aragua-leaders/",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326686258",
-      "title": "Assault — Colorado",
-      "description": "GDELT CAMEO 18 (assault) near Colorado, United States. 6 mentions, Goldstein -9. Actor: VENEZUELAN. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T06:15:00.000Z",
-      "longitude": -105.327,
-      "latitude": 39.0646,
-      "country": "United States",
-      "label": "Assault",
-      "url": "https://nypost.com/2026/10/07/us-news/denver-man-escapes-torture-chamber-home-directed-by-tren-de-aragua-leaders/",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326686265",
-      "title": "Armed clash — Yemen",
-      "description": "GDELT CAMEO 19 (armed clash) near Yemen. 5 mentions, Goldstein -10. Actor: YEMEN. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T06:15:00.000Z",
-      "longitude": 47.5,
-      "latitude": 15.5,
-      "country": "Yemen",
-      "label": "Armed",
-      "url": "https://english.news.cn/20261007/a33d627d1f394e728706d79541b44b69/c.html",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326686268",
-      "title": "Assault — Saudi Arabia",
-      "description": "GDELT CAMEO 18 (assault) near Saudi Arabia. 10 mentions, Goldstein -9. Actor: YEMEN. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T06:15:00.000Z",
-      "longitude": 45,
-      "latitude": 25,
-      "country": "Saudi Arabia",
-      "label": "Assault",
-      "url": "https://en.shafaqna.com/483089/oil-prices-climb-storm-saudi-tensions-supply/",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326682462",
-      "title": "Armed clash — Lebanon",
-      "description": "GDELT CAMEO 19 (armed clash) near Lebanon. 2 mentions, Goldstein -10. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T05:45:00.000Z",
-      "longitude": 35.833333,
-      "latitude": 33.833333,
-      "country": "Lebanon",
-      "label": "Armed",
-      "url": "https://www.whio.com/news/local/murder-investigation-underway-after-inmate-dies-area-jail/MSYYBOVOI5GNHHFJ765R7HY4AQ/",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326682621",
-      "title": "Armed clash — Peshawar",
-      "description": "GDELT CAMEO 19 (armed clash) near Peshawar, North-West Frontier, Pakistan. 5 mentions, Goldstein -10. Actor: SECURITY FORCE. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T05:45:00.000Z",
-      "longitude": 71.5733,
-      "latitude": 34.0078,
-      "country": "Pakistan",
-      "label": "Armed",
-      "url": "https://tribune.com.pk/story/2633356/militancy-historical-perspective",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326682908",
-      "title": "Assault — Tel Aviv",
-      "description": "GDELT CAMEO 18 (assault) near Tel Aviv, Tel Aviv, Israel. 10 mentions, Goldstein -9. Actor: TEL AVIV. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T05:45:00.000Z",
-      "longitude": 34.7667,
-      "latitude": 32.0667,
-      "country": "Israel",
-      "label": "Assault",
-      "url": "https://cyprus-mail.com/2026/10/07/israel-marks-three-years-since-october-7-attack-as-election-looms",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326682921",
-      "title": "Armed clash — Syria",
-      "description": "GDELT CAMEO 19 (armed clash) near Syria. 4 mentions, Goldstein -10. Actor: ISRAEL. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T05:45:00.000Z",
-      "longitude": 38,
-      "latitude": 35,
-      "country": "Syria",
-      "label": "Armed",
-      "url": "https://krmg.com/2026/10/07/netanyahu-and-his-opponents-are-putting-oct-7-at-the-heart-of-israels-elections/",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326683097",
-      "title": "Armed clash — Turkey",
-      "description": "GDELT CAMEO 19 (armed clash) near Turkey. 6 mentions, Goldstein -10. Actor: PAKISTANI. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T05:45:00.000Z",
-      "longitude": 34.911546,
-      "latitude": 39.059012,
-      "country": "Turkey",
-      "label": "Armed",
-      "url": "https://tribune.com.pk/story/2633352/makkah-pact-in-action",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326683098",
-      "title": "Armed clash — Yemen",
-      "description": "GDELT CAMEO 19 (armed clash) near Yemen. 4 mentions, Goldstein -10. Actor: PAKISTANI. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T05:45:00.000Z",
-      "longitude": 47.5,
-      "latitude": 15.5,
-      "country": "Yemen",
-      "label": "Armed",
-      "url": "https://tribune.com.pk/story/2633352/makkah-pact-in-action",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326683116",
-      "title": "Armed clash — Salfit",
-      "description": "GDELT CAMEO 19 (armed clash) near Salfit, West Bank (general), West Bank. 2 mentions, Goldstein -10. Actor: WEST BANK. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T05:45:00.000Z",
-      "longitude": 35.1808,
-      "latitude": 32.0837,
-      "country": "West Bank",
-      "label": "Armed",
-      "url": "https://sundayworld.co.za/politics/israel-warns-of-full-scale-offensive-against-palestinian-authority/",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326683117",
+      "id": "gdelt-1326739874",
       "title": "Armed clash — Jerusalem",
-      "description": "GDELT CAMEO 19 (armed clash) near Jerusalem, Israel (general), Israel. 4 mentions, Goldstein -10. Actor: WEST BANK. News-mention event, not a verified incident.",
+      "description": "GDELT CAMEO 19 (armed clash) near Jerusalem, Israel (general), Israel. 7 mentions, Goldstein -10. Actor: ISRAELI. News-mention event, not a verified incident.",
       "severity": "elevated",
-      "occurredAt": "2026-10-07T05:45:00.000Z",
+      "occurredAt": "2026-10-07T12:45:00.000Z",
       "longitude": 35.2333,
       "latitude": 31.7667,
       "country": "Israel",
       "label": "Armed",
-      "url": "https://sundayworld.co.za/politics/israel-warns-of-full-scale-offensive-against-palestinian-authority/",
+      "url": "https://www.thenationalnews.com/news/mena/2026/10/07/cheers-for-hardliners-and-jeers-for-palestinians-on-israels-campaign-trail/",
       "source": "GDELT"
     },
     {
-      "id": "gdelt-1326683122",
+      "id": "gdelt-1326739877",
       "title": "Assault — Gaza",
-      "description": "GDELT CAMEO 18 (assault) near Gaza, Israel (general), Israel. 3 mentions, Goldstein -9. Actor: GAZA. News-mention event, not a verified incident.",
+      "description": "GDELT CAMEO 18 (assault) near Gaza, Israel (general), Israel. 4 mentions, Goldstein -9. Actor: ISRAELI. News-mention event, not a verified incident.",
       "severity": "elevated",
-      "occurredAt": "2026-10-07T05:45:00.000Z",
+      "occurredAt": "2026-10-07T12:45:00.000Z",
       "longitude": 34.3333,
       "latitude": 31.4167,
       "country": "Israel",
       "label": "Assault",
-      "url": "https://cyprus-mail.com/2026/10/07/israel-marks-three-years-since-october-7-attack-as-election-looms",
+      "url": "https://www.thenationalnews.com/news/mena/2026/10/07/cheers-for-hardliners-and-jeers-for-palestinians-on-israels-campaign-trail/",
       "source": "GDELT"
     },
     {
-      "id": "gdelt-1326683124",
-      "title": "Armed clash — Gaza",
-      "description": "GDELT CAMEO 19 (armed clash) near Gaza, Israel (general), Israel. 2 mentions, Goldstein -10. Actor: HAMAS. News-mention event, not a verified incident.",
+      "id": "gdelt-1326739897",
+      "title": "Assault — Tehran",
+      "description": "GDELT CAMEO 18 (assault) near Tehran, Tehran, Iran. 8 mentions, Goldstein -9. Actor: JEWISH. News-mention event, not a verified incident.",
       "severity": "elevated",
-      "occurredAt": "2026-10-07T05:45:00.000Z",
+      "occurredAt": "2026-10-07T12:45:00.000Z",
+      "longitude": 51.5148,
+      "latitude": 35.75,
+      "country": "Iran",
+      "label": "Assault",
+      "url": "https://www.thenationalnews.com/news/uk/2026/10/07/ambassador-meets-british-couple-detained-in-irans-evin-prison-after-months-without-contact/",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326739898",
+      "title": "Assault — United Kingdom",
+      "description": "GDELT CAMEO 18 (assault) near United Kingdom. 2 mentions, Goldstein -9. Actor: JEWISH. News-mention event, not a verified incident.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:45:00.000Z",
+      "longitude": -4,
+      "latitude": 54,
+      "country": "United Kingdom",
+      "label": "Assault",
+      "url": "https://www.thenationalnews.com/news/uk/2026/10/07/ambassador-meets-british-couple-detained-in-irans-evin-prison-after-months-without-contact/",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326740017",
+      "title": "Armed clash — Havana",
+      "description": "GDELT CAMEO 19 (armed clash) near Havana, Ciudad de La Habana, Cuba. 3 mentions, Goldstein -10. Actor: BATTALION. News-mention event, not a verified incident.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:45:00.000Z",
+      "longitude": -82.3642,
+      "latitude": 23.1319,
+      "country": "Cuba",
+      "label": "Armed",
+      "url": "https://www.cubaheadlines.com/articles/342158",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326740020",
+      "title": "Armed clash — Puerto Rico",
+      "description": "GDELT CAMEO 19 (armed clash) near Puerto Rico. 2 mentions, Goldstein -10. Actor: BATTALION. News-mention event, not a verified incident.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:45:00.000Z",
+      "longitude": -66.4838,
+      "latitude": 18.2359,
+      "country": "Puerto Rico",
+      "label": "Armed",
+      "url": "https://www.cubaheadlines.com/articles/342158",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326740030",
+      "title": "Assault — Paris",
+      "description": "GDELT CAMEO 18 (assault) near Paris, France (general), France. 5 mentions, Goldstein -9.5. Actor: SECURITY PERSONNEL. News-mention event, not a verified incident.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:45:00.000Z",
+      "longitude": 2.33333,
+      "latitude": 48.8667,
+      "country": "France",
+      "label": "Assault",
+      "url": "https://pakobserver.net/france-shuts-nearly-900-schools-amid-violent-protests-over-poor-facilities/",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326740046",
+      "title": "Armed clash — Borno State",
+      "description": "GDELT CAMEO 19 (armed clash) near Borno State, Borno, Nigeria. 5 mentions, Goldstein -10. Actor: SPECIAL FORCES. News-mention event, not a verified incident.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:45:00.000Z",
+      "longitude": 13,
+      "latitude": 11.5,
+      "country": "Nigeria",
+      "label": "Armed",
+      "url": "http://silverbirdtv.com/army-foil-multi-flank-iswap-attack-in-borno-kill-over-25-terrorists/",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326740129",
+      "title": "Assault — United States",
+      "description": "GDELT CAMEO 18 (assault) near United States. 10 mentions, Goldstein -9. Actor: HAMAS. News-mention event, not a verified incident.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:45:00.000Z",
+      "longitude": -98.5795,
+      "latitude": 39.828175,
+      "country": "United States",
+      "label": "Assault",
+      "url": "https://www.foxnews.com/live-news/us-iran-war-vance-talks-tehran-nuclear-program-10-07-26",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326740223",
+      "title": "Armed clash — Tigray",
+      "description": "GDELT CAMEO 19 (armed clash) near Tigray, Tigray, Ethiopia. 4 mentions, Goldstein -10. Actor: MILITIA. News-mention event, not a verified incident.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:45:00.000Z",
+      "longitude": 39.5,
+      "latitude": 13.5,
+      "country": "Ethiopia",
+      "label": "Armed",
+      "url": "https://www.riotimesonline.com/tigray-conflict-and-region-guide-2026/",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326734238",
+      "title": "Assault — Pakistan",
+      "description": "GDELT CAMEO 18 (assault) near Pakistan. 7 mentions, Goldstein -10. News-mention event, not a verified incident.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
+      "longitude": 70,
+      "latitude": 30,
+      "country": "Pakistan",
+      "label": "Assault",
+      "url": "https://www.freepressjournal.in/india/fpj-quick-take-at-5-pm-rahul-gandhis-100-firs-remark-to-indianoil-officer-stabbed-to-death-in-maharashtra-your-daily-evening-guide-to-news-headlines-7-october-2026",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326734271",
+      "title": "Armed clash — Ratan",
+      "description": "GDELT CAMEO 19 (armed clash) near Ratan, Punjab, Pakistan. 4 mentions, Goldstein -10. News-mention event, not a verified incident.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
+      "longitude": 72.8484,
+      "latitude": 31.2809,
+      "country": "Pakistan",
+      "label": "Armed",
+      "url": "https://bdnews24.com/bangladesh/hraauttvjx",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326734272",
+      "title": "Armed clash — Shahjahan",
+      "description": "GDELT CAMEO 19 (armed clash) near Shahjahan, North-West Frontier, Pakistan. 2 mentions, Goldstein -10. News-mention event, not a verified incident.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
+      "longitude": 70.573,
+      "latitude": 32.9614,
+      "country": "Pakistan",
+      "label": "Armed",
+      "url": "https://bdnews24.com/bangladesh/hraauttvjx",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326734609",
+      "title": "Armed clash — Gaza",
+      "description": "GDELT CAMEO 19 (armed clash) near Gaza, Israel (general), Israel. 2 mentions, Goldstein -10. Actor: STUDENT. News-mention event, not a verified incident.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
       "longitude": 34.3333,
       "latitude": 31.4167,
       "country": "Israel",
       "label": "Armed",
-      "url": "https://krdo.com/news/national-world/cnn-world/2026/10/06/israel-marks-three-years-since-october-7-attack-with-memorials-and-protests/",
+      "url": "https://www.asianimage.co.uk/news/26614026.met-imposes-conditions-pro-palestine-student-march/",
       "source": "GDELT"
     },
     {
-      "id": "gdelt-1326683156",
+      "id": "gdelt-1326734891",
       "title": "Armed clash — Gaza",
-      "description": "GDELT CAMEO 19 (armed clash) near Gaza, Israel (general), Israel. 2 mentions, Goldstein -10. Actor: MILITANT. News-mention event, not a verified incident.",
+      "description": "GDELT CAMEO 19 (armed clash) near Gaza, Israel (general), Israel. 5 mentions, Goldstein -10. Actor: MINIST OF HEALTH. News-mention event, not a verified incident.",
       "severity": "elevated",
-      "occurredAt": "2026-10-07T05:45:00.000Z",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
       "longitude": 34.3333,
       "latitude": 31.4167,
       "country": "Israel",
       "label": "Armed",
-      "url": "https://cyprus-mail.com/2026/10/07/israel-marks-three-years-since-october-7-attack-as-election-looms",
+      "url": "https://www.outlookindia.com/international/three-years-after-october-7-gaza-ceasefire-fails-to-end-israel-hamas-violence",
       "source": "GDELT"
     },
     {
-      "id": "gdelt-1326679383",
-      "title": "Assault — Israel",
-      "description": "GDELT CAMEO 18 (assault) near Israel. 10 mentions, Goldstein -9. Actor: AUSTRALIA. News-mention event, not a verified incident.",
+      "id": "gdelt-1326735018",
+      "title": "Assault — Fort Hood",
+      "description": "GDELT CAMEO 18 (assault) near Fort Hood, Texas, United States. 2 mentions, Goldstein -9. Actor: IRAQ. News-mention event, not a verified incident.",
       "severity": "elevated",
-      "occurredAt": "2026-10-07T05:15:00.000Z",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
+      "longitude": -97.7091,
+      "latitude": 31.2548,
+      "country": "United States",
+      "label": "Assault",
+      "url": "https://townhall.com/news/mattvespa/2026/10/07/nidal-hasans-execution-date-has-been-set-n2684238",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326735019",
+      "title": "Assault — Iraq",
+      "description": "GDELT CAMEO 18 (assault) near Iraq. 2 mentions, Goldstein -9. Actor: IRAQ. News-mention event, not a verified incident.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
+      "longitude": 44,
+      "latitude": 33,
+      "country": "Iraq",
+      "label": "Assault",
+      "url": "https://townhall.com/news/mattvespa/2026/10/07/nidal-hasans-execution-date-has-been-set-n2684238",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326735020",
+      "title": "Armed clash — Fort Hood",
+      "description": "GDELT CAMEO 19 (armed clash) near Fort Hood, Texas, United States. 4 mentions, Goldstein -10. Actor: IRAQ. News-mention event, not a verified incident.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
+      "longitude": -97.7091,
+      "latitude": 31.2548,
+      "country": "United States",
+      "label": "Armed",
+      "url": "https://townhall.com/news/mattvespa/2026/10/07/nidal-hasans-execution-date-has-been-set-n2684238",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326735040",
+      "title": "Assault — Gaza",
+      "description": "GDELT CAMEO 18 (assault) near Gaza, Israel (general), Israel. 4 mentions, Goldstein -9. Actor: ISRAEL. News-mention event, not a verified incident.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
+      "longitude": 34.3333,
+      "latitude": 31.4167,
+      "country": "Israel",
+      "label": "Assault",
+      "url": "https://townhall.com/news/amy-curtis/2026/10/07/gaza-n2684231",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326735041",
+      "title": "Armed clash — Israel",
+      "description": "GDELT CAMEO 19 (armed clash) near Israel. 2 mentions, Goldstein -10. Actor: ISRAEL. News-mention event, not a verified incident.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
       "longitude": 34.75,
       "latitude": 31.5,
       "country": "Israel",
-      "label": "Assault",
-      "url": "https://www.abc.net.au/listen/programs/worldtoday/hundreds-attend-bondi-october-7-vigil/107238792",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326679599",
-      "title": "Assault — Afghanistan",
-      "description": "GDELT CAMEO 18 (assault) near Afghanistan. 6 mentions, Goldstein -9. Actor: STUDENT. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T05:15:00.000Z",
-      "longitude": 66,
-      "latitude": 33,
-      "country": "Afghanistan",
-      "label": "Assault",
-      "url": "https://arynews.tv/afghan-nationals-jailed-for-raping-teenage-girl-in-uks-bristol",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326679617",
-      "title": "Armed clash — Riyadh",
-      "description": "GDELT CAMEO 19 (armed clash) near Riyadh, Ar Riya?, Saudi Arabia. 3 mentions, Goldstein -10. Actor: CAIRO. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T05:15:00.000Z",
-      "longitude": 46.7728,
-      "latitude": 24.6408,
-      "country": "Saudi Arabia",
       "label": "Armed",
-      "url": "https://cyprus-mail.com/2026/10/07/houthis-attack-aden-airport-as-saudi-arabia-intercepts-missiles",
+      "url": "https://www.azernews.az/region/265119.html",
       "source": "GDELT"
     },
     {
-      "id": "gdelt-1326679648",
-      "title": "Armed clash — Moscow",
-      "description": "GDELT CAMEO 19 (armed clash) near Moscow, Moskva, Russia. 8 mentions, Goldstein -10. Actor: FRANCE. News-mention event, not a verified incident.",
+      "id": "gdelt-1326735049",
+      "title": "Armed clash — Gaza",
+      "description": "GDELT CAMEO 19 (armed clash) near Gaza, Israel (general), Israel. 4 mentions, Goldstein -10. Actor: ISRAELI. News-mention event, not a verified incident.",
       "severity": "elevated",
-      "occurredAt": "2026-10-07T05:15:00.000Z",
-      "longitude": 37.6156,
-      "latitude": 55.7522,
-      "country": "Russia",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
+      "longitude": 34.3333,
+      "latitude": 31.4167,
+      "country": "Israel",
       "label": "Armed",
-      "url": "https://www.armstrongeconomics.com/world-news/war/the-war-cycle-is-turning-up/",
+      "url": "https://www.middleeastmonitor.com/20261007-three-years-of-genocide-how-americas-israel-first-media-filtered-out-the-truth/",
       "source": "GDELT"
     },
     {
-      "id": "gdelt-1326679649",
+      "id": "gdelt-1326735052",
       "title": "Armed clash — France",
-      "description": "GDELT CAMEO 19 (armed clash) near France. 2 mentions, Goldstein -10. Actor: FRANCE. News-mention event, not a verified incident.",
+      "description": "GDELT CAMEO 19 (armed clash) near France. 2 mentions, Goldstein -9.5. Actor: ISRAEL. News-mention event, not a verified incident.",
       "severity": "elevated",
-      "occurredAt": "2026-10-07T05:15:00.000Z",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
       "longitude": 2,
       "latitude": 46,
       "country": "France",
       "label": "Armed",
-      "url": "https://www.armstrongeconomics.com/world-news/war/the-war-cycle-is-turning-up/",
+      "url": "https://www.americanthinker.com/articles/2026/10/french-riots-islamic-terrorism-and-civil-war/",
       "source": "GDELT"
     },
     {
-      "id": "gdelt-1326679669",
-      "title": "Assault — Gaza",
-      "description": "GDELT CAMEO 18 (assault) near Gaza, Israel (general), Israel. 2 mentions, Goldstein -9. Actor: GREAT BRITAIN. News-mention event, not a verified incident.",
+      "id": "gdelt-1326735053",
+      "title": "Armed clash — Israel",
+      "description": "GDELT CAMEO 19 (armed clash) near Israel. 8 mentions, Goldstein -9.5. Actor: ISRAEL. News-mention event, not a verified incident.",
       "severity": "elevated",
-      "occurredAt": "2026-10-07T05:15:00.000Z",
-      "longitude": 34.3333,
-      "latitude": 31.4167,
+      "occurredAt": "2026-10-07T12:15:00.000Z",
+      "longitude": 34.75,
+      "latitude": 31.5,
       "country": "Israel",
-      "label": "Assault",
-      "url": "https://www.dailygazette.com/leader_herald/opinion/letters-for-october-7/article_db45c31a-7cc4-4968-af49-b1ff04c7720f.html",
+      "label": "Armed",
+      "url": "https://www.americanthinker.com/articles/2026/10/french-riots-islamic-terrorism-and-civil-war/",
       "source": "GDELT"
     },
     {
-      "id": "gdelt-1326679673",
+      "id": "gdelt-1326735059",
       "title": "Armed clash — Gaza",
-      "description": "GDELT CAMEO 19 (armed clash) near Gaza, Israel (general), Israel. 2 mentions, Goldstein -10. Actor: GREAT BRITAIN. News-mention event, not a verified incident.",
+      "description": "GDELT CAMEO 19 (armed clash) near Gaza, Israel (general), Israel. 3 mentions, Goldstein -10. Actor: ISRAEL. News-mention event, not a verified incident.",
       "severity": "elevated",
-      "occurredAt": "2026-10-07T05:15:00.000Z",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
       "longitude": 34.3333,
       "latitude": 31.4167,
       "country": "Israel",
       "label": "Armed",
-      "url": "https://www.dailygazette.com/leader_herald/opinion/letters-for-october-7/article_db45c31a-7cc4-4968-af49-b1ff04c7720f.html",
+      "url": "https://www.hindustantimes.com/world-news/three-years-of-october-7-hamas-attack-was-israel-alerted-by-a-country-days-before-101791368969698.html",
       "source": "GDELT"
     },
     {
-      "id": "gdelt-1326679838",
-      "title": "Armed clash — San Diego",
-      "description": "GDELT CAMEO 19 (armed clash) near San Diego, California, United States. 3 mentions, Goldstein -10. Actor: IRAN. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T05:15:00.000Z",
-      "longitude": -117.157,
-      "latitude": 32.7153,
-      "country": "United States",
-      "label": "Armed",
-      "url": "https://www.channelnewsasia.com/world/trump-iran-bomb-los-angeles-san-diego-democrat-cities-remark-6437196",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326679853",
-      "title": "Armed clash — Belgium",
-      "description": "GDELT CAMEO 19 (armed clash) near Belgium. 7 mentions, Goldstein -10. Actor: ISRAELI. News-mention event, not a verified incident.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T05:15:00.000Z",
-      "longitude": 4,
-      "latitude": 50.833333,
-      "country": "Belgium",
-      "label": "Armed",
-      "url": "https://www.euronews.com/2026/10/07/celebrating-the-october-7-massacre-is-inhumanity-not-solidarity",
-      "source": "GDELT"
-    },
-    {
-      "id": "gdelt-1326680053",
+      "id": "gdelt-1326735071",
       "title": "Assault — Gaza",
-      "description": "GDELT CAMEO 18 (assault) near Gaza, Israel (general), Israel. 2 mentions, Goldstein -9. Actor: PALESTINIAN. News-mention event, not a verified incident.",
+      "description": "GDELT CAMEO 18 (assault) near Gaza, Israel (general), Israel. 4 mentions, Goldstein -9. Actor: ISRAEL. News-mention event, not a verified incident.",
       "severity": "elevated",
-      "occurredAt": "2026-10-07T05:15:00.000Z",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
       "longitude": 34.3333,
       "latitude": 31.4167,
       "country": "Israel",
       "label": "Assault",
-      "url": "https://www.euronews.com/2026/10/07/celebrating-the-october-7-massacre-is-inhumanity-not-solidarity",
+      "url": "https://www.middleeastmonitor.com/20261007-susan-abulhawa-wins-fight-to-restore-censored-oxford-union-speech-on-israel-apartheid/",
       "source": "GDELT"
     },
     {
-      "id": "gdelt-1326680062",
-      "title": "Armed clash — Gaza Strip",
-      "description": "GDELT CAMEO 19 (armed clash) near Gaza Strip. 3 mentions, Goldstein -10. Actor: HAMAS. News-mention event, not a verified incident.",
+      "id": "gdelt-1326735076",
+      "title": "Armed clash — Jamaica",
+      "description": "GDELT CAMEO 19 (armed clash) near Jamaica. 5 mentions, Goldstein -10. Actor: JAMAICA. News-mention event, not a verified incident.",
       "severity": "elevated",
-      "occurredAt": "2026-10-07T05:15:00.000Z",
-      "longitude": 34.373398,
-      "latitude": 31.425074,
-      "country": "Gaza Strip",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
+      "longitude": -77.5,
+      "latitude": 18.25,
+      "country": "Jamaica",
       "label": "Armed",
-      "url": "https://cyprusnews.eu/cnn-kosmos/israel-marks-three-years-since-october-7-attack-with-memorials-and-protests/",
+      "url": "https://jamaica-gleaner.com/article/news/20261007/former-air-j-plane-bombed-iran-pilot-recalls-good-times-flying-mike-papa",
       "source": "GDELT"
     },
     {
-      "id": "gdelt-1326680075",
-      "title": "Armed clash — Kyiv",
-      "description": "GDELT CAMEO 19 (armed clash) near Kyiv, Kyyiv, Misto, Ukraine. 2 mentions, Goldstein -10. Actor: RUSSIAN. News-mention event, not a verified incident.",
+      "id": "gdelt-1326735081",
+      "title": "Armed clash — Ramallah",
+      "description": "GDELT CAMEO 19 (armed clash) near Ramallah, West Bank (general), West Bank. 3 mentions, Goldstein -10. Actor: JEWISH. News-mention event, not a verified incident.",
       "severity": "elevated",
-      "occurredAt": "2026-10-07T05:15:00.000Z",
-      "longitude": 30.5167,
-      "latitude": 50.4333,
+      "occurredAt": "2026-10-07T12:15:00.000Z",
+      "longitude": 35.1955,
+      "latitude": 31.9026,
+      "country": "West Bank",
+      "label": "Armed",
+      "url": "https://www.middleeastmonitor.com/20261007-three-years-of-genocide-how-americas-israel-first-media-filtered-out-the-truth/",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326735293",
+      "title": "Assault — Turkey",
+      "description": "GDELT CAMEO 18 (assault) near Turkey. 2 mentions, Goldstein -9. Actor: SPECIAL FORCES. News-mention event, not a verified incident.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
+      "longitude": 34.911546,
+      "latitude": 39.059012,
+      "country": "Turkey",
+      "label": "Assault",
+      "url": "https://www.irishtimes.com/world/europe/2026/10/07/the-astonishing-fall-of-a-german-spymaster/",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326735295",
+      "title": "Armed clash — Gaza",
+      "description": "GDELT CAMEO 19 (armed clash) near Gaza, Israel (general), Israel. 5 mentions, Goldstein -10. Actor: MILITARY. News-mention event, not a verified incident.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
+      "longitude": 34.3333,
+      "latitude": 31.4167,
+      "country": "Israel",
+      "label": "Armed",
+      "url": "https://townhall.com/news/amy-curtis/2026/10/07/gaza-n2684231",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326735489",
+      "title": "Armed clash — Moscow",
+      "description": "GDELT CAMEO 19 (armed clash) near Moscow, Moskva, Russia. 2 mentions, Goldstein -10. Actor: RUSSIA. News-mention event, not a verified incident.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
+      "longitude": 37.6156,
+      "latitude": 55.7522,
+      "country": "Russia",
+      "label": "Armed",
+      "url": "https://www.rferl.org/a/politkovskaya-russia-murder-anniversary/33872006.html",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326735494",
+      "title": "Armed clash — Samara",
+      "description": "GDELT CAMEO 19 (armed clash) near Samara, Samarskaya Oblast', Russia. 2 mentions, Goldstein -10. Actor: RUSSIA. News-mention event, not a verified incident.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
+      "longitude": 50.15,
+      "latitude": 53.2,
+      "country": "Russia",
+      "label": "Armed",
+      "url": "https://nypost.com/2026/10/07/world-news/russian-strikes-on-ukrainian-cities-kill-at-least-19-in-a-major-attack-that-kyiv-saw-coming/",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326735497",
+      "title": "Armed clash — Moscow",
+      "description": "GDELT CAMEO 19 (armed clash) near Moscow, Moskva, Russia. 4 mentions, Goldstein -10. Actor: RUSSIA. News-mention event, not a verified incident.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
+      "longitude": 37.6156,
+      "latitude": 55.7522,
+      "country": "Russia",
+      "label": "Armed",
+      "url": "https://www.bankingnews.gr/diethni/articles/903794/ukraine-flamingo-missile-factories-turned-to-ash-by-rain-of-70-missiles-russians-dismantle-kyiv-war-enters-new-phase",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326735505",
+      "title": "Armed clash — Chernihiv",
+      "description": "GDELT CAMEO 19 (armed clash) near Chernihiv, Chernihivs'ka Oblast', Ukraine. 4 mentions, Goldstein -10. Actor: RUSSIA. News-mention event, not a verified incident.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
+      "longitude": 31.2849,
+      "latitude": 51.5055,
       "country": "Ukraine",
       "label": "Armed",
-      "url": "https://www.theguardian.com/world/2026/oct/07/ukraine-drone-hits-oil-tanker-russia-sochi",
+      "url": "https://www.bankingnews.gr/diethni/articles/903794/ukraine-flamingo-missile-factories-turned-to-ash-by-rain-of-70-missiles-russians-dismantle-kyiv-war-enters-new-phase",
       "source": "GDELT"
     },
     {
-      "id": "gdelt-1326680086",
-      "title": "Armed clash — Dnipro",
-      "description": "GDELT CAMEO 19 (armed clash) near Dnipro, Ukraine (general), Ukraine. 2 mentions, Goldstein -10. Actor: RUSSIA. News-mention event, not a verified incident.",
+      "id": "gdelt-1326735521",
+      "title": "Armed clash — Darfur",
+      "description": "GDELT CAMEO 19 (armed clash) near Darfur, Gharb Darfur, Sudan. 6 mentions, Goldstein -9.5. Actor: SUDANESE. News-mention event, not a verified incident.",
       "severity": "elevated",
-      "occurredAt": "2026-10-07T05:15:00.000Z",
-      "longitude": 32.3086,
-      "latitude": 46.4975,
+      "occurredAt": "2026-10-07T12:15:00.000Z",
+      "longitude": 23.5,
+      "latitude": 13.5,
+      "country": "Sudan",
+      "label": "Armed",
+      "url": "https://kenya-today.com/report-sudan-army-chief-rejects-talks-with-rsf-pledges-to-retake-all-rebelheld-areas-7926/",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326735527",
+      "title": "Armed clash — Wunkur",
+      "description": "GDELT CAMEO 19 (armed clash) near Wunkur, Wilayat A`ali an Nil, South Sudan. 4 mentions, Goldstein -10. Actor: SOUTH SUDAN. News-mention event, not a verified incident.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
+      "longitude": 30.781,
+      "latitude": 9.69103,
+      "country": "South Sudan",
+      "label": "Armed",
+      "url": "https://www.radiotamazuj.org/en/news/article/sspdf-says-13-spla-io-fighters-killed-in-upper-nile-clashes",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326735558",
+      "title": "Armed clash — Kremenchuk",
+      "description": "GDELT CAMEO 19 (armed clash) near Kremenchuk, Poltavs'ka Oblast', Ukraine. 2 mentions, Goldstein -10. Actor: UKRAINE. News-mention event, not a verified incident.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
+      "longitude": 33.4275,
+      "latitude": 49.072,
       "country": "Ukraine",
       "label": "Armed",
-      "url": "https://cyprus-mail.com/2026/10/07/fresh-wave-of-russian-attacks-on-ukraine-kills-two-in-kyiv",
+      "url": "https://www.bankingnews.gr/diethni/articles/903794/ukraine-flamingo-missile-factories-turned-to-ash-by-rain-of-70-missiles-russians-dismantle-kyiv-war-enters-new-phase",
+      "source": "GDELT"
+    },
+    {
+      "id": "gdelt-1326735559",
+      "title": "Armed clash — Odesa",
+      "description": "GDELT CAMEO 19 (armed clash) near Odesa, Odes'ka Oblast, Ukraine. 2 mentions, Goldstein -10. Actor: UKRAINE. News-mention event, not a verified incident.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
+      "longitude": 30.7386,
+      "latitude": 46.4639,
+      "country": "Ukraine",
+      "label": "Armed",
+      "url": "https://www.bankingnews.gr/diethni/articles/903794/ukraine-flamingo-missile-factories-turned-to-ash-by-rain-of-70-missiles-russians-dismantle-kyiv-war-enters-new-phase",
       "source": "GDELT"
     }
   ],
@@ -2860,20 +2862,20 @@
     {
       "id": "gdelt-cluster-0",
       "title": "Conflict cluster — Israel",
-      "description": "26 GDELT conflict mentions clustered in this box. Density overlay, not a front line.",
+      "description": "30 GDELT conflict mentions clustered in this box. Density overlay, not a front line.",
       "severity": "elevated",
-      "occurredAt": "2026-10-07T06:15:00.000Z",
+      "occurredAt": "2026-10-07T12:45:00.000Z",
       "country": "Israel",
       "source": "GDELT",
       "rings": [
         [
           [
             33.6063,
-            32.7667
+            32.2
           ],
           [
             35.4863,
-            32.7667
+            32.2
           ],
           [
             35.4863,
@@ -2885,18 +2887,18 @@
           ],
           [
             33.6063,
-            32.7667
+            32.2
           ]
         ]
       ]
     },
     {
       "id": "gdelt-cluster-1",
-      "title": "Conflict cluster — West Bank",
-      "description": "20 GDELT conflict mentions clustered in this box. Density overlay, not a front line.",
+      "title": "Conflict cluster — Israel",
+      "description": "17 GDELT conflict mentions clustered in this box. Density overlay, not a front line.",
       "severity": "elevated",
-      "occurredAt": "2026-10-07T05:45:00.000Z",
-      "country": "West Bank",
+      "occurredAt": "2026-10-07T12:45:00.000Z",
+      "country": "Israel",
       "source": "GDELT",
       "rings": [
         [
@@ -2905,16 +2907,16 @@
             32.9174
           ],
           [
-            36.7,
+            36.2575,
             32.9174
           ],
           [
-            36.7,
-            30.3
+            36.2575,
+            30.8333
           ],
           [
             34.1117,
-            30.3
+            30.8333
           ],
           [
             34.1117,
@@ -2925,76 +2927,43 @@
     },
     {
       "id": "gdelt-cluster-2",
-      "title": "Conflict cluster — Ukraine",
-      "description": "8 GDELT conflict mentions clustered in this box. Density overlay, not a front line.",
-      "severity": "high",
-      "occurredAt": "2026-10-07T06:45:00.000Z",
-      "country": "Ukraine",
+      "title": "Conflict cluster — Iran",
+      "description": "9 GDELT conflict mentions clustered in this box. Density overlay, not a front line.",
+      "severity": "elevated",
+      "occurredAt": "2026-10-07T12:45:00.000Z",
+      "country": "Iran",
       "source": "GDELT",
       "rings": [
         [
           [
-            29.8167,
-            51.133300000000006
+            50.8148,
+            36.45
           ],
           [
-            31.2167,
-            51.133300000000006
+            52.214800000000004,
+            36.45
           ],
           [
-            31.2167,
-            49.7333
+            52.214800000000004,
+            35.05
           ],
           [
-            29.8167,
-            49.7333
+            50.8148,
+            35.05
           ],
           [
-            29.8167,
-            51.133300000000006
+            50.8148,
+            36.45
           ]
         ]
       ]
     },
     {
       "id": "gdelt-cluster-3",
-      "title": "Conflict cluster — Yemen",
-      "description": "7 GDELT conflict mentions clustered in this box. Density overlay, not a front line.",
-      "severity": "high",
-      "occurredAt": "2026-10-07T06:15:00.000Z",
-      "country": "Yemen",
-      "source": "GDELT",
-      "rings": [
-        [
-          [
-            46.8,
-            16.2
-          ],
-          [
-            48.2,
-            16.2
-          ],
-          [
-            48.2,
-            14.8
-          ],
-          [
-            46.8,
-            14.8
-          ],
-          [
-            46.8,
-            16.2
-          ]
-        ]
-      ]
-    },
-    {
-      "id": "gdelt-cluster-4",
       "title": "Conflict cluster — Iran",
       "description": "7 GDELT conflict mentions clustered in this box. Density overlay, not a front line.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T06:15:00.000Z",
+      "severity": "high",
+      "occurredAt": "2026-10-07T12:45:00.000Z",
       "country": "Iran",
       "source": "GDELT",
       "rings": [
@@ -3023,76 +2992,44 @@
       ]
     },
     {
+      "id": "gdelt-cluster-4",
+      "title": "Conflict cluster — Russia",
+      "description": "7 GDELT conflict mentions clustered in this box. Density overlay, not a front line.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
+      "country": "Russia",
+      "source": "GDELT",
+      "rings": [
+        [
+          [
+            36.9156,
+            56.452200000000005
+          ],
+          [
+            38.3156,
+            56.452200000000005
+          ],
+          [
+            38.3156,
+            55.0522
+          ],
+          [
+            36.9156,
+            55.0522
+          ],
+          [
+            36.9156,
+            56.452200000000005
+          ]
+        ]
+      ]
+    },
+    {
       "id": "gdelt-cluster-5",
-      "title": "Conflict cluster — India",
-      "description": "6 GDELT conflict mentions clustered in this box. Density overlay, not a front line.",
-      "severity": "high",
-      "occurredAt": "2026-10-07T06:45:00.000Z",
-      "country": "India",
-      "source": "GDELT",
-      "rings": [
-        [
-          [
-            76.3,
-            20.7
-          ],
-          [
-            77.7,
-            20.7
-          ],
-          [
-            77.7,
-            19.3
-          ],
-          [
-            76.3,
-            19.3
-          ],
-          [
-            76.3,
-            20.7
-          ]
-        ]
-      ]
-    },
-    {
-      "id": "gdelt-cluster-6",
-      "title": "Conflict cluster — Armed clash — Unknown location",
-      "description": "6 GDELT conflict mentions clustered in this box. Density overlay, not a front line.",
-      "severity": "high",
-      "occurredAt": "2026-10-07T06:45:00.000Z",
-      "source": "GDELT",
-      "rings": [
-        [
-          [
-            -0.7,
-            0.7
-          ],
-          [
-            0.7,
-            0.7
-          ],
-          [
-            0.7,
-            -0.7
-          ],
-          [
-            -0.7,
-            -0.7
-          ],
-          [
-            -0.7,
-            0.7
-          ]
-        ]
-      ]
-    },
-    {
-      "id": "gdelt-cluster-7",
       "title": "Conflict cluster — Ukraine",
-      "description": "6 GDELT conflict mentions clustered in this box. Density overlay, not a front line.",
-      "severity": "elevated",
-      "occurredAt": "2026-10-07T06:15:00.000Z",
+      "description": "5 GDELT conflict mentions clustered in this box. Density overlay, not a front line.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T11:15:00.000Z",
       "country": "Ukraine",
       "source": "GDELT",
       "rings": [
@@ -3121,11 +3058,44 @@
       ]
     },
     {
-      "id": "gdelt-cluster-8",
-      "title": "Conflict cluster — Saudi Arabia",
-      "description": "6 GDELT conflict mentions clustered in this box. Density overlay, not a front line.",
+      "id": "gdelt-cluster-6",
+      "title": "Conflict cluster — Ukraine",
+      "description": "5 GDELT conflict mentions clustered in this box. Density overlay, not a front line.",
       "severity": "elevated",
-      "occurredAt": "2026-10-07T06:15:00.000Z",
+      "occurredAt": "2026-10-07T12:15:00.000Z",
+      "country": "Ukraine",
+      "source": "GDELT",
+      "rings": [
+        [
+          [
+            29.8167,
+            52.2055
+          ],
+          [
+            31.9849,
+            52.2055
+          ],
+          [
+            31.9849,
+            49.7333
+          ],
+          [
+            29.8167,
+            49.7333
+          ],
+          [
+            29.8167,
+            52.2055
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "gdelt-cluster-7",
+      "title": "Conflict cluster — Saudi Arabia",
+      "description": "4 GDELT conflict mentions clustered in this box. Density overlay, not a front line.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T08:45:00.000Z",
       "country": "Saudi Arabia",
       "source": "GDELT",
       "rings": [
@@ -3154,34 +3124,66 @@
       ]
     },
     {
-      "id": "gdelt-cluster-9",
-      "title": "Conflict cluster — Russia",
-      "description": "5 GDELT conflict mentions clustered in this box. Density overlay, not a front line.",
-      "severity": "elevated",
+      "id": "gdelt-cluster-8",
+      "title": "Conflict cluster — Armed clash — Unknown location",
+      "description": "4 GDELT conflict mentions clustered in this box. Density overlay, not a front line.",
+      "severity": "high",
       "occurredAt": "2026-10-07T06:45:00.000Z",
-      "country": "Russia",
       "source": "GDELT",
       "rings": [
         [
           [
-            99.3,
-            60.7
+            -0.7,
+            0.7
           ],
           [
-            100.7,
-            60.7
+            0.7,
+            0.7
           ],
           [
-            100.7,
-            59.3
+            0.7,
+            -0.7
           ],
           [
-            99.3,
-            59.3
+            -0.7,
+            -0.7
           ],
           [
-            99.3,
-            60.7
+            -0.7,
+            0.7
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "gdelt-cluster-9",
+      "title": "Conflict cluster — Yemen",
+      "description": "4 GDELT conflict mentions clustered in this box. Density overlay, not a front line.",
+      "severity": "high",
+      "occurredAt": "2026-10-07T06:15:00.000Z",
+      "country": "Yemen",
+      "source": "GDELT",
+      "rings": [
+        [
+          [
+            46.8,
+            16.2
+          ],
+          [
+            48.2,
+            16.2
+          ],
+          [
+            48.2,
+            14.8
+          ],
+          [
+            46.8,
+            14.8
+          ],
+          [
+            46.8,
+            16.2
           ]
         ]
       ]
