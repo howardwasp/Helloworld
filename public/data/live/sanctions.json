@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-09T12:35:58.702Z",
-  "listDate": "2026-10-09T12:35:58.684Z",
+  "generatedAt": "2026-10-09T18:33:27.657Z",
+  "listDate": "2026-10-09T18:33:27.645Z",
   "countries": [
     {
       "code": "RU",
@@ -350,7 +350,7 @@
       "name": "Myanmar",
       "longitude": 97.1105,
       "latitude": 19.9945,
-      "count": 194,
+      "count": 193,
       "programs": [
         "SDNTK",
         "DPRK2",
@@ -807,6 +807,24 @@
       "samples": []
     },
     {
+      "code": "NL",
+      "name": "Netherlands",
+      "longitude": 5.5483,
+      "latitude": 52.0546,
+      "count": 63,
+      "programs": [
+        "CUBA",
+        "SDGT",
+        "SDNTK",
+        "IRAN",
+        "GLOMAG",
+        "CYBER2",
+        "RUSSIA-EO14024",
+        "TCO"
+      ],
+      "samples": []
+    },
+    {
       "code": "GT",
       "name": "Guatemala",
       "longitude": -90.2122,
@@ -819,24 +837,6 @@
         "TCO",
         "GLOMAG",
         "ILLICIT-DRUGS-EO14059"
-      ],
-      "samples": []
-    },
-    {
-      "code": "NL",
-      "name": "Netherlands",
-      "longitude": 5.5483,
-      "latitude": 52.0546,
-      "count": 62,
-      "programs": [
-        "CUBA",
-        "SDGT",
-        "SDNTK",
-        "IRAN",
-        "GLOMAG",
-        "CYBER2",
-        "RUSSIA-EO14024",
-        "TCO"
       ],
       "samples": []
     },
