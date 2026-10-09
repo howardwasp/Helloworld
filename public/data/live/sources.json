@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T18:35:16.589Z",
+  "generatedAt": "2026-10-09T00:43:31.748Z",
   "sources": [
     {
       "id": "natural",
@@ -13,7 +13,7 @@
       "provider": "National Weather Service",
       "url": "https://api.weather.gov/alerts/active",
       "license": "U.S. public domain",
-      "count": 416
+      "count": 492
     },
     {
       "id": "storms",
@@ -34,7 +34,7 @@
       "provider": "Derived from GDELT clusters",
       "url": "https://www.gdeltproject.org/",
       "license": "Derived from the GDELT conflict snapshot",
-      "count": 14
+      "count": 16
     },
     {
       "id": "sanctions",
@@ -48,7 +48,7 @@
       "provider": "IODA / Georgia Institute of Technology",
       "url": "https://ioda.inetintel.cc.gatech.edu/",
       "license": "Attribution required. Live client fetch preferred; this file is a short snapshot.",
-      "count": 26
+      "count": 28
     }
   ]
 }
