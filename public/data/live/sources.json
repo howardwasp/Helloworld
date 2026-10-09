@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-09T06:38:14.823Z",
+  "generatedAt": "2026-10-09T12:35:58.703Z",
   "sources": [
     {
       "id": "natural",
       "provider": "USGS Earthquake Hazards Program",
       "url": "https://earthquake.usgs.gov/fdsnws/event/1/",
       "license": "U.S. public domain",
-      "count": 117
+      "count": 120
     },
     {
       "id": "weather",
       "provider": "National Weather Service",
       "url": "https://api.weather.gov/alerts/active",
       "license": "U.S. public domain",
-      "count": 404
+      "count": 443
     },
     {
       "id": "storms",
@@ -34,7 +34,7 @@
       "provider": "Derived from GDELT clusters",
       "url": "https://www.gdeltproject.org/",
       "license": "Derived from the GDELT conflict snapshot",
-      "count": 15
+      "count": 16
     },
     {
       "id": "sanctions",
@@ -48,7 +48,7 @@
       "provider": "IODA / Georgia Institute of Technology",
       "url": "https://ioda.inetintel.cc.gatech.edu/",
       "license": "Attribution required. Live client fetch preferred; this file is a short snapshot.",
-      "count": 28
+      "count": 29
     }
   ]
 }
