@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-13T00:40:16.415Z",
-  "listDate": "2026-10-13T00:40:16.411Z",
+  "generatedAt": "2026-10-13T14:12:18.203Z",
+  "listDate": "2026-10-13T14:12:18.197Z",
   "countries": [
     {
       "code": "RU",
@@ -69,7 +69,7 @@
       "name": "Mexico",
       "longitude": -103.0479,
       "latitude": 23.8233,
-      "count": 1213,
+      "count": 1228,
       "programs": [
         "CUBA",
         "SDNTK",
