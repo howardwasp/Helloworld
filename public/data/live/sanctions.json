@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-14T11:52:44.743Z",
-  "listDate": "2026-10-14T11:52:44.734Z",
+  "generatedAt": "2026-10-14T17:10:53.956Z",
+  "listDate": "2026-10-14T17:10:53.945Z",
   "countries": [
     {
       "code": "RU",
@@ -154,7 +154,7 @@
       "name": "Venezuela",
       "longitude": -66.9188,
       "latitude": 7.2356,
-      "count": 484,
+      "count": 483,
       "programs": [
         "SDGT",
         "SDNTK",
