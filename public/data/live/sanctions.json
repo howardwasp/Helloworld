@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-21T11:49:43.504Z",
-  "listDate": "2026-10-21T11:49:43.498Z",
+  "generatedAt": "2026-10-21T17:12:49.838Z",
+  "listDate": "2026-10-21T17:12:49.830Z",
   "countries": [
     {
       "code": "RU",
@@ -38,7 +38,7 @@
       "name": "Iran",
       "longitude": 53.4092,
       "latitude": 33.3488,
-      "count": 3468,
+      "count": 3486,
       "programs": [
         "IRAN",
         "SDGT",
@@ -87,7 +87,7 @@
       "name": "China",
       "longitude": 105.7794,
       "latitude": 37.285,
-      "count": 1193,
+      "count": 1190,
       "programs": [
         "SDGT",
         "SDNTK",
@@ -105,7 +105,7 @@
       "name": "United Arab Emirates",
       "longitude": 54.3703,
       "latitude": 24.193,
-      "count": 767,
+      "count": 768,
       "programs": [
         "IRAQ2",
         "SDGT",
@@ -123,7 +123,7 @@
       "name": "Dem. Rep. Korea",
       "longitude": 127.2503,
       "latitude": 39.8262,
-      "count": 591,
+      "count": 588,
       "programs": [
         "CUBA",
         "NPWMD",
@@ -270,7 +270,7 @@
       "name": "Belarus",
       "longitude": 28.2222,
       "latitude": 53.3109,
-      "count": 292,
+      "count": 291,
       "programs": [
         "BELARUS",
         "IRAN",
@@ -477,7 +477,7 @@
       "name": "Panama",
       "longitude": -80.3753,
       "latitude": 8.4924,
-      "count": 147,
+      "count": 154,
       "programs": [
         "CUBA",
         "SDNTK",
