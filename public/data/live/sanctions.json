@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-28T12:55:31.966Z",
-  "listDate": "2026-10-28T12:55:31.959Z",
+  "generatedAt": "2026-10-28T22:35:30.233Z",
+  "listDate": "2026-10-28T22:35:30.221Z",
   "countries": [
     {
       "code": "RU",
       "name": "Russia",
       "longitude": 91.2457,
       "latitude": 59.302,
-      "count": 7103,
+      "count": 7114,
       "programs": [
         "CUBA",
         "SDGT",
@@ -123,7 +123,7 @@
       "name": "Dem. Rep. Korea",
       "longitude": 127.2503,
       "latitude": 39.8262,
-      "count": 588,
+      "count": 599,
       "programs": [
         "CUBA",
         "NPWMD",
@@ -495,7 +495,7 @@
       "name": "Dem. Rep. Congo",
       "longitude": 22.949,
       "latitude": -3.8313,
-      "count": 143,
+      "count": 145,
       "programs": [
         "DRCONGO",
         "SDGT",
