@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-11-04T06:22:39.373Z",
-  "listDate": "2026-11-04T06:22:39.367Z",
+  "generatedAt": "2026-11-04T19:45:29.125Z",
+  "listDate": "2026-11-04T19:45:29.119Z",
   "countries": [
     {
       "code": "RU",
       "name": "Russia",
       "longitude": 91.2457,
       "latitude": 59.302,
-      "count": 7114,
+      "count": 7115,
       "programs": [
         "CUBA",
         "SDGT",
@@ -38,7 +38,7 @@
       "name": "Iran",
       "longitude": 53.4092,
       "latitude": 33.3488,
-      "count": 3486,
+      "count": 3503,
       "programs": [
         "IRAN",
         "SDGT",
@@ -185,7 +185,7 @@
       "name": "Turkey",
       "longitude": 36.5985,
       "latitude": 38.4246,
-      "count": 387,
+      "count": 388,
       "programs": [
         "SDGT",
         "SDNTK",
@@ -423,6 +423,24 @@
       "samples": []
     },
     {
+      "code": "IN",
+      "name": "India",
+      "longitude": 83.4864,
+      "latitude": 23.9339,
+      "count": 175,
+      "programs": [
+        "SDGT",
+        "SDNTK",
+        "IRAN",
+        "FTO",
+        "UKRAINE-EO13662",
+        "IRAN-EO13902",
+        "RUSSIA-EO14024",
+        "DPRK3"
+      ],
+      "samples": []
+    },
+    {
       "code": "PK",
       "name": "Pakistan",
       "longitude": 69.3144,
@@ -437,24 +455,6 @@
         "CYBER2",
         "ELECTION-EO13848",
         "IRAN-EO13846"
-      ],
-      "samples": []
-    },
-    {
-      "code": "IN",
-      "name": "India",
-      "longitude": 83.4864,
-      "latitude": 23.9339,
-      "count": 163,
-      "programs": [
-        "SDGT",
-        "SDNTK",
-        "IRAN",
-        "FTO",
-        "UKRAINE-EO13662",
-        "IRAN-EO13902",
-        "RUSSIA-EO14024",
-        "DPRK3"
       ],
       "samples": []
     },
