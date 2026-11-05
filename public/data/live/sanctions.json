@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-05T06:46:53.300Z",
-  "listDate": "2026-11-05T06:46:53.294Z",
+  "generatedAt": "2026-11-05T19:57:09.860Z",
+  "listDate": "2026-11-05T19:57:09.848Z",
   "countries": [
     {
       "code": "RU",
@@ -87,7 +87,7 @@
       "name": "China",
       "longitude": 105.7794,
       "latitude": 37.285,
-      "count": 1190,
+      "count": 1198,
       "programs": [
         "SDGT",
         "SDNTK",
@@ -346,6 +346,36 @@
       "samples": []
     },
     {
+      "code": "CU",
+      "name": "Cuba",
+      "longitude": -79.6713,
+      "latitude": 21.6871,
+      "count": 203,
+      "programs": [
+        "CUBA",
+        "CUBA-EO14404",
+        "SDGT",
+        "NPWMD",
+        "VENEZUELA-EO13850",
+        "GLOMAG",
+        "VENEZUELA"
+      ],
+      "samples": [
+        {
+          "name": "AEROCARIBBEAN AIRLINES",
+          "program": "CUBA"
+        },
+        {
+          "name": "ANGLO-CARIBBEAN CO., LTD.",
+          "program": "CUBA"
+        },
+        {
+          "name": "BANCO NACIONAL DE CUBA",
+          "program": "CUBA"
+        }
+      ]
+    },
+    {
       "code": "MM",
       "name": "Myanmar",
       "longitude": 97.1105,
@@ -376,35 +406,6 @@
       ]
     },
     {
-      "code": "CU",
-      "name": "Cuba",
-      "longitude": -79.6713,
-      "latitude": 21.6871,
-      "count": 188,
-      "programs": [
-        "CUBA",
-        "CUBA-EO14404",
-        "SDGT",
-        "NPWMD",
-        "VENEZUELA-EO13850",
-        "GLOMAG"
-      ],
-      "samples": [
-        {
-          "name": "AEROCARIBBEAN AIRLINES",
-          "program": "CUBA"
-        },
-        {
-          "name": "ANGLO-CARIBBEAN CO., LTD.",
-          "program": "CUBA"
-        },
-        {
-          "name": "BANCO NACIONAL DE CUBA",
-          "program": "CUBA"
-        }
-      ]
-    },
-    {
       "code": "GB",
       "name": "United Kingdom",
       "longitude": -3.0844,
@@ -419,6 +420,20 @@
         "IRAQ2",
         "SDNTK",
         "NPWMD"
+      ],
+      "samples": []
+    },
+    {
+      "code": "KH",
+      "name": "Cambodia",
+      "longitude": 105.0396,
+      "latitude": 12.6697,
+      "count": 181,
+      "programs": [
+        "SDGT",
+        "GLOMAG",
+        "TCO",
+        "CYBER4"
       ],
       "samples": []
     },
@@ -459,25 +474,11 @@
       "samples": []
     },
     {
-      "code": "KH",
-      "name": "Cambodia",
-      "longitude": 105.0396,
-      "latitude": 12.6697,
-      "count": 155,
-      "programs": [
-        "SDGT",
-        "GLOMAG",
-        "TCO",
-        "CYBER4"
-      ],
-      "samples": []
-    },
-    {
       "code": "PA",
       "name": "Panama",
       "longitude": -80.3753,
       "latitude": 8.4924,
-      "count": 154,
+      "count": 156,
       "programs": [
         "CUBA",
         "SDNTK",
@@ -581,8 +582,8 @@
         "RUSSIA-EO14024",
         "GLOMAG",
         "VENEZUELA-EO13850",
-        "LIBYA3",
-        "PEESA-EO14039"
+        "CUBA-EO14404",
+        "LIBYA3"
       ],
       "samples": []
     },
@@ -963,7 +964,7 @@
       "name": "Malaysia",
       "longitude": 114.6814,
       "latitude": 3.6659,
-      "count": 44,
+      "count": 45,
       "programs": [
         "SDGT",
         "IRAN",
