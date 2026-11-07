@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-06T19:24:45.766Z",
-  "listDate": "2026-11-06T19:24:45.760Z",
+  "generatedAt": "2026-11-07T05:58:35.144Z",
+  "listDate": "2026-11-07T05:58:35.137Z",
   "countries": [
     {
       "code": "RU",
@@ -38,7 +38,7 @@
       "name": "Iran",
       "longitude": 53.4092,
       "latitude": 33.3488,
-      "count": 3503,
+      "count": 3511,
       "programs": [
         "IRAN",
         "SDGT",
@@ -908,6 +908,24 @@
       "samples": []
     },
     {
+      "code": "CA",
+      "name": "Canada",
+      "longitude": -90.6245,
+      "latitude": 56.4298,
+      "count": 49,
+      "programs": [
+        "CUBA",
+        "SDGT",
+        "IRAN",
+        "SDNTK",
+        "TCO",
+        "GLOMAG",
+        "RUSSIA-EO14024",
+        "ILLICIT-DRUGS-EO14059"
+      ],
+      "samples": []
+    },
+    {
       "code": "RS",
       "name": "Serbia",
       "longitude": 20.9866,
@@ -974,24 +992,6 @@
         "TCO",
         "IRAN-EO13846",
         "IRGC"
-      ],
-      "samples": []
-    },
-    {
-      "code": "CA",
-      "name": "Canada",
-      "longitude": -90.6245,
-      "latitude": 56.4298,
-      "count": 41,
-      "programs": [
-        "CUBA",
-        "SDGT",
-        "IRAN",
-        "SDNTK",
-        "TCO",
-        "GLOMAG",
-        "RUSSIA-EO14024",
-        "ILLICIT-DRUGS-EO14059"
       ],
       "samples": []
     },
