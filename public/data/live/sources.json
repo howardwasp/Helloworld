@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T21:51:18.163Z",
+  "generatedAt": "2026-11-08T06:01:27.581Z",
   "sources": [
     {
       "id": "natural",
@@ -13,7 +13,7 @@
       "provider": "National Weather Service",
       "url": "https://api.weather.gov/alerts/active",
       "license": "U.S. public domain",
-      "count": 118
+      "count": 121
     },
     {
       "id": "storms",
@@ -48,7 +48,7 @@
       "provider": "IODA / Georgia Institute of Technology",
       "url": "https://ioda.inetintel.cc.gatech.edu/",
       "license": "Attribution required. Live client fetch preferred; this file is a short snapshot.",
-      "count": 29
+      "count": 28
     }
   ]
 }
