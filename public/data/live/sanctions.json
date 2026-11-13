@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-13T06:46:08.711Z",
-  "listDate": "2026-11-13T06:46:08.705Z",
+  "generatedAt": "2026-11-13T19:42:35.828Z",
+  "listDate": "2026-11-13T19:42:35.817Z",
   "countries": [
     {
       "code": "RU",
@@ -808,6 +808,22 @@
       "samples": []
     },
     {
+      "code": "GT",
+      "name": "Guatemala",
+      "longitude": -90.2122,
+      "latitude": 15.5603,
+      "count": 65,
+      "programs": [
+        "SDNTK",
+        "FTO",
+        "SDGT",
+        "TCO",
+        "GLOMAG",
+        "ILLICIT-DRUGS-EO14059"
+      ],
+      "samples": []
+    },
+    {
       "code": "NL",
       "name": "Netherlands",
       "longitude": 5.5483,
@@ -822,22 +838,6 @@
         "CYBER2",
         "RUSSIA-EO14024",
         "TCO"
-      ],
-      "samples": []
-    },
-    {
-      "code": "GT",
-      "name": "Guatemala",
-      "longitude": -90.2122,
-      "latitude": 15.5603,
-      "count": 63,
-      "programs": [
-        "SDNTK",
-        "FTO",
-        "SDGT",
-        "TCO",
-        "GLOMAG",
-        "ILLICIT-DRUGS-EO14059"
       ],
       "samples": []
     },
