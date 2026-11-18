@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-18T07:28:59.993Z",
-  "listDate": "2026-11-18T07:28:59.985Z",
+  "generatedAt": "2026-11-18T20:31:37.692Z",
+  "listDate": "2026-11-18T20:31:37.686Z",
   "countries": [
     {
       "code": "RU",
@@ -185,7 +185,7 @@
       "name": "Turkey",
       "longitude": 36.5985,
       "latitude": 38.4246,
-      "count": 388,
+      "count": 389,
       "programs": [
         "SDGT",
         "SDNTK",
@@ -203,7 +203,7 @@
       "name": "Lebanon",
       "longitude": 35.8547,
       "latitude": 33.8503,
-      "count": 367,
+      "count": 372,
       "programs": [
         "SDGT",
         "IRAQ2",
