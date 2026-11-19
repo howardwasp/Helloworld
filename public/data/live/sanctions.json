@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-19T07:25:53.629Z",
-  "listDate": "2026-11-19T07:25:53.621Z",
+  "generatedAt": "2026-11-19T20:37:45.274Z",
+  "listDate": "2026-11-19T20:37:45.268Z",
   "countries": [
     {
       "code": "RU",
@@ -105,7 +105,7 @@
       "name": "United Arab Emirates",
       "longitude": 54.3703,
       "latitude": 24.193,
-      "count": 768,
+      "count": 769,
       "programs": [
         "IRAQ2",
         "SDGT",
@@ -380,7 +380,7 @@
       "name": "Myanmar",
       "longitude": 97.1105,
       "latitude": 19.9945,
-      "count": 193,
+      "count": 195,
       "programs": [
         "SDNTK",
         "DPRK2",
@@ -428,7 +428,7 @@
       "name": "Cambodia",
       "longitude": 105.0396,
       "latitude": 12.6697,
-      "count": 181,
+      "count": 183,
       "programs": [
         "SDGT",
         "GLOMAG",
@@ -556,7 +556,7 @@
       "name": "Germany",
       "longitude": 10.631,
       "latitude": 50.9968,
-      "count": 131,
+      "count": 132,
       "programs": [
         "CUBA",
         "SDGT",
@@ -689,6 +689,24 @@
       ]
     },
     {
+      "code": "IT",
+      "name": "Italy",
+      "longitude": 12.6602,
+      "latitude": 43.0281,
+      "count": 82,
+      "programs": [
+        "CUBA",
+        "SDGT",
+        "SDNTK",
+        "ILLICIT-DRUGS-EO14059",
+        "IRAN",
+        "TCO",
+        "LIBYA3",
+        "NPWMD"
+      ],
+      "samples": []
+    },
+    {
       "code": "LY",
       "name": "Libya",
       "longitude": 16.4862,
@@ -716,24 +734,6 @@
           "program": "LIBYA2"
         }
       ]
-    },
-    {
-      "code": "IT",
-      "name": "Italy",
-      "longitude": 12.6602,
-      "latitude": 43.0281,
-      "count": 80,
-      "programs": [
-        "CUBA",
-        "SDGT",
-        "SDNTK",
-        "IRAN",
-        "TCO",
-        "LIBYA3",
-        "NPWMD",
-        "IFSR"
-      ],
-      "samples": []
     },
     {
       "code": "AF",
@@ -842,6 +842,42 @@
       "samples": []
     },
     {
+      "code": "CA",
+      "name": "Canada",
+      "longitude": -90.6245,
+      "latitude": 56.4298,
+      "count": 62,
+      "programs": [
+        "CUBA",
+        "SDGT",
+        "IRAN",
+        "SDNTK",
+        "TCO",
+        "GLOMAG",
+        "RUSSIA-EO14024",
+        "ILLICIT-DRUGS-EO14059"
+      ],
+      "samples": []
+    },
+    {
+      "code": "ES",
+      "name": "Spain",
+      "longitude": -4.3907,
+      "latitude": 40.2368,
+      "count": 54,
+      "programs": [
+        "CUBA",
+        "SDGT",
+        "SDNTK",
+        "VENEZUELA",
+        "NPWMD",
+        "IFSR",
+        "TCO",
+        "VENEZUELA-EO13850"
+      ],
+      "samples": []
+    },
+    {
       "code": "ML",
       "name": "Mali",
       "longitude": -5.7259,
@@ -872,24 +908,6 @@
       ]
     },
     {
-      "code": "ES",
-      "name": "Spain",
-      "longitude": -4.3907,
-      "latitude": 40.2368,
-      "count": 52,
-      "programs": [
-        "CUBA",
-        "SDGT",
-        "SDNTK",
-        "VENEZUELA",
-        "NPWMD",
-        "IFSR",
-        "TCO",
-        "VENEZUELA-EO13850"
-      ],
-      "samples": []
-    },
-    {
       "code": "LR",
       "name": "Liberia",
       "longitude": -9.1698,
@@ -904,24 +922,6 @@
         "IRAN-EO13846",
         "IRAN-EO13902",
         "UKRAINE-EO13662"
-      ],
-      "samples": []
-    },
-    {
-      "code": "CA",
-      "name": "Canada",
-      "longitude": -90.6245,
-      "latitude": 56.4298,
-      "count": 49,
-      "programs": [
-        "CUBA",
-        "SDGT",
-        "IRAN",
-        "SDNTK",
-        "TCO",
-        "GLOMAG",
-        "RUSSIA-EO14024",
-        "ILLICIT-DRUGS-EO14059"
       ],
       "samples": []
     },
