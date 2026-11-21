@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-20T20:20:34.260Z",
-  "listDate": "2026-11-20T20:20:34.252Z",
+  "generatedAt": "2026-11-21T07:08:07.529Z",
+  "listDate": "2026-11-21T07:08:07.522Z",
   "countries": [
     {
       "code": "RU",
@@ -38,7 +38,7 @@
       "name": "Iran",
       "longitude": 53.4092,
       "latitude": 33.3488,
-      "count": 3511,
+      "count": 3515,
       "programs": [
         "IRAN",
         "SDGT",
