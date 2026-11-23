@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-23T07:39:11.053Z",
-  "listDate": "2026-11-23T07:39:11.041Z",
+  "generatedAt": "2026-11-23T23:53:44.278Z",
+  "listDate": "2026-11-23T23:53:44.270Z",
   "countries": [
     {
       "code": "RU",
@@ -38,7 +38,7 @@
       "name": "Iran",
       "longitude": 53.4092,
       "latitude": 33.3488,
-      "count": 3515,
+      "count": 3544,
       "programs": [
         "IRAN",
         "SDGT",
@@ -87,7 +87,7 @@
       "name": "China",
       "longitude": 105.7794,
       "latitude": 37.285,
-      "count": 1198,
+      "count": 1199,
       "programs": [
         "SDGT",
         "SDNTK",
@@ -105,7 +105,7 @@
       "name": "United Arab Emirates",
       "longitude": 54.3703,
       "latitude": 24.193,
-      "count": 769,
+      "count": 785,
       "programs": [
         "IRAQ2",
         "SDGT",
@@ -185,7 +185,7 @@
       "name": "Turkey",
       "longitude": 36.5985,
       "latitude": 38.4246,
-      "count": 389,
+      "count": 390,
       "programs": [
         "SDGT",
         "SDNTK",

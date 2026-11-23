@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-23T07:39:11.053Z",
+  "generatedAt": "2026-11-23T23:53:44.278Z",
   "events": [
     {
       "id": "ioda-NL-1795320660",
       "title": "Internet outage — Netherlands",
-      "description": "IODA merit-nt / median scored 154282. Duration about 27h. Georgia Tech Internet Outage Detection and Analysis.",
+      "description": "IODA merit-nt / median scored 245520. Duration about 44h. Georgia Tech Internet Outage Detection and Analysis.",
       "severity": "critical",
       "occurredAt": "2026-11-22T04:11:00.000Z",
       "longitude": 5.548327170128927,
@@ -16,7 +16,7 @@
     {
       "id": "ioda-SE-1795320660",
       "title": "Internet outage — Sweden",
-      "description": "IODA merit-nt / median scored 154051. Duration about 27h. Georgia Tech Internet Outage Detection and Analysis.",
+      "description": "IODA merit-nt / median scored 245151. Duration about 44h. Georgia Tech Internet Outage Detection and Analysis.",
       "severity": "critical",
       "occurredAt": "2026-11-22T04:11:00.000Z",
       "longitude": 16.705226500769143,
@@ -28,7 +28,7 @@
     {
       "id": "ioda-RU-1795320660",
       "title": "Internet outage — Russian Federation",
-      "description": "IODA merit-nt / median scored 150009. Duration about 27h. Georgia Tech Internet Outage Detection and Analysis.",
+      "description": "IODA merit-nt / median scored 238719. Duration about 44h. Georgia Tech Internet Outage Detection and Analysis.",
       "severity": "critical",
       "occurredAt": "2026-11-22T04:11:00.000Z",
       "longitude": 91.24573212178149,
@@ -40,13 +40,25 @@
     {
       "id": "ioda-FI-1795073400",
       "title": "Internet outage — Finland",
-      "description": "IODA gtr / sarima scored 148259. Duration about 96h. Georgia Tech Internet Outage Detection and Analysis.",
+      "description": "IODA gtr / sarima scored 173304. Duration about 112h. Georgia Tech Internet Outage Detection and Analysis.",
       "severity": "critical",
       "occurredAt": "2026-11-19T07:30:00.000Z",
       "longitude": 25.695625601266606,
       "latitude": 65.38011102951226,
       "country": "Finland",
       "url": "https://ioda.inetintel.cc.gatech.edu/country/FI",
+      "source": "IODA"
+    },
+    {
+      "id": "ioda-GE-1795398540",
+      "title": "Internet outage — Georgia",
+      "description": "IODA merit-nt / median scored 105473. Duration about 22h. Georgia Tech Internet Outage Detection and Analysis.",
+      "severity": "critical",
+      "occurredAt": "2026-11-23T01:49:00.000Z",
+      "longitude": 43.511843490686886,
+      "latitude": 42.20730156722926,
+      "country": "Georgia",
+      "url": "https://ioda.inetintel.cc.gatech.edu/country/GE",
       "source": "IODA"
     },
     {
@@ -62,63 +74,15 @@
       "source": "IODA"
     },
     {
-      "id": "ioda-AZ-1795374840",
-      "title": "Internet outage — Azerbaijan",
-      "description": "IODA merit-nt / median scored 62646. Duration about 12h. Georgia Tech Internet Outage Detection and Analysis.",
-      "severity": "critical",
-      "occurredAt": "2026-11-22T19:14:00.000Z",
-      "longitude": 47.435115917402136,
-      "latitude": 40.32966585713885,
-      "country": "Azerbaijan",
-      "url": "https://ioda.inetintel.cc.gatech.edu/country/AZ",
-      "source": "IODA"
-    },
-    {
-      "id": "ioda-TR-1795376700",
+      "id": "ioda-TR-1795428360",
       "title": "Internet outage — Turkey",
-      "description": "IODA merit-nt / median scored 58590. Duration about 12h. Georgia Tech Internet Outage Detection and Analysis.",
+      "description": "IODA merit-nt / median scored 66330. Duration about 14h. Georgia Tech Internet Outage Detection and Analysis.",
       "severity": "critical",
-      "occurredAt": "2026-11-22T19:45:00.000Z",
+      "occurredAt": "2026-11-23T10:06:00.000Z",
       "longitude": 36.59851001749622,
       "latitude": 38.42459339905676,
       "country": "Turkey",
       "url": "https://ioda.inetintel.cc.gatech.edu/country/TR",
-      "source": "IODA"
-    },
-    {
-      "id": "ioda-CI-1795378320",
-      "title": "Internet outage — Cote D Ivoire",
-      "description": "IODA merit-nt / median scored 57249. Duration about 11h. Georgia Tech Internet Outage Detection and Analysis.",
-      "severity": "critical",
-      "occurredAt": "2026-11-22T20:12:00.000Z",
-      "longitude": -6.3081003890130924,
-      "latitude": 7.894345897289631,
-      "country": "Cote D Ivoire",
-      "url": "https://ioda.inetintel.cc.gatech.edu/country/CI",
-      "source": "IODA"
-    },
-    {
-      "id": "ioda-CN-1794778200",
-      "title": "Internet outage — China",
-      "description": "IODA gtr / sarima scored 53239. Duration about 15h. Georgia Tech Internet Outage Detection and Analysis.",
-      "severity": "critical",
-      "occurredAt": "2026-11-15T21:30:00.000Z",
-      "longitude": 33.47286505168423,
-      "latitude": 35.179792683784775,
-      "country": "China",
-      "url": "https://ioda.inetintel.cc.gatech.edu/country/CN",
-      "source": "IODA"
-    },
-    {
-      "id": "ioda-GE-1795398540",
-      "title": "Internet outage — Georgia",
-      "description": "IODA merit-nt / median scored 27869. Duration about 6h. Georgia Tech Internet Outage Detection and Analysis.",
-      "severity": "critical",
-      "occurredAt": "2026-11-23T01:49:00.000Z",
-      "longitude": 43.511843490686886,
-      "latitude": 42.20730156722926,
-      "country": "Georgia",
-      "url": "https://ioda.inetintel.cc.gatech.edu/country/GE",
       "source": "IODA"
     },
     {
@@ -134,9 +98,33 @@
       "source": "IODA"
     },
     {
+      "id": "ioda-AZ-1795463700",
+      "title": "Internet outage — Azerbaijan",
+      "description": "IODA merit-nt / median scored 20060. Duration about 4h. Georgia Tech Internet Outage Detection and Analysis.",
+      "severity": "critical",
+      "occurredAt": "2026-11-23T19:55:00.000Z",
+      "longitude": 47.435115917402136,
+      "latitude": 40.32966585713885,
+      "country": "Azerbaijan",
+      "url": "https://ioda.inetintel.cc.gatech.edu/country/AZ",
+      "source": "IODA"
+    },
+    {
+      "id": "ioda-CI-1795465260",
+      "title": "Internet outage — Cote D Ivoire",
+      "description": "IODA merit-nt / median scored 19484. Duration about 4h. Georgia Tech Internet Outage Detection and Analysis.",
+      "severity": "high",
+      "occurredAt": "2026-11-23T20:21:00.000Z",
+      "longitude": -6.3081003890130924,
+      "latitude": 7.894345897289631,
+      "country": "Cote D Ivoire",
+      "url": "https://ioda.inetintel.cc.gatech.edu/country/CI",
+      "source": "IODA"
+    },
+    {
       "id": "ioda-RS-1794486300",
       "title": "Internet outage — Serbia",
-      "description": "IODA bgp / median scored 17284. Duration about 259h. Georgia Tech Internet Outage Detection and Analysis.",
+      "description": "IODA bgp / median scored 18367. Duration about 275h. Georgia Tech Internet Outage Detection and Analysis.",
       "severity": "high",
       "occurredAt": "2026-11-12T12:25:00.000Z",
       "longitude": 20.986583968210045,
@@ -148,7 +136,7 @@
     {
       "id": "ioda-SY-1795082400",
       "title": "Internet outage — Syrian Arab Republic",
-      "description": "IODA bgp / median scored 14047. Duration about 94h. Georgia Tech Internet Outage Detection and Analysis.",
+      "description": "IODA bgp / median scored 16484. Duration about 110h. Georgia Tech Internet Outage Detection and Analysis.",
       "severity": "high",
       "occurredAt": "2026-11-19T10:00:00.000Z",
       "longitude": 38.03597842789607,
@@ -160,7 +148,7 @@
     {
       "id": "ioda-TJ-1794921900",
       "title": "Internet outage — Tajikistan",
-      "description": "IODA bgp / median scored 8966. Duration about 138h. Georgia Tech Internet Outage Detection and Analysis.",
+      "description": "IODA bgp / median scored 10020. Duration about 154h. Georgia Tech Internet Outage Detection and Analysis.",
       "severity": "high",
       "occurredAt": "2026-11-17T13:25:00.000Z",
       "longitude": 70.86110918567714,
@@ -170,35 +158,11 @@
       "source": "IODA"
     },
     {
-      "id": "ioda-NG-1794583800",
-      "title": "Internet outage — Nigeria",
-      "description": "IODA bgp / median scored 5919. Duration about 65h. Georgia Tech Internet Outage Detection and Analysis.",
-      "severity": "high",
-      "occurredAt": "2026-11-13T15:30:00.000Z",
-      "longitude": 8.447694704247693,
-      "latitude": 9.792473445544738,
-      "country": "Nigeria",
-      "url": "https://ioda.inetintel.cc.gatech.edu/country/NG",
-      "source": "IODA"
-    },
-    {
-      "id": "ioda-BY-1795416360",
-      "title": "Internet outage — Belarus",
-      "description": "IODA merit-nt / median scored 4615. Duration about 1h. Georgia Tech Internet Outage Detection and Analysis.",
-      "severity": "high",
-      "occurredAt": "2026-11-23T06:46:00.000Z",
-      "longitude": 28.22215223800246,
-      "latitude": 53.310925108066456,
-      "country": "Belarus",
-      "url": "https://ioda.inetintel.cc.gatech.edu/country/BY",
-      "source": "IODA"
-    },
-    {
-      "id": "ioda-AE-1795416720",
+      "id": "ioda-AE-1795471680",
       "title": "Internet outage — United Arab Emirates",
-      "description": "IODA merit-nt / median scored 4322. Duration about 1h. Georgia Tech Internet Outage Detection and Analysis.",
+      "description": "IODA merit-nt / median scored 8022. Duration about 2h. Georgia Tech Internet Outage Detection and Analysis.",
       "severity": "high",
-      "occurredAt": "2026-11-23T06:52:00.000Z",
+      "occurredAt": "2026-11-23T22:08:00.000Z",
       "longitude": 54.370252719953605,
       "latitude": 24.192992652351315,
       "country": "United Arab Emirates",
@@ -206,11 +170,11 @@
       "source": "IODA"
     },
     {
-      "id": "ioda-IQ-1795416660",
+      "id": "ioda-IQ-1795473000",
       "title": "Internet outage — Iraq",
-      "description": "IODA merit-nt / median scored 3976. Duration about 1h. Georgia Tech Internet Outage Detection and Analysis.",
+      "description": "IODA merit-nt / median scored 6684. Duration about 1h. Georgia Tech Internet Outage Detection and Analysis.",
       "severity": "high",
-      "occurredAt": "2026-11-23T06:51:00.000Z",
+      "occurredAt": "2026-11-23T22:30:00.000Z",
       "longitude": 44.57816575253386,
       "latitude": 33.482660301096445,
       "country": "Iraq",
@@ -218,9 +182,21 @@
       "source": "IODA"
     },
     {
+      "id": "ioda-BY-1795473240",
+      "title": "Internet outage — Belarus",
+      "description": "IODA merit-nt / median scored 6672. Duration about 1h. Georgia Tech Internet Outage Detection and Analysis.",
+      "severity": "high",
+      "occurredAt": "2026-11-23T22:34:00.000Z",
+      "longitude": 28.22215223800246,
+      "latitude": 53.310925108066456,
+      "country": "Belarus",
+      "url": "https://ioda.inetintel.cc.gatech.edu/country/BY",
+      "source": "IODA"
+    },
+    {
       "id": "ioda-LA-1795214100",
       "title": "Internet outage — Lao Peoples Democratic Republic",
-      "description": "IODA bgp / median scored 3623. Duration about 57h. Georgia Tech Internet Outage Detection and Analysis.",
+      "description": "IODA bgp / median scored 4655. Duration about 73h. Georgia Tech Internet Outage Detection and Analysis.",
       "severity": "high",
       "occurredAt": "2026-11-20T22:35:00.000Z",
       "longitude": 103.59046255675713,
@@ -234,7 +210,7 @@
       "title": "Internet disruption — Haiti",
       "description": "IODA country summary: 4 events, overall score 800409.",
       "severity": "critical",
-      "occurredAt": "2026-11-23T07:39:07.026Z",
+      "occurredAt": "2026-11-23T23:53:43.640Z",
       "longitude": -72.75205635241366,
       "latitude": 18.7958711206767,
       "country": "Haiti",
@@ -246,7 +222,7 @@
       "title": "Internet disruption — Democratic Republic Of The Congo",
       "description": "IODA country summary: 6 events, overall score 463481.",
       "severity": "critical",
-      "occurredAt": "2026-11-23T07:39:07.026Z",
+      "occurredAt": "2026-11-23T23:53:43.640Z",
       "longitude": 22.94897376596039,
       "latitude": -3.831256425740003,
       "country": "Democratic Republic Of The Congo",
@@ -254,11 +230,23 @@
       "source": "IODA"
     },
     {
+      "id": "ioda-sum-CN",
+      "title": "Internet disruption — China",
+      "description": "IODA country summary: 1 events, overall score 56380.",
+      "severity": "critical",
+      "occurredAt": "2026-11-23T23:53:43.640Z",
+      "longitude": 33.47286505168423,
+      "latitude": 35.179792683784775,
+      "country": "China",
+      "url": "https://ioda.inetintel.cc.gatech.edu/country/CN",
+      "source": "IODA"
+    },
+    {
       "id": "ioda-sum-TM",
       "title": "Internet disruption — Turkmenistan",
       "description": "IODA country summary: 7 events, overall score 43746.",
       "severity": "critical",
-      "occurredAt": "2026-11-23T07:39:07.026Z",
+      "occurredAt": "2026-11-23T23:53:43.640Z",
       "longitude": 58.56926997718098,
       "latitude": 39.28376404666889,
       "country": "Turkmenistan",
@@ -266,23 +254,11 @@
       "source": "IODA"
     },
     {
-      "id": "ioda-sum-TD",
-      "title": "Internet disruption — Chad",
-      "description": "IODA country summary: 3 events, overall score 25523.",
-      "severity": "critical",
-      "occurredAt": "2026-11-23T07:39:07.026Z",
-      "longitude": 17.89306371415596,
-      "latitude": 12.880213095401869,
-      "country": "Chad",
-      "url": "https://ioda.inetintel.cc.gatech.edu/country/TD",
-      "source": "IODA"
-    },
-    {
       "id": "ioda-sum-UZ",
       "title": "Internet disruption — Uzbekistan",
-      "description": "IODA country summary: 28 events, overall score 21195.",
+      "description": "IODA country summary: 46 events, overall score 37155.",
       "severity": "critical",
-      "occurredAt": "2026-11-23T07:39:07.026Z",
+      "occurredAt": "2026-11-23T23:53:43.640Z",
       "longitude": 65.46509498058663,
       "latitude": 41.14970348905301,
       "country": "Uzbekistan",
@@ -292,9 +268,9 @@
     {
       "id": "ioda-sum-DE",
       "title": "Internet disruption — Germany",
-      "description": "IODA country summary: 22 events, overall score 19484.",
-      "severity": "high",
-      "occurredAt": "2026-11-23T07:39:07.026Z",
+      "description": "IODA country summary: 29 events, overall score 25773.",
+      "severity": "critical",
+      "occurredAt": "2026-11-23T23:53:43.640Z",
       "longitude": 10.6309759185634,
       "latitude": 50.99677645991831,
       "country": "Germany",
@@ -302,11 +278,23 @@
       "source": "IODA"
     },
     {
+      "id": "ioda-sum-TD",
+      "title": "Internet disruption — Chad",
+      "description": "IODA country summary: 3 events, overall score 25523.",
+      "severity": "critical",
+      "occurredAt": "2026-11-23T23:53:43.640Z",
+      "longitude": 17.89306371415596,
+      "latitude": 12.880213095401869,
+      "country": "Chad",
+      "url": "https://ioda.inetintel.cc.gatech.edu/country/TD",
+      "source": "IODA"
+    },
+    {
       "id": "ioda-sum-SV",
       "title": "Internet disruption — El Salvador",
       "description": "IODA country summary: 1 events, overall score 10687.",
       "severity": "high",
-      "occurredAt": "2026-11-23T07:39:07.026Z",
+      "occurredAt": "2026-11-23T23:53:43.640Z",
       "longitude": -88.89711147204291,
       "latitude": 13.824661705823345,
       "country": "El Salvador",
@@ -314,11 +302,23 @@
       "source": "IODA"
     },
     {
+      "id": "ioda-sum-NG",
+      "title": "Internet disruption — Nigeria",
+      "description": "IODA country summary: 17 events, overall score 6700.",
+      "severity": "high",
+      "occurredAt": "2026-11-23T23:53:43.640Z",
+      "longitude": 8.447694704247693,
+      "latitude": 9.792473445544738,
+      "country": "Nigeria",
+      "url": "https://ioda.inetintel.cc.gatech.edu/country/NG",
+      "source": "IODA"
+    },
+    {
       "id": "ioda-sum-BZ",
       "title": "Internet disruption — Belize",
       "description": "IODA country summary: 4 events, overall score 6385.",
       "severity": "high",
-      "occurredAt": "2026-11-23T07:39:07.026Z",
+      "occurredAt": "2026-11-23T23:53:43.640Z",
       "longitude": -88.60339894976926,
       "latitude": 17.396577503021025,
       "country": "Belize",
@@ -330,7 +330,7 @@
       "title": "Internet disruption — Honduras",
       "description": "IODA country summary: 1 events, overall score 5837.",
       "severity": "high",
-      "occurredAt": "2026-11-23T07:39:07.026Z",
+      "occurredAt": "2026-11-23T23:53:43.640Z",
       "longitude": -86.3644404917561,
       "latitude": 14.741846425400329,
       "country": "Honduras",
@@ -342,23 +342,11 @@
       "title": "Internet disruption — Costa Rica",
       "description": "IODA country summary: 1 events, overall score 5482.",
       "severity": "high",
-      "occurredAt": "2026-11-23T07:39:07.026Z",
+      "occurredAt": "2026-11-23T23:53:43.640Z",
       "longitude": -84.20798924721161,
       "latitude": 9.82946087138488,
       "country": "Costa Rica",
       "url": "https://ioda.inetintel.cc.gatech.edu/country/CR",
-      "source": "IODA"
-    },
-    {
-      "id": "ioda-sum-MZ",
-      "title": "Internet disruption — Mozambique",
-      "description": "IODA country summary: 1 events, overall score 5196.",
-      "severity": "high",
-      "occurredAt": "2026-11-23T07:39:07.026Z",
-      "longitude": 34.869542438823366,
-      "latitude": -17.996705318677034,
-      "country": "Mozambique",
-      "url": "https://ioda.inetintel.cc.gatech.edu/country/MZ",
       "source": "IODA"
     }
   ]
