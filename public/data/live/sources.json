@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-11-25T08:34:37.231Z",
+  "generatedAt": "2026-11-25T21:42:14.063Z",
   "sources": [
     {
       "id": "natural",
       "provider": "USGS Earthquake Hazards Program",
       "url": "https://earthquake.usgs.gov/fdsnws/event/1/",
       "license": "U.S. public domain",
-      "count": 95
+      "count": 88
     },
     {
       "id": "weather",
       "provider": "National Weather Service",
       "url": "https://api.weather.gov/alerts/active",
       "license": "U.S. public domain",
-      "count": 359
+      "count": 412
     },
     {
       "id": "storms",
@@ -48,7 +48,7 @@
       "provider": "IODA / Georgia Institute of Technology",
       "url": "https://ioda.inetintel.cc.gatech.edu/",
       "license": "Attribution required. Live client fetch preferred; this file is a short snapshot.",
-      "count": 29
+      "count": 30
     }
   ]
 }
